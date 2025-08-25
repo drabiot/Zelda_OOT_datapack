@@ -1,5 +1,6 @@
 {
     "values":[
-      "zelda_oot:tick"
+      "zelda_oot:tick",
+      "zelda_oot:check_item"
     ]
   }
