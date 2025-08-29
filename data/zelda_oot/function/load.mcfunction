@@ -1,1 +1,2 @@
 tellraw @a {"text":"Datapack : Zelda OOT loaded","color":"yellow"}
+gamerule announceAdvancements false

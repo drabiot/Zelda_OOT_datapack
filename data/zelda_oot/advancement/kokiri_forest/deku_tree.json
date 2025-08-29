@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:oak_log"
+    },
+    "title": "Deku Tree",
+    "description": "Listen the Great Deku Tree & Enter his body",
+    "background": "minecraft:block/oak_leaves",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "zelda_oot:kokiri_forest/kokiri_sword",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    ["tick"]
+  ]
+}

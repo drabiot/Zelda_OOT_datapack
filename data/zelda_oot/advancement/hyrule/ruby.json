@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:redstone"
+    },
+    "title": "Goron's Ruby",
+    "description": "Possess Spiritual Stone of Fire, Goron's Ruby",
+    "background": "minecraft:block/calcite",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "zelda_oot:hyrule/ocarina",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    ["tick"]
+  ]
+}

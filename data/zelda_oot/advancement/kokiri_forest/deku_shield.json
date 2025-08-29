@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:shield"
+    },
+    "title": "Deku Shield",
+    "description": "Buy your first Deku Shield",
+    "background": "minecraft:block/oak_leaves",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "zelda_oot:kokiri_forest/navi",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    ["tick"]
+  ]
+}

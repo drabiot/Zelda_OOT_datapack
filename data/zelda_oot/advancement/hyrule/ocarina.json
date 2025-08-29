@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:goat_horn"
+    },
+    "title": "First Ocarina",
+    "description": "Obtain Saria's Ocarina",
+    "background": "minecraft:block/calcite",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "zelda_oot:hyrule/hyrule_root",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    ["tick"]
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:lapis_lazuli"
+    },
+    "title": "Zora's Sapphire",
+    "description": "Possess Spiritual Stone of Water, Zora's Shappire",
+    "background": "minecraft:block/calcite",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "zelda_oot:hyrule/ocarina",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    ["tick"]
+  ]
+}
