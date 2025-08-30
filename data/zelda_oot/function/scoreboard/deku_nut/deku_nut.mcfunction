@@ -1,0 +1,1 @@
+scoreboard objectives add deku_nut dummy "deku nut"

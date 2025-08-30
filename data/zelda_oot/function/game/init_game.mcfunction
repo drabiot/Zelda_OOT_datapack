@@ -1,0 +1,4 @@
+function zelda_oot:scoreboard/wallet/reset_wallet
+function zelda_oot:scoreboard/deku_nut/reset_deku_nut
+function zelda_oot:scoreboard/deku_stick/reset_deku_stick
+function zelda_oot:scoreboard/deku_seed_bullet/reset_deku_seed_bullet

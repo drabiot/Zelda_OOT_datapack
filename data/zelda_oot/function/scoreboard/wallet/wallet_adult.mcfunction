@@ -1,0 +1,1 @@
+scoreboard players set max wallet_max 200

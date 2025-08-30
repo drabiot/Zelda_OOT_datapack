@@ -1,0 +1,1 @@
+scoreboard players add max deku_nut 10

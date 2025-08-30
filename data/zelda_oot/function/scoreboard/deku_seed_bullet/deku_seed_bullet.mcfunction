@@ -1,0 +1,1 @@
+scoreboard objectives add deku_seed_bullet dummy "deku seed bullet"

@@ -1,0 +1,1 @@
+scoreboard objectives add deku_stick dummy "deku stick"

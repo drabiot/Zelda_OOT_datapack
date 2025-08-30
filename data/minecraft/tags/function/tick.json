@@ -2,6 +2,7 @@
     "values":[
       "zelda_oot:tick",
       "zelda_oot:items/check_item",
-      "zelda_oot:advancement/advancement"
+      "zelda_oot:advancement/advancement",
+      "zelda_oot:motion/loop"
     ]
   }

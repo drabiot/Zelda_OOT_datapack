@@ -1,0 +1,1 @@
+execute as @e[tag=motion_projectile, tag=!motion_added] at @s rotated as @p run function zelda_oot:motion/apply_motion

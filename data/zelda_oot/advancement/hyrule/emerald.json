@@ -1,10 +1,10 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:emerald"
+      "id": "minecraft:emerald_block"
     },
-    "title": "Kokiri Emerald",
-    "description": "Possess Spiritual Stone of the Forest, Kokiri Emerald",
+    "title": "Kokiri's Emerald",
+    "description": "Possess Spiritual Stone of the Forest, Kokiri's Emerald",
     "background": "minecraft:block/calcite",
     "show_toast": true,
     "announce_to_chat": true,
