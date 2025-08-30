@@ -1,0 +1,15 @@
+{
+    "criteria": {
+      "using_item": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:stick"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "zelda_oot:items/deku_stick"
+    }
+}
