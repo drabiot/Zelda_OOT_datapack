@@ -1,0 +1,1 @@
+give @a stick[custom_name=[{"text":"Deku Stick","italic":false,"color":"red"}],lore=[[{"text":"A long stick taken from the Deku Tree.","italic":false,"color":"white"}],[{"text":"It can be swung, or lit and used as a torch.","italic":false,"color":"white"}]],item_name="Deku Stick"] 1

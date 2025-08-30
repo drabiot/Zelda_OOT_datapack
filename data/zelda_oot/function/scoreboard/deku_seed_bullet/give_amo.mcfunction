@@ -1,0 +1,1 @@
+give @a tripwire_hook[consumable={consume_seconds:999999999},custom_name=[{"text":"Fairy Slingshot","italic":false,"color":"red"}],lore=[[{"text":"A toy weapon used to attack from afar.","italic":false,"color":"white"}],[{"text":"It's rubber sling can launch Deku Seeds.","italic":false,"color":"white"}]],item_name="Fairy Slingshot",rarity=uncommon] 1

@@ -1,0 +1,1 @@
+give @s pitcher_pod[custom_name=[{"text":"Deku Nut","italic":false,"color":"red"}],lore=[[{"text":"A nut harvested from the Deku Tree.","color":"white"}],[{"text":"It explodes with a blinding flash if throwns.","color":"white"}]],item_name="Deku Nut"] 1
