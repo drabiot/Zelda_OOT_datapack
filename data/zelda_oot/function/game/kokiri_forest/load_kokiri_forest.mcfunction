@@ -84,6 +84,44 @@ setblock -451 10 3 dark_oak_sign[rotation=10]{front_text:{messages:[[{"text":"Fo
 setblock -459 10 6 dark_oak_sign[rotation=10]{front_text:{messages:[[{"text":"House","color":"white"}],[{"text":"of the","color":"white"}],[{"text":"Know-it-All","color":"white"}],[{"text":"Brothers","color":"white"}]]},back_text:{messages:[[{"text":"House","color":"white"}],[{"text":"of the","color":"white"}],[{"text":"Know-it-All","color":"white"}],[{"text":"Brothers","color":"white"}]]},is_waxed:true} replace
 
 
+#Load stone
+setblock -431 5 -29 minecraft:stone_button[face=floor,facing=north]
+setblock -432 5 -31 minecraft:stone_button[face=floor,facing=north]
+setblock -430 5 -31 minecraft:stone_button[face=floor,facing=north]
+setblock -432 5 -27 minecraft:stone_button[face=floor,facing=north]
+setblock -430 5 -27 minecraft:stone_button[face=floor,facing=north]
+setblock -433 5 -30 minecraft:stone_button[face=floor,facing=east]
+setblock -433 5 -28 minecraft:stone_button[face=floor,facing=east]
+setblock -429 5 -30 minecraft:stone_button[face=floor,facing=east]
+setblock -429 5 -28 minecraft:stone_button[face=floor,facing=east]
+setblock -442 5 -34 minecraft:stone_button[face=floor,facing=north]
+setblock -418 5 3 minecraft:stone_button[face=floor,facing=north]
+setblock -401 5 18 minecraft:stone_button[face=floor,facing=north]
+setblock -468 10 -12 minecraft:stone_button[face=floor,facing=north]
+setblock -444 10 18 minecraft:stone_button[face=floor,facing=east]
+setblock -452 10 15 minecraft:stone_button[face=floor,facing=east]
+setblock -453 10 16 minecraft:stone_button[face=floor,facing=east]
+
+
+#Load grass
+setblock -404 5 6 minecraft:mangrove_propagule
+setblock -408 5 5 minecraft:mangrove_propagule
+setblock -406 5 3 minecraft:mangrove_propagule
+setblock -419 5 7 minecraft:mangrove_propagule
+setblock -452 10 9 minecraft:mangrove_propagule
+setblock -451 10 11 minecraft:mangrove_propagule
+setblock -450 10 9 minecraft:mangrove_propagule
+setblock -449 10 11 minecraft:mangrove_propagule
+setblock -447 10 9 minecraft:mangrove_propagule
+setblock -445 10 11 minecraft:mangrove_propagule
+setblock -443 10 11 minecraft:mangrove_propagule
+setblock -443 10 9 minecraft:mangrove_propagule
+
+
+
+
+
+
 
 
 

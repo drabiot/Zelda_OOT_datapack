@@ -1,0 +1,8 @@
+#pour load les maisons
+
+setblock -429 -7 32 minecraft:decorated_pot
+setblock -466 -4 0 minecraft:decorated_pot
+setblock -470 -4 0 minecraft:decorated_pot
+setblock -384 -7 14 minecraft:decorated_pot
+setblock -384 -7 18 minecraft:decorated_pot
+
