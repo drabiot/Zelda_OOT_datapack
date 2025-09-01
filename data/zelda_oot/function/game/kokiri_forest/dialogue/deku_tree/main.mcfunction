@@ -1,35 +1,35 @@
-# 1. Passer en spectateur
-function zelda_oot:game/kokiri_forest/dialogue/deku_tree/spec_mod
+# 1. Set everyone in spectator mode
+function zelda_oot:game/kokiri_forest/dialogue/spec_mod
 
-# 2. TP1 immédiat (pas de schedule)
-function zelda_oot:game/kokiri_forest/dialogue/deku_tree/tp1
+# 2. Init the cinematic
+tag @a add deku_tree_dialogue_1
 
-# 3. Effacer l’écran (space)
-schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/space 10t
+# 3. Clean Screen
+schedule function zelda_oot:game/kokiri_forest/dialogue/space 1t
+schedule function zelda_oot:game/kokiri_forest/dialogue/space 1t
+schedule function zelda_oot:game/kokiri_forest/dialogue/space 1t
+schedule function zelda_oot:game/kokiri_forest/dialogue/space 1t
 
-# 4. Dialogue part1
+# 4. Dialogue part1 20 ticks
 schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part1 20t
 
-# 5. Dialogue part2
-schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part2 30t
+# 5. Dialogue part2 40 ticks
+schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part2 60t
 
-# 6. TP2
-schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/tp2 40t
+# 7. Teleportation part3 48 ticks
+schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part3 108t
 
-# 7. Dialogue part3
-schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part3 50t
+# 8. Dialogue part4 44 ticks
+schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part4 152t
 
-# 8. Dialogue part4
-schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part4 60t
+# 9. Dialogue part5 24 ticks
+schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part5 176t
 
-# 9. TP3
-schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/tp3 70t
+# 10. Teleportation part6 60 ticks
+schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part6 236t
 
-# 10. Dialogue part5
-schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part5 80t
+# 11. Dialogue part7 44 ticks
+schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part7 280t
 
-# 11. TP4
-schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/tp4 90t
-
-# 12. Repasser en adventure
-schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/adv_mod 100t
+# 12. Teleportation partend 60 ticks
+schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/partend 340t

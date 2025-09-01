@@ -4,6 +4,7 @@
       "zelda_oot:items/check_item",
       "zelda_oot:advancement/advancement",
       "zelda_oot:motion/loop",
-      "zelda_oot:game/swim_event"
+      "zelda_oot:game/swim_event",
+      "zelda_oot:game/kokiri_forest/dialogue/deku_tree/tp"
     ]
   }

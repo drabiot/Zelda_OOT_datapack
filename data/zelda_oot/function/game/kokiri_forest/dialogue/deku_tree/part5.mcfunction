@@ -1,2 +1,1 @@
-#part 5 du dialogue du Deku Tree
-tellraw @a {"text":"However, there is one boy who does not have a fairy..."}
+tellraw @a {"text":"Each Kokiri has his or her own guardian fairy."}
