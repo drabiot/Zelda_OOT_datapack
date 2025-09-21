@@ -1,10 +1,16 @@
 {
     "values":[
       "zelda_oot:tick",
+
       "zelda_oot:items/check_item",
       "zelda_oot:advancement/advancement",
       "zelda_oot:motion/loop",
+
+      "zelda_oot:items/heart/heart_on_ground",
+      "zelda_oot:items/heart/heart_pick",
+
       "zelda_oot:game/swim_event",
+
       "zelda_oot:game/kokiri_forest/dialogue/deku_tree/tp",
       "zelda_oot:game/kokiri_forest/check_loader"
     ]

@@ -118,6 +118,12 @@ setblock -443 10 11 minecraft:bush
 setblock -443 10 9 minecraft:bush
 
 
+#Load Hearts
+summon armor_stand -410 12 9 {CustomName:"heart",Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:0,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:beetroot}}}
+summon armor_stand -407 11 11 {CustomName:"heart",Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:0,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:beetroot}}}
+summon armor_stand -413 11 12 {CustomName:"heart",Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:0,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:beetroot}}}
+
+
 
 
 
