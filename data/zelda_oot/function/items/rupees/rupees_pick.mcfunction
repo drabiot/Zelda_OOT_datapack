@@ -1,0 +1,2 @@
+execute as @e[type=armor_stand,name=rupees,tag=green] at @s if entity @p[distance=..0.8] run function zelda_oot:items/rupees/green_rupees_reward
+execute as @e[type=armor_stand,name=rupees,tag=blue] at @s if entity @p[distance=..0.8] run function zelda_oot:items/rupees/blue_rupees_reward
