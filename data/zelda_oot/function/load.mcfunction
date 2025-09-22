@@ -16,6 +16,13 @@ scoreboard players set @a is_swimming 0
 #Add quantity
 scoreboard objectives add quantity dummy
 
+#Add random
+scoreboard objectives add random dummy
+scoreboard players set @a random 0
+
+#Add temporary item
+scoreboard objectives add decayTimer dummy
+
 #Add Rupees
 function zelda_oot:scoreboard/wallet/wallet
 

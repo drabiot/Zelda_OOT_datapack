@@ -12,6 +12,8 @@
       "zelda_oot:items/rupees/rupees_on_ground",
       "zelda_oot:items/rupees/rupees_pick",
 
+      "zelda_oot:game/breakable/check_stone",
+
       "zelda_oot:game/swim_event",
 
       "zelda_oot:game/kokiri_forest/dialogue/deku_tree/tp",

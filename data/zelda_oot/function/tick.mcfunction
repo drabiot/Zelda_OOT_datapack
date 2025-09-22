@@ -1,0 +1,10 @@
+scoreboard players add @a random 1
+execute if score @p random matches 10 run scoreboard players set @a random 0
+
+tag @e[type=armor_stand, tag=decay] add decay_pending
+scoreboard players set @e[type=armor_stand, tag=decay] decayTimer 100
+tag @e[type=armor_stand, tag=decay] remove decay
+
+scoreboard players remove @e[type=armor_stand,tag=decay_pending] decayTimer 1
+
+execute as @e[type=armor_stand, tag=decay_pending] if score @s decayTimer matches 0 run kill @s

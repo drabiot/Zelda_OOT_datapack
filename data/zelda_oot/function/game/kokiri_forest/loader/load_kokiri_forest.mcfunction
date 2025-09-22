@@ -85,7 +85,6 @@ setblock -459 10 6 dark_oak_sign[rotation=10]{front_text:{messages:[[{"text":"Ho
 
 
 #Load stone
-setblock -431 5 -29 minecraft:stone_button[face=floor,facing=north]
 setblock -432 5 -31 minecraft:stone_button[face=floor,facing=north]
 setblock -430 5 -31 minecraft:stone_button[face=floor,facing=north]
 setblock -432 5 -27 minecraft:stone_button[face=floor,facing=north]
