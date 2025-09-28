@@ -122,6 +122,8 @@ summon armor_stand -416 4.5 -29 {CustomName:"rupees",Tags:["green"],Invisible:1b
 summon armor_stand -437 4.5 -6 {CustomName:"rupees",Tags:["green"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:lime_concrete}}}
 summon armor_stand -440 4.5 -9 {CustomName:"rupees",Tags:["green"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:lime_concrete}}}
 
+tag @a remove trial_pound_finished
+
 
 
 

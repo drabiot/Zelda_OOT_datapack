@@ -13,11 +13,13 @@
       "zelda_oot:items/rupees/rupees_pick",
 
       "zelda_oot:game/breakable/check_stone",
+      "zelda_oot:game/kokiri_forest/bush/check_grass",
 
       "zelda_oot:game/swim_event",
 
       "zelda_oot:game/kokiri_forest/dialogue/deku_tree/tp",
       "zelda_oot:game/kokiri_forest/check_loader",
-      "zelda_oot:game/kokiri_forest/loader/trial_grass_respawn"
+      "zelda_oot:game/kokiri_forest/loader/trial_grass_respawn",
+      "zelda_oot:game/kokiri_forest/pound_trial/detect_start"
     ]
   }

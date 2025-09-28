@@ -7,6 +7,8 @@ function zelda_oot:scoreboard/deku_seed_bullet/reset_deku_seed_bullet
 kill @e[type=armor_stand]
 kill @e[type=falling_block]
 
+advancement revoke @a everything
+
 #Init Reward's Tag
 tag @a add mido_reward_blue_1
 tag @a add mido_reward_blue_2
