@@ -31,8 +31,6 @@ summon minecraft:falling_block -443 10 44 {Time:-1000000,NoGravity:true,BlockSta
 summon minecraft:falling_block -444 10 44 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
 summon minecraft:falling_block -441 10 45 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
 summon minecraft:falling_block -444 10 45 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
-summon minecraft:falling_block -439 10 46 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
-summon minecraft:falling_block -440 10 46 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
 summon minecraft:falling_block -441 10 46 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
 summon minecraft:falling_block -442 10 46 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
 summon minecraft:falling_block -444 10 46 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
@@ -42,16 +40,17 @@ summon minecraft:falling_block -441 10 47 {Time:-1000000,NoGravity:true,BlockSta
 summon minecraft:falling_block -442 10 47 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
 summon minecraft:falling_block -443 10 47 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
 summon minecraft:falling_block -444 10 47 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
-summon minecraft:falling_block -445 10 47 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
 summon minecraft:falling_block -440 10 48 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
 summon minecraft:falling_block -441 10 48 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
 summon minecraft:falling_block -442 10 48 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
 summon minecraft:falling_block -443 10 48 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
 summon minecraft:falling_block -444 10 48 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
 summon minecraft:falling_block -439 10 49 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
-summon minecraft:falling_block -444 10 47 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
 summon minecraft:falling_block -440 10 49 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
-summon minecraft:falling_block -445 10 47 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
 summon minecraft:falling_block -441 10 49 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
 summon minecraft:falling_block -443 10 49 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
 summon minecraft:falling_block -444 10 49 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
+
+#Load Green Rupees
+summon armor_stand -442.0 9.5 46 {CustomName:"rupees",Tags:["green"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:lime_concrete}}}
+summon armor_stand -442.0 9.5 40 {CustomName:"rupees",Tags:["green"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:lime_concrete}}}
