@@ -13,6 +13,9 @@ scoreboard objectives add motion_z2 dummy
 scoreboard objectives add is_swimming dummy
 scoreboard players set @a is_swimming 0
 
+scoreboard objectives add sneak_time minecraft.custom:minecraft.sneak_time
+scoreboard objectives add sneak_prev dummy
+
 #Add quantity
 scoreboard objectives add quantity dummy
 

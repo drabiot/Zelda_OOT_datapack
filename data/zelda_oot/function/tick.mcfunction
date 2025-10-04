@@ -1,3 +1,18 @@
+#Sneak
+execute as @a if score @s sneak_time > @s sneak_prev run tag @s add is_sneak
+execute as @a unless score @s sneak_time > @s sneak_prev run tag @s remove is_sneak
+
+scoreboard players operation @a sneak_prev = @a sneak_time
+
+attribute @a[tag=is_sneak,limit=1] camera_distance base set 0
+attribute @a[tag=is_sneak,limit=1] scale base set 0.5
+attribute @a[tag=is_sneak,limit=1] jump_strength base set 0
+
+attribute @a[tag=!is_sneak,limit=1] camera_distance base reset
+attribute @a[tag=!is_sneak,limit=1] scale base reset
+attribute @a[tag=!is_sneak,limit=1] jump_strength base reset
+
+#Randomizer
 scoreboard players add @a random 1
 execute if score @p random matches 10 run scoreboard players set @a random 0
 
