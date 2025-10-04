@@ -1,3 +1,4 @@
+#Koriri Houses
 #Check Link's House -> Kokiri
 execute positioned -427 -7 24 if entity @p[distance=..0.5] run function zelda_oot:game/kokiri_forest/wrapper/link/link_kokiri
 
@@ -38,3 +39,12 @@ execute positioned -461 10 3 if entity @p[distance=..1.5] run function zelda_oot
 #Check Kokiri -> Mido
 execute positioned -436 5 -31 if entity @p[distance=..0.5] run function zelda_oot:game/kokiri_forest/wrapper/mido/kokiri_mido
 execute positioned -435 5 -31 if entity @p[distance=..0.5] run function zelda_oot:game/kokiri_forest/wrapper/mido/kokiri_mido
+
+
+
+#Deku Tree
+#Deku Tree -> Kokiri
+execute positioned 1281 16 -60 if entity @a[distance=..3] run function zelda_oot:game/kokiri_forest/wrapper/deku_tree/deku_tree_kokiri
+
+#Kokiri -> Deku Tree
+execute positioned -290 2 -56 if entity @p[distance=..3] run function zelda_oot:game/kokiri_forest/wrapper/deku_tree/kokiri_deku_tree

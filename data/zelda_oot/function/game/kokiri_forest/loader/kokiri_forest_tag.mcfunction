@@ -1,1 +1,1 @@
-execute positioned 427 7 22 run title @p title {"text":"Kokiri Forest","underlined":true}
+execute positioned 427 7 22 run title @p title {"text":"Kokiri Forest"}
