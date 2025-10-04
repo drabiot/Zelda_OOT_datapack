@@ -1,0 +1,1 @@
+tellraw @a {"text":"Then enter, brave Link, and thou too, Navi..."}

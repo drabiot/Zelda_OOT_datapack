@@ -1,0 +1,1 @@
+tellraw @a {"text":"Link... The time has come to test thy courage..."}

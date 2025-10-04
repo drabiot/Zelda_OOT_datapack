@@ -1,2 +1,1 @@
-function zelda_oot:game/kokiri_forest/dialogue/space
-tellraw @a {"text":"However, there is one boy who does not have a fairy..."}
+tellraw @a {"text":"Verily, thou hast felt it..."}

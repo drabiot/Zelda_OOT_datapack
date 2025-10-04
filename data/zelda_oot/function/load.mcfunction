@@ -33,3 +33,6 @@ function zelda_oot:scoreboard/deku_seed_bullet/deku_seed_bullet
 
 scoreboard objectives add backup dummy
 scoreboard players add deku_stick backup 0
+
+scoreboard objectives add deku_tree_yes trigger
+scoreboard objectives add deku_tree_no trigger

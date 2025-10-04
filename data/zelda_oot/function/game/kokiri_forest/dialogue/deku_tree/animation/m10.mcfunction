@@ -1,0 +1,1 @@
+place template zelda_oot:kokiri/deku_tree/mouth10 -294 2 -56

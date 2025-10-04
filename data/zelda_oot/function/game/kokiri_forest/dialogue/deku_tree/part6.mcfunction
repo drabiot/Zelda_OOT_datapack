@@ -1,2 +1,1 @@
-tag @a remove deku_tree_dialogue_2
-tag @a add deku_tree_dialogue_3
+tellraw @a {"text":"As the servants of evil gain strength, a vile climate pervades the land and causes nightmares to those sensitive to it..."}

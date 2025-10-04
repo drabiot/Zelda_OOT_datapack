@@ -9,6 +9,20 @@ kill @e[type=falling_block]
 
 advancement revoke @a everything
 
+#advancement grant drabiot until zelda_oot:kokiri_forest/kokiri_forest_root
+#advancement grant drabiot until zelda_oot:hyrule/hyrule_root
+
+#Init Structures
+function zelda_oot:game/kokiri_forest/way_to_deku_tree/close_way
+function zelda_oot:game/kokiri_forest/dialogue/deku_tree/animation/m1
+
+#Reset First dialogue
+tag @a remove way_to_deku_tree
+
+#Reset Deku Tree
+tag @a remove deku_tree_again
+tag @a remove deku_tree_d_finish
+
 #Init Reward's Tag
 tag @a add mido_reward_blue_1
 tag @a add mido_reward_blue_2

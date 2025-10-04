@@ -1,2 +1,1 @@
-function zelda_oot:game/kokiri_forest/dialogue/space
-tellraw @a {"text":"The children of the forest, the Kokiri, live here with me."}
+tellraw @a ["",{"text":"Listen carefully to what I, the "},{"text":"Deku Tree","color":"red"},{"text":", am about to tell thee..."}]

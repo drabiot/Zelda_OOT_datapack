@@ -1,1 +1,1 @@
-tellraw @a {"text":"In the vast, deep forest of Hyrule..."}
+tellraw @a {"text":"Great Deku Tree... I'm back!","color":"aqua"}

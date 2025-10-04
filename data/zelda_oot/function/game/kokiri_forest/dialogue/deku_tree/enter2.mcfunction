@@ -1,0 +1,1 @@
+tellraw @a {"text":"Navi the fairy... Thou must aid Link..."}

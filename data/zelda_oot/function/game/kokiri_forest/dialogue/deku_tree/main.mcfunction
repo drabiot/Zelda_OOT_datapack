@@ -1,35 +1,39 @@
-# 1. Set everyone in spectator mode
-function zelda_oot:game/kokiri_forest/dialogue/spec_mod
+# 1. Block loop
+tag @a add dialogue
+scoreboard players set @a[scores={deku_tree_yes=1..}] deku_tree_yes 0
+scoreboard players set @a[scores={deku_tree_no=1..}] deku_tree_no 0
 
-# 2. Init the cinematic
+# 2. First Scene
+summon mannequin -332 5 -36 {hidden_layers:[cape],CustomName:[{text:player}],Rotation:[-115f,0f]}
+gamemode spectator @a
 tag @a add deku_tree_dialogue_1
 
-# 3. Clean Screen
-schedule function zelda_oot:game/kokiri_forest/dialogue/space 1t
-schedule function zelda_oot:game/kokiri_forest/dialogue/space 1t
-schedule function zelda_oot:game/kokiri_forest/dialogue/space 1t
-schedule function zelda_oot:game/kokiri_forest/dialogue/space 1t
+# 3. Dialogue part1
+schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part1 1t
 
-# 4. Dialogue part1 20 ticks
-schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part1 20t
+# 4. Dialogue part2 80 ticks
+schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part2 80t
 
-# 5. Dialogue part2 40 ticks
-schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part2 60t
+# 5. Dialogue part3 40 ticks
+schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part3 120t
 
-# 7. Teleportation part3 48 ticks
-schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part3 108t
+# 6. Dialogue part4 40 ticks
+schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part4 160t
 
-# 8. Dialogue part4 44 ticks
-schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part4 152t
+# 7. Dialogue part5 80 ticks
+schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part5 240t
 
-# 9. Dialogue part5 24 ticks
-schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part5 176t
+# 8. Dialogue part6 100 ticks
+schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part6 340t
 
-# 10. Teleportation part6 60 ticks
-schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part6 236t
+# 9. Dialogue part7 140 ticks
+schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part7 480t
 
-# 11. Dialogue part7 44 ticks
-schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part7 280t
+# 10. Dialogue part8 40 ticks
+schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part8 520t
 
-# 12. Teleportation partend 60 ticks
-schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/partend 340t
+# 11. Dialogue part9 60 ticks
+schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part9 580t
+
+# 12. Dialogue part 10 60 ticks
+schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/part10 640t

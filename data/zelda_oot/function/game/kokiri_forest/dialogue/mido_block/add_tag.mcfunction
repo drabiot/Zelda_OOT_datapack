@@ -1,0 +1,1 @@
+tag @a add way_to_deku_tree

@@ -1,0 +1,1 @@
+tellraw @a {"text":"Each Kokiri has his or her own guardian fairy."}

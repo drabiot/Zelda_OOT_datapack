@@ -1,0 +1,1 @@
+place template zelda_oot:kokiri/way_to_deku_tree/deku_close -376 5 -16

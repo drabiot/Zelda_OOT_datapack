@@ -14,3 +14,6 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:firefly_bush"}}] run kill @s
 execute as @e[type=item,nbt={Item:{id:"minecraft:spruce_sign"}}] run kill @s
 execute as @e[type=item,nbt={Item:{id:"minecraft:brick"}}] run kill @s
 execute as @e[type=item,nbt={Item:{id:"minecraft:decorated_pot"}}] run function zelda_oot:game/breakable/pot_reward
+
+scoreboard players enable @a deku_tree_yes
+scoreboard players enable @a deku_tree_no

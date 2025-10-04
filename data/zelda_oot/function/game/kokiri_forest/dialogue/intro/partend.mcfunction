@@ -1,4 +1,4 @@
-tag @a remove deku_tree_dialogue_3
+tag @a remove intro_dialogue_3
 
 tp @a[] -427 -7 32 facing -427 -6 23
 

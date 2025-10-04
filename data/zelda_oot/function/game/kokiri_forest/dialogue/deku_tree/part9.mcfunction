@@ -1,0 +1,1 @@
+tellraw @a ["",{"text":"I have been "},{"text":"cursed","color":"red"},{"text":"... I need thee to break the curse with thy wisdom and courage.","color":"white"}]
