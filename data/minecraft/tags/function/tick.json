@@ -15,6 +15,8 @@
       "zelda_oot:game/breakable/check_stone",
       "zelda_oot:game/kokiri_forest/bush/check_grass",
 
+      "zelda_oot:game/kokiri_forest/loader/trial/apply_motion_rock",
+
       "zelda_oot:game/swim_event",
 
       "zelda_oot:game/kokiri_forest/dialogue/intro/tp",

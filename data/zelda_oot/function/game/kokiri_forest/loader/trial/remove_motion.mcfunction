@@ -1,0 +1,1 @@
+tag @e[type=armor_stand,name=rock] remove motion_rock

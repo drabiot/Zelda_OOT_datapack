@@ -1,0 +1,1 @@
+tag @e[type=armor_stand,name=rock] add motion_rock

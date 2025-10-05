@@ -1,3 +1,4 @@
+execute as @a at @s run playsound minecraft:block.chest.close master @a ~ ~ ~ 1 0
 schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/animation/m12 1t
 schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/animation/m11 4t
 schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/animation/m10 8t
