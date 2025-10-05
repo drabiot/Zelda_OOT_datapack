@@ -1,0 +1,2 @@
+execute as @p if score @s wallet >= deku_stick kokiri_shop run function zelda_oot:scoreboard/deku_stick/give_deku_stick
+execute as @p if score @s wallet >= deku_stick kokiri_shop run scoreboard players remove @s wallet 10

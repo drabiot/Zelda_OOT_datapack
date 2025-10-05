@@ -13,3 +13,4 @@ tp @e[type= mannequin,name=player] ~ ~-100 ~
 kill @e[type=mannequin,name=player]
 
 function zelda_oot:game/kokiri_forest/dialogue/adv_mod
+function zelda_oot:game/kokiri_forest/dialogue/clear_chat

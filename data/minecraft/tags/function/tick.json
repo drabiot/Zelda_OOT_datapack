@@ -25,6 +25,8 @@
       "zelda_oot:game/kokiri_forest/loader/trial_grass_respawn",
       "zelda_oot:game/kokiri_forest/pound_trial/detect_start",
 
-      "zelda_oot:game/kokiri_forest/dialogue/mido_block/check_mido_block_dialogue"
+      "zelda_oot:game/kokiri_forest/dialogue/mido_block/check_mido_block_dialogue",
+
+      "zelda_oot:game/kokiri_forest/wrapper/shop/check_shop"
     ]
   }

@@ -4,13 +4,13 @@ execute as @a unless score @s sneak_time > @s sneak_prev run tag @s remove is_sn
 
 scoreboard players operation @a sneak_prev = @a sneak_time
 
-attribute @a[tag=is_sneak,tag=!dev,limit=1] camera_distance base set 0
-attribute @a[tag=is_sneak,tag=!dev,limit=1] scale base set 0.5
-attribute @a[tag=is_sneak,tag=!dev,limit=1] jump_strength base set 0
+attribute @a[tag=is_sneak,tag=!dev,tag=!dialogue,limit=1] camera_distance base set 0
+attribute @a[tag=is_sneak,tag=!dev,tag=!dialogue,limit=1] scale base set 0.5
+attribute @a[tag=is_sneak,tag=!dev,tag=!dialogue,limit=1] jump_strength base set 0
 
-attribute @a[tag=!is_sneak,tag=!dev,limit=1] camera_distance base reset
-attribute @a[tag=!is_sneak,tag=!dev,limit=1] scale base reset
-attribute @a[tag=!is_sneak,tag=!dev,limit=1] jump_strength base reset
+attribute @a[tag=!is_sneak,tag=!dev,tag=!dialogue,limit=1] camera_distance base reset
+attribute @a[tag=!is_sneak,tag=!dev,tag=!dialogue,limit=1] scale base reset
+attribute @a[tag=!is_sneak,tag=!dev,tag=!dialogue,limit=1] jump_strength base reset
 
 #Randomizer
 scoreboard players add @a random 1
@@ -32,3 +32,12 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:decorated_pot"}}] run function 
 
 scoreboard players enable @a deku_tree_yes
 scoreboard players enable @a deku_tree_no
+
+scoreboard players enable @a deku_shield
+scoreboard players enable @a deku_nut_5 
+scoreboard players enable @a deku_nut_10
+scoreboard players enable @a deku_stick_shop
+scoreboard players enable @a deku_seed_shop
+scoreboard players enable @a arrow_10
+scoreboard players enable @a arrow_30
+scoreboard players enable @a heart_shop

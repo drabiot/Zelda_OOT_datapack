@@ -1,0 +1,3 @@
+execute as @p if score @s wallet >= deku_shield kokiri_shop run advancement grant @s only zelda_oot:kokiri_forest/deku_shield
+execute as @p if score @s wallet >= deku_shield kokiri_shop run give @a shield[custom_name=[{"text":"Deku Shield","italic":false,"color":"red"}],lore=[[{"text":"Once equipped, you can defend.","italic":false,"color":"white"}],[{"text":"If set on fire, it will burn","italic":false,"color":"white"}]],unbreakable={},tooltip_display={hidden_components:[can_break,can_place_on,unbreakable]}]
+execute as @p if score @s wallet >= deku_shield kokiri_shop run scoreboard players remove @s wallet 40

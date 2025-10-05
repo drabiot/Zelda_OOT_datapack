@@ -1,0 +1,1 @@
+tellraw @a {"text":"you can't buy arrows!"}

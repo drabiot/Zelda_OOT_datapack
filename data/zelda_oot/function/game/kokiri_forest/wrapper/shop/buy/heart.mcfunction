@@ -1,0 +1,2 @@
+execute as @p if score @s wallet >= heart_shop kokiri_shop run execute at @s if score @p random matches 1..2 run summon armor_stand ~ ~-1 ~ {CustomName:"heart",Tags:["decay"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:beetroot}}}
+execute as @p if score @s wallet >= heart_shop kokiri_shop run scoreboard players remove @s wallet 10
