@@ -1,2 +1,5 @@
 execute positioned -393 -6 -40 run kill @e[type=armor_stand,distance=..5]
-function zelda_oot:game/kokiri_forest/dialogue/clear_chat
+
+execute positioned -393 -7 -38 run kill @e[type=interaction,distance=..10]
+
+tag @a remove kokiri_shop

@@ -39,13 +39,3 @@ scoreboard players add deku_stick backup 0
 
 scoreboard objectives add deku_tree_yes trigger
 scoreboard objectives add deku_tree_no trigger
-
-#Kokiri Shop
-scoreboard objectives add deku_shield trigger
-scoreboard objectives add deku_nut_5 trigger
-scoreboard objectives add deku_nut_10 trigger
-scoreboard objectives add deku_stick_shop trigger
-scoreboard objectives add deku_seed_shop trigger
-scoreboard objectives add arrow_10 trigger
-scoreboard objectives add arrow_30 trigger
-scoreboard objectives add heart_shop trigger
