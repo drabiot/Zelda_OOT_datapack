@@ -11,7 +11,7 @@ scoreboard players set arrow_10 kokiri_shop 0
 scoreboard players set arrow_30 kokiri_shop 0
 scoreboard players set heart_shop kokiri_shop 10
 
-tellraw @a {"text":"Welcome!\nPunch the item for informations\nSneak Punch it to buy it"}
+tellraw @a {"text":"Welcome!\nClick the item for informations\nSneak Click it to buy it"}
 
 #Right Shop Part
 summon armor_stand -391.3 -5.5 -40 {CustomName:"deku_shield",Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,Rotation:[180f,0f],equipment:{head:{id:shield}}}

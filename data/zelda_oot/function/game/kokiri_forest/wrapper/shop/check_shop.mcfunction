@@ -1,13 +1,13 @@
 #Check First Buy
-execute as @e[type=interaction,tag=deku_shield_click] on attacker run tag @a add deku_shield_click
-execute as @e[type=interaction,tag=deku_nut_5_click] on attacker run tag @a add deku_nut_5_click
-execute as @e[type=interaction,tag=deku_nut_10_click] on attacker run tag @a add deku_nut_10_click
-execute as @e[type=interaction,tag=deku_stick_click] on attacker run tag @a add deku_stick_click
+execute as @e[type=interaction,tag=deku_shield_click] on target run tag @a add deku_shield_click
+execute as @e[type=interaction,tag=deku_nut_5_click] on target run tag @a add deku_nut_5_click
+execute as @e[type=interaction,tag=deku_nut_10_click] on target run tag @a add deku_nut_10_click
+execute as @e[type=interaction,tag=deku_stick_click] on target run tag @a add deku_stick_click
 
-execute as @e[type=interaction,tag=deku_seed_click] on attacker run tag @a add deku_seed_click
-execute as @e[type=interaction,tag=arrow_10_click] on attacker run tag @a add arrow_10_click
-execute as @e[type=interaction,tag=arrow_30_click] on attacker run tag @a add arrow_30_click
-execute as @e[type=interaction,tag=heart_click] on attacker run tag @a add heart_click
+execute as @e[type=interaction,tag=deku_seed_click] on target run tag @a add deku_seed_click
+execute as @e[type=interaction,tag=arrow_10_click] on target run tag @a add arrow_10_click
+execute as @e[type=interaction,tag=arrow_30_click] on target run tag @a add arrow_30_click
+execute as @e[type=interaction,tag=heart_click] on target run tag @a add heart_click
 
 
 #Punch Remove Interaction
