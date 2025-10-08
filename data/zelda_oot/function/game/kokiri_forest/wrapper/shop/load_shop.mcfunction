@@ -11,26 +11,26 @@ scoreboard players set arrow_10 kokiri_shop 0
 scoreboard players set arrow_30 kokiri_shop 0
 scoreboard players set heart_shop kokiri_shop 10
 
-tellraw @a {"text":"Welcome!\nClick the item for informations\nSneak Click it to buy it"}
+tellraw @a {"text":"Welcome!"}
 
 #Right Shop Part
-summon armor_stand -391.3 -5.5 -40 {CustomName:"deku_shield",Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,Rotation:[180f,0f],equipment:{head:{id:shield}}}
-summon armor_stand -392 -5 -40 {CustomName:"deku_nut_5",Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,Rotation:[0f,0f],equipment:{head:{id:pitcher_pod}}}
-summon armor_stand -391 -6 -39 {CustomName:"deku_nut_10",Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,Rotation:[0f,0f],equipment:{head:{id:pitcher_pod}}}
-summon armor_stand -391 -5 -39 {CustomName:"deku_stick",Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,Rotation:[0f,0f],equipment:{head:{id:stick}}}
+summon item_display -391.3 -4.8 -40 {CustomName:"deku_shield",transformation:{left_rotation:[0f,1f,0f,0f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,0.5f]},item:{id:"minecraft:shield",count:1}}
+summon item_display -392 -4 -40.0 {CustomName:"deku_nut_5",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,0.5f],},item:{id:"minecraft:pitcher_pod",count:1}}
+summon item_display -391 -5 -39.0 {CustomName:"deku_nut_10",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,0.5f]},item:{id:"minecraft:pitcher_pod",count:1}}
+summon item_display -391 -4 -39.0 {CustomName:"deku_stick",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,0.5f]},item:{id:"minecraft:stick",count:1}}
 
-summon interaction -392 -5.5 -40 {width:0.8f,height:1f,response:true,Tags:["deku_shield_click"]}
-summon interaction -392 -4 -40 {width:0.8f,height:1f,response:true,Tags:["deku_nut_5_click"]}
-summon interaction -391 -5.5 -39 {width:0.8f,height:1f,response:true,Tags:["deku_nut_10_click"]}
-summon interaction -391 -4 -39 {width:0.8f,height:1f,response:true,Tags:["deku_stick_click"]}
+summon interaction -392 -5.2 -40 {width:0.5f,height:0.5f,response:true,Tags:["deku_shield_click"]}
+summon interaction -392 -4.2 -40 {width:0.5f,height:0.5f,response:true,Tags:["deku_nut_5_click"]}
+summon interaction -391 -5.2 -39 {width:0.5f,height:0.5f,response:true,Tags:["deku_nut_10_click"]}
+summon interaction -391 -4.2 -39 {width:0.5f,height:0.5f,response:true,Tags:["deku_stick_click"]}
 
 #Left SHop Part
-summon armor_stand -394 -6 -40 {CustomName:"deku_seed",Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,Rotation:[0f,0f],equipment:{head:{id:beetroot_seeds}}}
-summon armor_stand -394 -5 -40 {CustomName:"arrow_10",Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,Rotation:[0f,0f],equipment:{head:{id:arrow}}}
-summon armor_stand -395 -6 -39 {CustomName:"arrow_30",Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,Rotation:[0f,0f],equipment:{head:{id:arrow}}}
-summon armor_stand -395 -5 -39 {CustomName:"heart_shop",Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,Rotation:[0f,0f],equipment:{head:{id:beetroot}}}
+summon item_display -394 -5 -40.0 {CustomName:"deku_seed",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,0.5f],},item:{id:"minecraft:beetroot_seeds",count:1}}
+summon item_display -394 -4 -40.0 {CustomName:"arrow_10",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,0.5f],},item:{id:"minecraft:arrow",count:1}}
+summon item_display -395 -5 -39.0 {CustomName:"arrow_30",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,0.5f],},item:{id:"minecraft:arrow",count:1}}
+summon item_display -395 -4 -39.0 {CustomName:"heart_shop",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,0.5f],},item:{id:"minecraft:beetroot",count:1}}
 
-summon interaction -394 -5.5 -40 {width:0.8f,height:1f,response:true,Tags:["deku_seed_click"]}
-summon interaction -394 -4 -40 {width:0.8f,height:1f,response:true,Tags:["arrow_10_click"]}
-summon interaction -395 -5.5 -39 {width:0.8f,height:1f,response:true,Tags:["arrow_30_click"]}
-summon interaction -395 -4 -39 {width:0.8f,height:1f,response:true,Tags:["heart_click"]}
+summon interaction -394 -5.2 -40 {width:0.5f,height:0.5f,response:true,Tags:["deku_seed_click"]}
+summon interaction -394 -4.2 -40 {width:0.5f,height:0.5f,response:true,Tags:["arrow_10_click"]}
+summon interaction -395 -5.2 -39 {width:0.5f,height:0.5f,response:true,Tags:["arrow_30_click"]}
+summon interaction -395 -4.2 -39 {width:0.5f,height:0.5f,response:true,Tags:["heart_click"]}

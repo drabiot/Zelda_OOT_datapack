@@ -12,6 +12,8 @@ attribute @a[tag=!is_sneak,tag=!dev,tag=!dialogue,tag=!kokiri_shop,limit=1] came
 attribute @a[tag=!is_sneak,tag=!dev,tag=!dialogue,tag=!kokiri_shop,limit=1] scale base reset
 attribute @a[tag=!is_sneak,tag=!dev,tag=!dialogue,tag=!kokiri_shop,limit=1] jump_strength base reset
 
+attribute @a[tag=!dev,tag=!dialogue,tag=kokiri_shop,limit=1] jump_strength base set 0
+
 #Randomizer
 scoreboard players add @a random 1
 execute if score @p random matches 10 run scoreboard players set @a random 0
