@@ -8,11 +8,11 @@ attribute @a[tag=is_sneak,tag=!dev,tag=!dialogue,tag=!kokiri_shop,limit=1] camer
 attribute @a[tag=is_sneak,tag=!dev,tag=!dialogue,tag=!kokiri_shop,limit=1] scale base set 0.5
 attribute @a[tag=is_sneak,tag=!dev,tag=!dialogue,tag=!kokiri_shop,limit=1] jump_strength base set 0
 
-attribute @a[tag=!is_sneak,tag=!dev,tag=!dialogue,tag=!kokiri_shop,limit=1] camera_distance base reset
-attribute @a[tag=!is_sneak,tag=!dev,tag=!dialogue,tag=!kokiri_shop,limit=1] scale base reset
-attribute @a[tag=!is_sneak,tag=!dev,tag=!dialogue,tag=!kokiri_shop,limit=1] jump_strength base reset
+attribute @a[tag=!is_sneak,tag=!dialogue,tag=!kokiri_shop,limit=1] camera_distance base reset
+attribute @a[tag=!is_sneak,tag=!dialogue,tag=!kokiri_shop,limit=1] scale base reset
+attribute @a[tag=!is_sneak,tag=!dialogue,tag=!kokiri_shop,limit=1] jump_strength base reset
 
-attribute @a[tag=!dev,tag=!dialogue,tag=kokiri_shop,limit=1] jump_strength base set 0
+attribute @a[tag=!dev,tag=kokiri_shop,limit=1] jump_strength base set 0
 
 #Randomizer
 scoreboard players add @a random 1
