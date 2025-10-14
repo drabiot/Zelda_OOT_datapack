@@ -1,0 +1,1 @@
+execute as @e[type=mannequin,name="know_it_all_grass"] at @s run tp @e[type=mannequin,name="know_it_all_grass",limit=1] ~ ~ ~ ~ ~10

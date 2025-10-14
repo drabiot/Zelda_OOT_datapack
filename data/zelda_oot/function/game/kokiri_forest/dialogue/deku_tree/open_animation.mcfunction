@@ -1,4 +1,5 @@
 execute as @a at @s run playsound minecraft:block.chest.open master @a ~ ~ ~ 1 0
+execute as @a at @s run playsound minecraft:entity.minecart.riding master @a ~ ~ ~ 1 0
 schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/animation/m1 1t
 schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/animation/m2 4t
 schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/animation/m3 8t

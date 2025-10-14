@@ -15,4 +15,4 @@ schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/open_animation
 
 schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/enter2 40t
 
-schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/reset_yes 50t
+schedule function zelda_oot:game/kokiri_forest/dialogue/deku_tree/reset_yes 70t

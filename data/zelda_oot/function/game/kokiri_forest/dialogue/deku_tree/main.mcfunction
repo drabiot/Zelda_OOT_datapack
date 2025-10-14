@@ -4,7 +4,7 @@ scoreboard players set @a[scores={deku_tree_yes=1..}] deku_tree_yes 0
 scoreboard players set @a[scores={deku_tree_no=1..}] deku_tree_no 0
 
 # 2. First Scene
-summon mannequin -332 5 -36 {hidden_layers:[cape],CustomName:[{text:player}],Rotation:[-115f,0f]}
+summon mannequin -332 5 -36 {hidden_layers:[cape],CustomName:[{text:player}],Rotation:[-115f,0f],attributes:[{id:"minecraft:scale",base:0.9}],profile:{"properties":[{"name":"textures","value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjliMzdlYWJkM2RmNTI4ZGU4MWM1ZTZlZTEyMDkyMjgxOWE1MmRmMDNlM2ZjZWI0YWZmY2FiZDc3MGI0MWY0NCJ9fX0="}]}}
 gamemode spectator @a
 tag @a add deku_tree_dialogue_1
 
