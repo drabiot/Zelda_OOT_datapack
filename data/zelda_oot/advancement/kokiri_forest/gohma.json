@@ -10,7 +10,7 @@
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "zelda_oot:kokiri_forest/deku_tree",
+  "parent": "zelda_oot:kokiri_forest/fairy_slingshot",
   "criteria": {
     "tick": {
       "trigger": "minecraft:impossible"

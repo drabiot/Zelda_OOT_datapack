@@ -1,21 +1,21 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:iron_sword",
+      "id": "minecraft:tripwire_hook",
       "components": {
         "minecraft:custom_model_data": {
-          "strings": ["kokiri_sword"]
+          "strings": ["fairy_slingshot"]
         }
       }
     },
-    "title": "Kokiri Sword",
-    "description": "Possess your own Kokiri Sword",
+    "title": "Fairy Slingshot",
+    "description": "Possess your own slingshot",
     "background": "minecraft:block/oak_leaves",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "zelda_oot:kokiri_forest/navi",
+  "parent": "zelda_oot:kokiri_forest/deku_tree",
   "criteria": {
     "tick": {
       "trigger": "minecraft:impossible"
