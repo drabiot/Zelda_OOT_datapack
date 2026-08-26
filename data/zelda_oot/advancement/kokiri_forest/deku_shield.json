@@ -1,7 +1,12 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:shield"
+      "id": "minecraft:shield",
+      "components": {
+        "minecraft:custom_model_data": {
+          "strings": ["deku_shield"]
+        }
+      }
     },
     "title": "Deku Shield",
     "description": "Buy your first Deku Shield",
