@@ -1,32 +1,32 @@
 {
-    "values":[
-      "zelda_oot:tick",
+  "values": [
+    { "id": "zelda_oot:tick", "required": false },
 
-      "zelda_oot:items/check_item",
-      "zelda_oot:advancement/advancement",
-      "zelda_oot:motion/loop",
+    { "id": "zelda_oot:items/check_item", "required": false },
 
-      "zelda_oot:items/heart/heart_on_ground",
-      "zelda_oot:items/heart/heart_pick",
+    { "id": "zelda_oot:advancement/advancement", "required": false },
 
-      "zelda_oot:items/rupees/rupees_on_ground",
-      "zelda_oot:items/rupees/rupees_pick",
+    { "id": "zelda_oot:motion/loop", "required": false },
 
-      "zelda_oot:game/breakable/check_stone",
-      "zelda_oot:game/kokiri_forest/bush/check_grass",
+    { "id": "zelda_oot:items/heart/heart_on_ground", "required": false },
+    { "id": "zelda_oot:items/heart/heart_pick", "required": false },
 
-      "zelda_oot:game/kokiri_forest/loader/trial/apply_motion_rock",
+    { "id": "zelda_oot:items/rupees/rupees_on_ground", "required": false },
+    { "id": "zelda_oot:items/rupees/rupees_pick", "required": false },
 
-      "zelda_oot:game/swim_event",
+    { "id": "zelda_oot:game/breakable/check_stone", "required": false },
+    { "id": "zelda_oot:game/kokiri_forest/bush/check_grass", "required": false },
 
-      "zelda_oot:game/kokiri_forest/dialogue/intro/tp",
-      "zelda_oot:game/kokiri_forest/dialogue/deku_tree/tp",
-      "zelda_oot:game/kokiri_forest/check_loader",
-      "zelda_oot:game/kokiri_forest/loader/trial_grass_respawn",
-      "zelda_oot:game/kokiri_forest/pound_trial/detect_start",
+    { "id": "zelda_oot:game/kokiri_forest/loader/trial/apply_motion_rock", "required": false },
 
-      "zelda_oot:game/kokiri_forest/dialogue/mido_block/check_mido_block_dialogue",
-
-      "zelda_oot:game/kokiri_forest/wrapper/shop/check_shop"
-    ]
-  }
+    { "id": "zelda_oot:game/swim_event", "required": false },
+    
+    { "id": "zelda_oot:game/kokiri_forest/dialogue/intro/tp", "required": false },
+    { "id": "zelda_oot:game/kokiri_forest/dialogue/deku_tree/tp", "required": false },
+    { "id": "zelda_oot:game/kokiri_forest/check_loader", "required": false },
+    { "id": "zelda_oot:game/kokiri_forest/loader/trial_grass_respawn", "required": false },
+    { "id": "zelda_oot:game/kokiri_forest/pound_trial/detect_start", "required": false },
+    { "id": "zelda_oot:game/kokiri_forest/dialogue/mido_block/check_mido_block_dialogue", "required": false },
+    { "id": "zelda_oot:game/kokiri_forest/wrapper/shop/check_shop", "required": false }
+  ]
+}
