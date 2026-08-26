@@ -9,4 +9,4 @@ execute as @s[tag=!busy, tag=!out_amo] at @s run summon minecraft:arrow ^0.5 ^1 
 
 tag @s add busy
 
-schedule function zelda_oot:game/busy 2t
+schedule function zelda_oot:game/busy 3t

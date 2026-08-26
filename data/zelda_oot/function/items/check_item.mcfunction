@@ -8,7 +8,7 @@ function zelda_oot:scoreboard/deku_stick/check_deku_stick
 function zelda_oot:scoreboard/deku_seed_bullet/check_deku_seed_bullet
 
 #Check for Slingshot
-execute as @a[nbt={SelectedItem:{id:"minecraft:tripwire_hook"}}] run effect give @s minecraft:slowness 1 1 true
+execute as @a[nbt={SelectedItem:{id:"minecraft:tripwire_hook"}}] run effect give @s minecraft:slowness 1 2 true
 
 #Check for bath behavior
 function zelda_oot:game/swim_event
