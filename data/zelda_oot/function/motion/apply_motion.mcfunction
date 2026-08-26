@@ -13,3 +13,4 @@ execute store result entity @s Motion[1] double 0.02 run scoreboard players oper
 execute store result entity @s Motion[2] double 0.02 run scoreboard players operation @s motion_z2 -= @s motion_z1
 
 tag @s add motion_added
+tag @s add in_flight

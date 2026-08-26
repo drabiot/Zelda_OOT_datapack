@@ -1,5 +1,5 @@
 tellraw @a {"text":"Datapack : Zelda OOT loaded","color":"yellow"}
-gamerule announceAdvancements false
+gamerule minecraft:show_advancement_messages false
 
 #Add Motion
 scoreboard objectives add motion_x1 dummy
