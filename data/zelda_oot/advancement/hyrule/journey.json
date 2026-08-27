@@ -1,16 +1,15 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:lapis_block"
+      "id": "minecraft:red_bed"
     },
-    "title": "Zora's Sapphire",
-    "description": "Possess Spiritual Stone of Water, Zora's Shappire",
-    "frame": "challenge",
+    "title": "Wake up!",
+    "description": "Start your journey in Hyrule",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "zelda_oot:hyrule/ocarina",
+  "parent": "zelda_oot:hyrule/hyrule_root",
   "criteria": {
     "tick": {
       "trigger": "minecraft:impossible"

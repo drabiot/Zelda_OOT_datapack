@@ -1,16 +1,15 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:lapis_block"
+      "id": "minecraft:golden_dandelion"
     },
-    "title": "Zora's Sapphire",
-    "description": "Possess Spiritual Stone of Water, Zora's Shappire",
-    "frame": "challenge",
+    "title": "Protector of the family",
+    "description": "Obtain 50 Golden Skulltula",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "zelda_oot:hyrule/ocarina",
+  "parent": "zelda_oot:hyrule/g_skulltula6",
   "criteria": {
     "tick": {
       "trigger": "minecraft:impossible"

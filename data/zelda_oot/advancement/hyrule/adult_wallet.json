@@ -1,16 +1,15 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:lapis_block"
+      "id": "minecraft:light_gray_bundle"
     },
-    "title": "Zora's Sapphire",
-    "description": "Possess Spiritual Stone of Water, Zora's Shappire",
-    "frame": "challenge",
+    "title": "Like an adult",
+    "description": "Possess the Adult's Wallet",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "zelda_oot:hyrule/ocarina",
+  "parent": "zelda_oot:hyrule/journey",
   "criteria": {
     "tick": {
       "trigger": "minecraft:impossible"

@@ -1,16 +1,16 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:lapis_block"
+      "id": "minecraft:yellow_bundle"
     },
-    "title": "Zora's Sapphire",
-    "description": "Possess Spiritual Stone of Water, Zora's Shappire",
+    "title": "Deep Pockets",
+    "description": "Possess the Giant's Wallet",
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "zelda_oot:hyrule/ocarina",
+  "parent": "zelda_oot:hyrule/adult_wallet",
   "criteria": {
     "tick": {
       "trigger": "minecraft:impossible"

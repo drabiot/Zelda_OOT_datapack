@@ -1,16 +1,16 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:lapis_block"
+      "id": "minecraft:goat_horn"
     },
-    "title": "Zora's Sapphire",
-    "description": "Possess Spiritual Stone of Water, Zora's Shappire",
+    "title": "Lullaby",
+    "description": "Find the Ocarina of Time in the Hyrule's moat",
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "zelda_oot:hyrule/ocarina",
+  "parent": "zelda_oot:hyrule/emerald",
   "criteria": {
     "tick": {
       "trigger": "minecraft:impossible"

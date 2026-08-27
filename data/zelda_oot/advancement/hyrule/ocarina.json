@@ -3,14 +3,13 @@
     "icon": {
       "id": "minecraft:goat_horn"
     },
-    "title": "First Ocarina",
-    "description": "Obtain Saria's Ocarina",
-    "background": "minecraft:block/calcite",
+    "title": "Saria's gift",
+    "description": "Obtain Saria's Ocarina, the Fairy Ocarina",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "zelda_oot:hyrule/hyrule_root",
+  "parent": "zelda_oot:hyrule/journey",
   "criteria": {
     "tick": {
       "trigger": "minecraft:impossible"

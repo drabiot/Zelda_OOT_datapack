@@ -1,16 +1,16 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:lapis_block"
+      "id": "minecraft:red_bundle"
     },
-    "title": "Zora's Sapphire",
-    "description": "Possess Spiritual Stone of Water, Zora's Shappire",
+    "title": "Sharpshooter",
+    "description": "Upgrade your Bullet Bag capacity twice",
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "zelda_oot:hyrule/ocarina",
+  "parent": "zelda_oot:hyrule/bullet_bag1",
   "criteria": {
     "tick": {
       "trigger": "minecraft:impossible"

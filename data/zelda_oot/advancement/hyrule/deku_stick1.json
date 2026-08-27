@@ -1,16 +1,15 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:lapis_block"
+      "id": "minecraft:stick"
     },
-    "title": "Zora's Sapphire",
-    "description": "Possess Spiritual Stone of Water, Zora's Shappire",
-    "frame": "challenge",
+    "title": "Branching out",
+    "description": "Upgrade your Deku Stick capacity once",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "zelda_oot:hyrule/ocarina",
+  "parent": "zelda_oot:hyrule/journey",
   "criteria": {
     "tick": {
       "trigger": "minecraft:impossible"

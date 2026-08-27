@@ -3,7 +3,7 @@
     "icon": {
       "id": "minecraft:spider_eye"
     },
-    "title": "Defeat Gohma",
+    "title": "Spider down!",
     "description": "Heal the Great Deku Tree by deafeating Gohma",
     "background": "minecraft:block/oak_leaves",
     "show_toast": true,

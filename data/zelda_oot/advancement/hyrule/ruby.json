@@ -5,7 +5,7 @@
     },
     "title": "Goron's Ruby",
     "description": "Possess Spiritual Stone of Fire, Goron's Ruby",
-    "background": "minecraft:block/calcite",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
