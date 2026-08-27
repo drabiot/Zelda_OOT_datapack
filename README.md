@@ -1,0 +1,80 @@
+<div align="center">
+  <h1> ⚔️ The Legend of Zelda Ocarina of Time Minecraft Datapack
+  </h1>
+</div>
+
+---
+
+This datapack combine with the correct Map & texture pack, create the epic journey of Link in Hyrule.
+Even if this datapack add world based event, it also create The Legend of Zelda based items like the Fairy Slingshot.
+
+## Summary
+
+- [Basic information](#basic-information)
+- [Use the datapack](#use-the-datapack)
+- [Documentation](#documentation)
+  - [Player Tag](#player-tag)
+
+## BASIC INFORMATION
+
+The datapack and the map cover only the Kokiri Forest & the Great Deku Tree for the moment. 
+
+To have the true experience combine the datapack with the Adventure Map & the [Zelda Ocarina of Time texturepack](https://github.com/drabiot/Zelda_OOT_texturepack). Moreover, this datapack work only for singleplayer and may have bugs when played in multiplayer.
+
+The datapack run in minecraft version 26.2 & above.
+
+Everything is made by hand with love and passion, so feel free to give me constructed feedback!
+
+## USE THE DATAPACK
+
+Go into the datapack files of the world you want to put it in
+
+```bash
+  cd AppData/Roaming/.minecraft/saves/<your world>/datapacks
+```
+
+Clone the project 
+
+```bash
+  git clone https://github.com/drabiot/Zelda_OOT_datapack.git.git
+```
+
+Launch you save and to check if everything is working reload the datapack
+
+```cpp
+  /reload
+```
+
+If you see the message: "Zelda OOT loaded", everything must be ok
+
+## DOCUMENTATION
+
+### PLAYER TAG
+
+| Tag | Usage | Unique | Reset |
+| ---- | ---- | :----: | ----- |
+| dev | admin rule that deny every other inconveniant tag | ❌ |  |
+| is_sneak | Check if you're in sneak | ❌ | Remove when you aren't sneaking |
+| mido_reward_blue_1 | Grant you the one time reward of one of the 4 chest in Mido's house (blue rupee) | ✅ |  |
+| mido_reward_blue_2 | Grant you the one time reward of one of the 4 chest in Mido's house (blue rupee) | ✅ |  |
+| mido_reward_green | Grant you the one time reward of one of the 4 chest in Mido's house (green rupee) | ✅ |  |
+| mido_reward_heart | Grant you the one time reward of one of the 4 chest in Mido's house (healing heart) | ✅ |  |
+| kokiri_shop | Prevent the player from jumping in the shop | ❌ | Remove when you quit the Kokiri shop |
+| load_trial | Point the fact that player is in the trial zone for the loader/unloader | ❌ | Remove when you quit the Trial Zone |
+| trial_kokiri | Load the trial zone boulder | ❌ | Remove when you quit the Trial Zone |
+| load_kokiri_forest | Point the fact that player is in the Kokiri forest for the loader/unloader | ❌ | Remove when you quit the Kokiri Forest |
+| dialogue | Prevent player from moving during cinematics or dialogue | ❌ |  |
+| way_to_deku_tree | Check if you can go to the Greate Deku Tree blocked by Mido | ✅ |  |
+| deku_tree_dialogue_1 | Move & prevent player to move during Deku Tree Dialogue | ✅ |  |
+| deku_tree_dialogue_2 | Move & prevent player to move during Deku Tree Dialogue | ✅ |  |
+| deku_tree_dialogue_3 | Move & prevent player to move during Deku Tree Dialogue | ✅ |  |
+| deku_tree_dialogue_maybe | Move player after Deku Tree Dialogue | ✅ |  |
+| deku_tree_dialogue_no | Move player after Deku Tree Dialogue | ✅ |  |
+| deku_tree_no | Save the answer you gave to Deku Tree | ❌ | Remove after speaking to the Greate Deku Tree |
+| deku_tree_yes | Save the answer you gave to Deku Tree | ❌ | Remove after speaking to the Greate Deku Tree |
+| deku_tree_again | Check if you already talked to the Deku Tree | ✅ |  |
+| deku_tree_d_finish | Check if the Deku Tree dialogue is finished | ✅ |  |
+| trial_pound_1 | Check if the player pass in the trial pound 1 to check if he succeed the trial pound | ❌ | Remove if you leave the trial area |
+| trial_pound_2 | Check if the player pass in the trial pound 2 to check if he succeed the trial pound | ❌ | Remove if you leave the trial area |
+| trial_pound_3 | Check if the player pass in the trial pound 3 to check if he succeed the trial pound | ❌ | Remove if you leave the trial area |
+| trial_pound_finished | Check if the player finished the trial pound | ❌ | Remove when you leave Kokiri Forest |
