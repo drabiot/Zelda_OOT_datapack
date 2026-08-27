@@ -8,12 +8,20 @@
 This datapack combine with the correct Map & texture pack, create the epic journey of Link in Hyrule.
 Even if this datapack add world based event, it also create The Legend of Zelda based items like the Fairy Slingshot.
 
+![Static Badge](https://img.shields.io/badge/language-minecraft_java-green)
+![Static Badge](https://img.shields.io/badge/version-26.2-yellow)
+
 ## Summary
 
 - [Basic information](#basic-information)
 - [Use the datapack](#use-the-datapack)
 - [Documentation](#documentation)
+  - [Gameplay](#gameplay)
+    - [Sneaking/Crawling](#sneakingcrawling)
   - [Player Tag](#player-tag)
+    - [Admin](#admin)
+	- [Player Status](#player-status)
+	- [Kokiri Forest](#kokiri-forest)
 
 ## BASIC INFORMATION
 
@@ -49,13 +57,25 @@ If you see the message: "Zelda OOT loaded", everything must be ok
 
 ## DOCUMENTATION
 
+### GAMEPLAY
+
+There are a few new gameplay mechanics in this datapack.
+
+#### SNEAKING/CRAWLING
+
+The sneak key force you to crawl. You can by this new mechanics travel to thigh place, like th Hole of 'Z'.
+
+<img width="480" height="311" alt="crawling" src="https://github.com/user-attachments/assets/6abafef8-0c83-4e61-a378-e4788779971e" />
+
+You can crawl everywhere at any time (except in dialogue & cinematic)
+
 ### PLAYER TAG
 
 #### ADMIN
 
 | Tag | Usage | Unique | Reset |
 | ---- | ---- | :----: | ----- |
-| dev | admin rule that deny every other inconveniant tag | ❌ |  |
+| dev | admin rule that deny every other inconveniant tag | ⚠️ |  |
 
 #### PLAYER STATUS
 
