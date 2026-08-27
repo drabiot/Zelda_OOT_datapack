@@ -51,19 +51,36 @@ If you see the message: "Zelda OOT loaded", everything must be ok
 
 ### PLAYER TAG
 
+#### ADMIN
+
 | Tag | Usage | Unique | Reset |
 | ---- | ---- | :----: | ----- |
 | dev | admin rule that deny every other inconveniant tag | ❌ |  |
+
+#### PLAYER STATUS
+
+| Tag | Usage | Unique | Reset |
+| ---- | ---- | :----: | ----- |
 | is_sneak | Check if you're in sneak | ❌ | Remove when you aren't sneaking |
-| mido_reward_blue_1 | Grant you the one time reward of one of the 4 chest in Mido's house (blue rupee) | ✅ |  |
-| mido_reward_blue_2 | Grant you the one time reward of one of the 4 chest in Mido's house (blue rupee) | ✅ |  |
-| mido_reward_green | Grant you the one time reward of one of the 4 chest in Mido's house (green rupee) | ✅ |  |
-| mido_reward_heart | Grant you the one time reward of one of the 4 chest in Mido's house (healing heart) | ✅ |  |
+| dialogue | Prevent player from retrigger dialogue when we are in one already | ❌ | Remove after finishin dialogue |
+| slingshot_possess | Check if you have the Fairy Slingshot unlocked | ✅ |  |
+
+#### KOKIRI FOREST
+
+| Tag | Usage | Unique | Reset |
+| ---- | ---- | :----: | ----- |
+| mido_reward_blue_1 | Check if you grab the one time reward of one of the 4 chest in Mido's house (blue rupee) | ✅ | Removed when open the chest |
+| mido_reward_blue_2 | Check if you grab the one time reward of one of the 4 chest in Mido's house (blue rupee) | ✅ | Removed when open the chest |
+| mido_reward_green | Check if you grab the one time reward of one of the 4 chest in Mido's house (green rupee) | ✅ | Removed when open the chest |
+| mido_reward_heart | Check if you grab the one time reward of one of the 4 chest in Mido's house (healing heart) | ✅ | Removed when open the chest |
+| trial_pound_1 | Check if the player pass in the trial pound 1 to check if he succeed the trial pound | ❌ | Remove if you leave the trial area |
+| trial_pound_2 | Check if the player pass in the trial pound 2 to check if he succeed the trial pound | ❌ | Remove if you leave the trial area |
+| trial_pound_3 | Check if the player pass in the trial pound 3 to check if he succeed the trial pound | ❌ | Remove if you leave the trial area |
+| trial_pound_finished | Check if the player finished the trial pound | ❌ | Remove when you leave Kokiri Forest |
 | kokiri_shop | Prevent the player from jumping in the shop | ❌ | Remove when you quit the Kokiri shop |
 | load_trial | Point the fact that player is in the trial zone for the loader/unloader | ❌ | Remove when you quit the Trial Zone |
 | trial_kokiri | Load the trial zone boulder | ❌ | Remove when you quit the Trial Zone |
 | load_kokiri_forest | Point the fact that player is in the Kokiri forest for the loader/unloader | ❌ | Remove when you quit the Kokiri Forest |
-| dialogue | Prevent player from moving during cinematics or dialogue | ❌ |  |
 | way_to_deku_tree | Check if you can go to the Greate Deku Tree blocked by Mido | ✅ |  |
 | deku_tree_dialogue_1 | Move & prevent player to move during Deku Tree Dialogue | ✅ |  |
 | deku_tree_dialogue_2 | Move & prevent player to move during Deku Tree Dialogue | ✅ |  |
@@ -72,9 +89,5 @@ If you see the message: "Zelda OOT loaded", everything must be ok
 | deku_tree_dialogue_no | Move player after Deku Tree Dialogue | ✅ |  |
 | deku_tree_no | Save the answer you gave to Deku Tree | ❌ | Remove after speaking to the Greate Deku Tree |
 | deku_tree_yes | Save the answer you gave to Deku Tree | ❌ | Remove after speaking to the Greate Deku Tree |
-| deku_tree_again | Check if you already talked to the Deku Tree | ✅ |  |
+| deku_tree_again | Check if you already talked to the Deku Tree | ❌ |  Remove after speaking to the Greate Deku Tree |
 | deku_tree_d_finish | Check if the Deku Tree dialogue is finished | ✅ |  |
-| trial_pound_1 | Check if the player pass in the trial pound 1 to check if he succeed the trial pound | ❌ | Remove if you leave the trial area |
-| trial_pound_2 | Check if the player pass in the trial pound 2 to check if he succeed the trial pound | ❌ | Remove if you leave the trial area |
-| trial_pound_3 | Check if the player pass in the trial pound 3 to check if he succeed the trial pound | ❌ | Remove if you leave the trial area |
-| trial_pound_finished | Check if the player finished the trial pound | ❌ | Remove when you leave Kokiri Forest |
