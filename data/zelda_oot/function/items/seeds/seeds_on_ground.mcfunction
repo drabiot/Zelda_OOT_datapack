@@ -1,0 +1,2 @@
+#summon armor_stand ~ ~-0.9 ~ {CustomName:"deku_seeds",Tags:["decay"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:beetroot_seeds}}}
+execute as @e[type=armor_stand,name=deku_seeds] at @s run tp @s ~ ~ ~ ~5 ~

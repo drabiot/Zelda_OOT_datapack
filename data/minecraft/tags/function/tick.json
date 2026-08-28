@@ -14,6 +14,9 @@
     { "id": "zelda_oot:items/rupees/rupees_on_ground", "required": false },
     { "id": "zelda_oot:items/rupees/rupees_pick", "required": false },
 
+    { "id": "zelda_oot:items/seeds/seeds_on_ground", "required": false },
+    { "id": "zelda_oot:items/seeds/seeds_pick", "required": false },
+
     { "id": "zelda_oot:game/breakable/check_stone", "required": false },
     { "id": "zelda_oot:game/kokiri_forest/bush/check_grass", "required": false },
 

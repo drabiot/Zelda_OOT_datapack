@@ -22,7 +22,7 @@ execute as @a[tag=is_sneak] at @s run kill @e[type=shulker,tag=crawl,distance=1.
 
 #Randomizer
 scoreboard players add @a random 1
-execute if score @p random matches 10 run scoreboard players set @a random 0
+execute if score @p random matches 16 run scoreboard players set @a random 0
 
 tag @e[type=armor_stand, tag=decay] add decay_pending
 scoreboard players set @e[type=armor_stand, tag=decay] decayTimer 100
