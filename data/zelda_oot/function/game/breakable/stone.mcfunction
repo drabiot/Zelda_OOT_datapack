@@ -9,7 +9,7 @@ playsound block.stone.break master @a ~ ~ ~ 1 1
 execute if score @p random matches 6..7 run summon armor_stand ~ ~-0.5 ~ {CustomName:"rupees",Tags:["green", "decay"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:lime_concrete}}}
 
 #8-9    Heart
-execute if score @p random matches 8-9 run summon armor_stand ~ ~-0.9 ~ {CustomName:"heart",Tags:["decay"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:beetroot}}}
+execute if score @p random matches 8..9 run summon armor_stand ~ ~-0.9 ~ {CustomName:"heart",Tags:["decay"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:beetroot}}}
 
 #Special drop
 
