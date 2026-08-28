@@ -301,8 +301,8 @@ setblock -481 18 -142 minecraft:packed_mud
 setblock -480 18 -143 minecraft:packed_mud
 
 #Load bullseye
-summon minecraft:silverfish -489 17.4 -71 {NoAI:1b,PersistenceRequired:1b,NoGravity:1b,Silent:1b,Peek:0b,Tags:["bullseye"],Rotation:[90f,0f],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:-1,show_particles:0b},{id:"minecraft:regeneration",amplifier:127b,duration:-1,show_particles:0b}]}
-summon minecraft:ghast -487.8 17.2 -71 {NoAI:1b,PersistenceRequired:1b,NoGravity:1b,Silent:1b,Peek:0b,Tags:["target"],Rotation:[90f,0f],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:-1,show_particles:0b},{id:"minecraft:regeneration",amplifier:127b,duration:-1,show_particles:0b}]}
+summon minecraft:silverfish -489 17.4 -71 {NoAI:1b,PersistenceRequired:1b,NoGravity:1b,Silent:1b,Tags:["bullseye"],Rotation:[90f,0f],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:-1,show_particles:0b},{id:"minecraft:regeneration",amplifier:127b,duration:-1,show_particles:0b}]}
+summon minecraft:ghast -487.8 17.2 -71 {NoAI:1b,PersistenceRequired:1b,NoGravity:1b,Silent:1b,Tags:["target"],Rotation:[90f,0f],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:-1,show_particles:0b},{id:"minecraft:regeneration",amplifier:127b,duration:-1,show_particles:0b}]}
 attribute @e[type=silverfish,tag=bullseye,limit=1,sort=nearest] minecraft:scale base set 0.2
 attribute @e[type=ghast,tag=target,limit=1,sort=nearest] minecraft:scale base set 0.2
 

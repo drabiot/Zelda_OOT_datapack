@@ -15,7 +15,7 @@ attribute @a[tag=!is_sneak,tag=!dialogue,tag=!kokiri_shop,limit=1] jump_strength
 attribute @a[tag=!dev,tag=kokiri_shop,limit=1] jump_strength base set 0
 
 #Crawling Mechanics
-execute as @a[tag=is_sneak,tag=!dialogue] at @s unless entity @e[type=shulker,distance=..1] run summon shulker ~ ~1 ~ {NoAI:1b,PersistenceRequired:1b,NoGravity:1b,Invulnerable:1b,Silent:1b,Peek:0b,Tags:["crawl"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:-1,show_particles:0b}]}
+execute as @a[tag=is_sneak,tag=!dialogue,tag=!dev] at @s unless entity @e[type=shulker,distance=..1] run summon shulker ~ ~1 ~ {NoAI:1b,PersistenceRequired:1b,NoGravity:1b,Invulnerable:1b,Silent:1b,Peek:0b,Tags:["crawl"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:-1,show_particles:0b}]}
 execute if entity @a[tag=!is_sneak] run tp @e[type=minecraft:shulker, tag=crawl] ~ ~-1000 ~
 execute as @a[tag=is_sneak] at @s run tp @e[type=shulker,tag=crawl,distance=1.2..] ~ ~-1000 ~
 execute as @a[tag=is_sneak] at @s run kill @e[type=shulker,tag=crawl,distance=1.2..]
