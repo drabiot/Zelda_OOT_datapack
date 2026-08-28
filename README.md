@@ -111,3 +111,4 @@ You can crawl everywhere at any time (except in dialogue & cinematic)
 | deku_tree_yes | Save the answer you gave to Deku Tree | ❌ | Remove after speaking to the Greate Deku Tree |
 | deku_tree_again | Check if you already talked to the Deku Tree | ❌ |  Remove after speaking to the Greate Deku Tree |
 | deku_tree_d_finish | Check if the Deku Tree dialogue is finished | ✅ |  |
+| bullseye_challenge | Check if you complete the bullseye challenge in the Lost Wood | ✅ |  |

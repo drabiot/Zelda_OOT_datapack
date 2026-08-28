@@ -34,6 +34,11 @@ function zelda_oot:scoreboard/deku_nut/deku_nut
 function zelda_oot:scoreboard/deku_stick/deku_stick
 function zelda_oot:scoreboard/deku_seed_bullet/deku_seed_bullet
 
+#Add Bullseye Challenge
+scoreboard objectives add bullseye dummy
+scoreboard objectives add time_hurt dummy
+
+
 scoreboard objectives add backup dummy
 scoreboard players add deku_stick backup 0
 

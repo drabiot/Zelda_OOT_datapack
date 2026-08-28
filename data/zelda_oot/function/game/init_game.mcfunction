@@ -29,6 +29,9 @@ tag @a add mido_reward_blue_2
 tag @a add mido_reward_green
 tag @a add mido_reward_heart
 
+#Remove Advancement
+tag @a remove bullseye_challenge
+
 #Spawn Kokiri's Forest Hearts
 summon armor_stand -410 12.1 9 {CustomName:"heart",Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:beetroot}}}
 summon armor_stand -407 11.1 11 {CustomName:"heart",Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:beetroot}}}

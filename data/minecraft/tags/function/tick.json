@@ -20,6 +20,7 @@
 
     { "id": "zelda_oot:game/breakable/check_stone", "required": false },
     { "id": "zelda_oot:game/kokiri_forest/bush/check_grass", "required": false },
+    { "id": "zelda_oot:game/kokiri_forest/bullseye_challenge", "required": false },
 
     { "id": "zelda_oot:game/kokiri_forest/loader/trial/apply_motion_rock", "required": false },
 
