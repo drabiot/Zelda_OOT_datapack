@@ -1,5 +1,7 @@
 advancement revoke @s only zelda_oot:admin/ocarina
 
+execute if entity @a[tag=dialogue] run return run kill @e[type=armor_stand,tag=inexistant_dummy_tag]
+execute if entity @a[tag=kokiri_shop] run return run kill @e[type=armor_stand,tag=inexistant_dummy_tag]
 
 #Quit if the player is already playing the ocarina
 execute as @a[tag=playing_ocarina] run return run kill @e[tag=inexistant_dummy_tag]
