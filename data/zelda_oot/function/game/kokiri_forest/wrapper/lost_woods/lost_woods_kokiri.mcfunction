@@ -40,6 +40,10 @@ execute positioned -519 16 -139 if entity @p[distance=..2.5] run tp @p -432.0 17
 execute positioned -506 16 -126 if entity @p[distance=..2.5] run tp @p -432.0 17 -63 0 0
 execute positioned -507 16 -126 if entity @p[distance=..2.5] run tp @p -432.0 17 -63 0 0
 
+#Bridge
+execute positioned -556 9 -24 if entity @p[distance=..2.5] run tp @p -471 3 -25.0
+execute positioned -556 9 -25 if entity @p[distance=..2.5] run tp @p -471 3 -25.0
+
 function zelda_oot:game/kokiri_forest/unloader/unload_maze
 function zelda_oot:game/kokiri_forest/loader/load_kokiri_forest
 function zelda_oot:game/kokiri_forest/loader/kokiri_forest_tag
