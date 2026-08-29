@@ -1,3 +1,4 @@
-execute if entity @a[advancements={zelda_oot:song/saria_song=true}] run return run kill @e[type=armor_stand,tag=inexistant_dummy_tag]
+execute if entity @a[advancements={zelda_oot:song/saria_song=false}] run return run kill @e[type=armor_stand,tag=inexistant_dummy_tag]
 
+function zelda_oot:items/ocarina/song/reward/quit_ocarina
 say Saria's Song Played
