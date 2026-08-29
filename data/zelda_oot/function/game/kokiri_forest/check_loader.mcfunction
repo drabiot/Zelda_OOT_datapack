@@ -55,3 +55,39 @@ execute positioned 1281 16 -60 if entity @a[distance=..3] run function zelda_oot
 
 #Kokiri -> Deku Tree
 execute positioned -290 2 -56 if entity @p[distance=..3] run function zelda_oot:game/kokiri_forest/wrapper/deku_tree/kokiri_deku_tree
+
+#Lost Woods
+#Lost Woods -> Kokiri
+execute positioned -529 16 -57 if entity @p[distance=..2.5] run function zelda_oot:game/kokiri_forest/wrapper/lost_woods/lost_woods_kokiri
+execute positioned -530 16 -57 if entity @p[distance=..2.5] run function zelda_oot:game/kokiri_forest/wrapper/lost_woods/lost_woods_kokiri
+
+execute positioned -529 16 -82 if entity @p[distance=..2.5] run function zelda_oot:game/kokiri_forest/wrapper/lost_woods/lost_woods_kokiri
+execute positioned -530 16 -82 if entity @p[distance=..2.5] run function zelda_oot:game/kokiri_forest/wrapper/lost_woods/lost_woods_kokiri
+
+execute positioned -506 16 -57 if entity @p[distance=..2.5] run function zelda_oot:game/kokiri_forest/wrapper/lost_woods/lost_woods_kokiri
+execute positioned -507 16 -57 if entity @p[distance=..2.5] run function zelda_oot:game/kokiri_forest/wrapper/lost_woods/lost_woods_kokiri
+
+execute positioned -519 16 -92 if entity @p[distance=..2.5] run function zelda_oot:game/kokiri_forest/wrapper/lost_woods/lost_woods_kokiri
+execute positioned -519 16 -93 if entity @p[distance=..2.5] run function zelda_oot:game/kokiri_forest/wrapper/lost_woods/lost_woods_kokiri
+
+execute positioned -483 16 -80 if entity @p[distance=..2.5] run function zelda_oot:game/kokiri_forest/wrapper/lost_woods/lost_woods_kokiri
+execute positioned -484 16 -80 if entity @p[distance=..2.5] run function zelda_oot:game/kokiri_forest/wrapper/lost_woods/lost_woods_kokiri
+
+execute positioned -471 16 -115 if entity @p[distance=..2.5] run function zelda_oot:game/kokiri_forest/wrapper/lost_woods/lost_woods_kokiri
+execute positioned -471 16 -116 if entity @p[distance=..2.5] run function zelda_oot:game/kokiri_forest/wrapper/lost_woods/lost_woods_kokiri
+
+execute positioned -471 16 -138 if entity @p[distance=..2.5] run function zelda_oot:game/kokiri_forest/wrapper/lost_woods/lost_woods_kokiri
+execute positioned -471 16 -139 if entity @p[distance=..2.5] run function zelda_oot:game/kokiri_forest/wrapper/lost_woods/lost_woods_kokiri
+
+execute positioned -484 16 -151 if entity @p[distance=..2.5] run function zelda_oot:game/kokiri_forest/wrapper/lost_woods/lost_woods_kokiri
+execute positioned -483 16 -151 if entity @p[distance=..2.5] run function zelda_oot:game/kokiri_forest/wrapper/lost_woods/lost_woods_kokiri
+
+execute positioned -519 16 -138 if entity @p[distance=..2.5] run function zelda_oot:game/kokiri_forest/wrapper/lost_woods/lost_woods_kokiri
+execute positioned -519 16 -139 if entity @p[distance=..2.5] run function zelda_oot:game/kokiri_forest/wrapper/lost_woods/lost_woods_kokiri
+
+execute positioned -506 16 -126 if entity @p[distance=..2.5] run function zelda_oot:game/kokiri_forest/wrapper/lost_woods/lost_woods_kokiri
+execute positioned -507 16 -126 if entity @p[distance=..2.5] run function zelda_oot:game/kokiri_forest/wrapper/lost_woods/lost_woods_kokiri
+
+#Kokiri -> Lost Woods
+execute positioned -433 17 -69 if entity @p[distance=..2.5] run function zelda_oot:game/kokiri_forest/wrapper/lost_woods/kokiri_lost_woods
+execute positioned -432 17 -69 if entity @p[distance=..2.5] run function zelda_oot:game/kokiri_forest/wrapper/lost_woods/kokiri_lost_woods
