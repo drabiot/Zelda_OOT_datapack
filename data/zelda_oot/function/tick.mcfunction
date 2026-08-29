@@ -43,3 +43,12 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:decorated_pot"}}] run function 
 
 scoreboard players enable @a deku_tree_yes
 scoreboard players enable @a deku_tree_no
+
+#Ocarina Mechanics
+title @a[tag=playing_ocarina] actionbar {"text":"Sneak to stop playing the Ocarina","color":"gray","italic":true}
+execute as @a[tag=playing_ocarina] if entity @s[tag=playing_ocarina,tag=is_sneak] run kill @e[type=item_display,tag=ocarina_display]
+execute as @a[tag=playing_ocarina] if entity @s[tag=playing_ocarina,tag=is_sneak] run kill @e[type=interaction,tag=ocarina_display]
+execute as @a[tag=playing_ocarina] if entity @s[tag=playing_ocarina] run tag @s remove already_playing
+execute as @a[tag=playing_ocarina] if entity @s[tag=playing_ocarina,tag=is_sneak] run tag @s remove playing_ocarina
+
+

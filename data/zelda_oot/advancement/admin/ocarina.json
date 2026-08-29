@@ -1,0 +1,15 @@
+{
+    "criteria": {
+      "using_item": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:copper_chain"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "zelda_oot:items/ocarina/play_ocarina"
+    }
+}

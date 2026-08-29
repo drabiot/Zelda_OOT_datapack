@@ -14,7 +14,7 @@ scoreboard players set heart_shop kokiri_shop 10
 tellraw @a {"text":"Welcome!"}
 
 #Right Shop Part
-execute positioned -392 -5 -40.0 rotated 180 0 run summon item_display ~ ~ ~ {CustomName:'{"text":"deku_shield"}',transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,0.5f]},item:{id:"minecraft:shield",count:1,components:{"minecraft:custom_data":{deku_shield:1b},"minecraft:custom_model_data":{strings:["deku_shield"]}}}}
+execute positioned -392 -5 -40.0 rotated 180 0 run summon item_display ~ ~ ~ {CustomName:"deku_shield",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,0.5f]},item:{id:"minecraft:shield",count:1,components:{"minecraft:custom_data":{deku_shield:1b},"minecraft:custom_model_data":{strings:["deku_shield"]}}}}
 summon item_display -392 -4 -40.0 {CustomName:"deku_nut_5",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,0.5f],},item:{id:"minecraft:pitcher_pod",count:1}}
 summon item_display -391 -5 -39.0 {CustomName:"deku_nut_10",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,0.5f]},item:{id:"minecraft:pitcher_pod",count:1}}
 summon item_display -391 -4 -39.0 {CustomName:"deku_stick",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,0.5f]},item:{id:"minecraft:stick",count:1}}
