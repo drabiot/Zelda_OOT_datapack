@@ -52,3 +52,26 @@ scoreboard objectives add song_storm dummy
 scoreboard players set @a song_storm 0
 scoreboard objectives add zelda_lullaby dummy
 scoreboard players set @a zelda_lullaby 0
+scoreboard objectives add saria_song dummy
+scoreboard players set @a saria_song 0
+scoreboard objectives add song_of_time dummy
+scoreboard players set @a song_of_time 0
+scoreboard objectives add sun_song dummy
+scoreboard players set @a sun_song 0
+scoreboard objectives add saria_song dummy
+scoreboard players set @a saria_song 0
+scoreboard objectives add epona_song dummy
+scoreboard players set @a epona_song 0
+
+scoreboard objectives add minuet_of_forest dummy
+scoreboard players set @a minuet_of_forest 0
+scoreboard objectives add bolero_of_fire dummy
+scoreboard players set @a bolero_of_fire 0
+scoreboard objectives add serenade_of_water dummy
+scoreboard players set @a serenade_of_water 0
+scoreboard objectives add requiem_of_spirit dummy
+scoreboard players set @a requiem_of_spirit 0
+scoreboard objectives add nocturne_of_shadow dummy
+scoreboard players set @a nocturne_of_shadow 0
+scoreboard objectives add prelude_of_light dummy
+scoreboard players set @a prelude_of_light 0

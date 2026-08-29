@@ -1,2 +1,12 @@
 function zelda_oot:items/ocarina/song/song_of_storm
 function zelda_oot:items/ocarina/song/zelda_lullaby
+function zelda_oot:items/ocarina/song/saria_song
+function zelda_oot:items/ocarina/song/song_of_time
+function zelda_oot:items/ocarina/song/sun_song
+function zelda_oot:items/ocarina/song/epona_song
+function zelda_oot:items/ocarina/song/minuet_of_forest
+function zelda_oot:items/ocarina/song/bolero_of_fire
+function zelda_oot:items/ocarina/song/serenade_of_water
+function zelda_oot:items/ocarina/song/requiem_of_spirit
+function zelda_oot:items/ocarina/song/nocturne_of_shadow
+function zelda_oot:items/ocarina/song/prelude_of_light

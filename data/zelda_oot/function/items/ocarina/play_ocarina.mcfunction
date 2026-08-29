@@ -13,6 +13,16 @@ ride @p[tag=playing_ocarina] mount @e[tag=ocarina_display,limit=1]
 #Reset the song progress
 execute as @a[tag=playing_ocarina,tag=!already_playing] run scoreboard players set @s song_storm 0
 execute as @a[tag=playing_ocarina,tag=!already_playing] run scoreboard players set @s zelda_lullaby 0
+execute as @a[tag=playing_ocarina,tag=!already_playing] run scoreboard players set @s saria_song 0
+execute as @a[tag=playing_ocarina,tag=!already_playing] run scoreboard players set @s song_of_time 0
+execute as @a[tag=playing_ocarina,tag=!already_playing] run scoreboard players set @s sun_song 0
+execute as @a[tag=playing_ocarina,tag=!already_playing] run scoreboard players set @s epona_song 0
+execute as @a[tag=playing_ocarina,tag=!already_playing] run scoreboard players set @s minuet_of_forest 0
+execute as @a[tag=playing_ocarina,tag=!already_playing] run scoreboard players set @s bolero_of_fire 0
+execute as @a[tag=playing_ocarina,tag=!already_playing] run scoreboard players set @s serenade_of_water 0
+execute as @a[tag=playing_ocarina,tag=!already_playing] run scoreboard players set @s requiem_of_spirit 0
+execute as @a[tag=playing_ocarina,tag=!already_playing] run scoreboard players set @s nocturne_of_shadow 0
+execute as @a[tag=playing_ocarina,tag=!already_playing] run scoreboard players set @s prelude_of_light 0
 execute as @a[tag=playing_ocarina,tag=!already_playing] run scoreboard players set @s ocarina_note -1
 
 #Add the Key in front of the player
