@@ -34,7 +34,6 @@
     { "id": "zelda_oot:game/kokiri_forest/dialogue/mido_block/check_mido_block_dialogue", "required": false },
     { "id": "zelda_oot:game/kokiri_forest/wrapper/shop/check_shop", "required": false },
 
-    { "id": "zelda_oot:game/kokiri_forest/wrapper/lost_woods/hidden_door", "required": false },
-    { "id": "zelda_oot:game/kokiri_forest/wrapper/lost_woods/pole", "required": false }
+    { "id": "zelda_oot:game/kokiri_forest/wrapper/lost_woods/hidden_door", "required": false }
   ]
 }
