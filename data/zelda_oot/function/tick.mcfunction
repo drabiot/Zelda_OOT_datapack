@@ -1,3 +1,6 @@
+#Deny glowing effect to all entities that don't have the allow_glow tag
+effect clear @e[type=!item_display,type=!arrow,type=!spectral_arrow,type=!marker,type=!text_display,type=!block_display,tag=!allow_glow] minecraft:glowing
+
 #Sneak
 execute as @a if score @s sneak_time > @s sneak_prev run tag @s add is_sneak
 execute as @a unless score @s sneak_time > @s sneak_prev run tag @s remove is_sneak

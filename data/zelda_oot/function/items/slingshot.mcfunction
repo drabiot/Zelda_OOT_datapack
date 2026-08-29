@@ -5,7 +5,7 @@ execute as @s[tag=!busy] if score @s deku_seed_bullet matches 2.. run tag @s rem
 
 execute as @s[tag=!busy, tag=!out_amo] if score @s deku_seed_bullet matches 1.. run clear @s tripwire_hook 1
 playsound minecraft:item.trident.throw master @s[tag=!busy, tag=!out_amo] ~ ~ ~ 1 1
-execute as @s[tag=!busy, tag=!out_amo] at @s run summon minecraft:arrow ^0.5 ^1 ^0.5 {pickup:0b, Silent:1b, Tags:["motion_projectile","deku_seeds"], active_effects:[{id:"minecraft:invisibility",amplifier:0,duration:2000,show_particles:0b}]}
+execute as @s[tag=!busy, tag=!out_amo] at @s run summon minecraft:spectral_arrow ^0.5 ^1 ^0.5 {pickup:0b, Silent:1b, Tags:["motion_projectile","deku_seeds"]}
 
 tag @s add busy
 
