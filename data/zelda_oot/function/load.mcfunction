@@ -44,3 +44,11 @@ scoreboard players add deku_stick backup 0
 
 scoreboard objectives add deku_tree_yes trigger
 scoreboard objectives add deku_tree_no trigger
+
+#Add Ocarina Note
+scoreboard objectives add ocarina_note dummy
+scoreboard players set @a ocarina_note -1
+scoreboard objectives add song_storm dummy
+scoreboard players set @a song_storm 0
+scoreboard objectives add zelda_lullaby dummy
+scoreboard players set @a zelda_lullaby 0

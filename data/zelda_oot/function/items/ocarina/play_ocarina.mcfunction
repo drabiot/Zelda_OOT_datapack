@@ -1,12 +1,19 @@
 advancement revoke @s only zelda_oot:admin/ocarina
 
+
 #Quit if the player is already playing the ocarina
 execute as @a[tag=playing_ocarina] run return run kill @e[tag=inexistant_dummy_tag]
+
 
 #Sit down the player
 execute as @a[tag=!busy,nbt={OnGround:true}] run tag @a add playing_ocarina
 execute as @a[tag=playing_ocarina] at @s run summon item_display ~ ~0.6 ~ {view_range:0f,NoGravity:1b,Tags:["ocarina_display"]}
 ride @p[tag=playing_ocarina] mount @e[tag=ocarina_display,limit=1]
+
+#Reset the song progress
+execute as @a[tag=playing_ocarina,tag=!already_playing] run scoreboard players set @s song_storm 0
+execute as @a[tag=playing_ocarina,tag=!already_playing] run scoreboard players set @s zelda_lullaby 0
+execute as @a[tag=playing_ocarina,tag=!already_playing] run scoreboard players set @s ocarina_note -1
 
 #Add the Key in front of the player
 #Center

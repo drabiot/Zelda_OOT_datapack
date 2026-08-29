@@ -1,0 +1,2 @@
+$execute as @a[tag=playing_ocarina] if score @s $(objective) matches $(from) if score @s ocarina_note matches $(note) run function $(func)
+$execute as @a[tag=playing_ocarina] if score @s $(objective) matches $(from) if score @s ocarina_note matches $(note) run scoreboard players set @s $(objective) 0
