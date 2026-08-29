@@ -9,6 +9,8 @@ kill @e[type=falling_block]
 
 advancement revoke @a everything
 advancement grant @a only zelda_oot:song/song_root
+advancement grant @a only zelda_oot:song/classic
+advancement grant @a only zelda_oot:song/warp
 
 #advancement grant drabiot until zelda_oot:kokiri_forest/kokiri_forest_root
 #advancement grant drabiot until zelda_oot:hyrule/hyrule_root

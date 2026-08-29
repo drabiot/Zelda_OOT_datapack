@@ -4,17 +4,17 @@
       "id": "minecraft:flower_banner_pattern",
       "components": {
         "minecraft:custom_model_data": {
-          "strings": ["song_of_storm"]
+          "strings": ["classic"]
         }
       }
     },
-    "title": "Song of Storm",
-    "description": "A🡇🡅A🡇🡅",
+    "title": "Classic Song",
+    "description": "The base song of the Ocarina",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "zelda_oot:song/classic",
+  "parent": "zelda_oot:song/song_root",
   "criteria": {
     "tick": {
       "trigger": "minecraft:impossible"
