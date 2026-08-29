@@ -82,8 +82,10 @@ You can crawl everywhere at any time (except in dialogue & cinematic)
 | Tag | Usage | Unique | Reset |
 | ---- | ---- | :----: | ----- |
 | is_sneak | Check if you're in sneak | ❌ | Remove when you aren't sneaking |
-| dialogue | Prevent player from retrigger dialogue when we are in one already | ❌ | Remove after finishin dialogue |
+| dialogue | Prevent player from retrigger dialogue when we are in one already | ❌ | Remove after finishing dialogue |
 | slingshot_possess | Check if you have the Fairy Slingshot unlocked | ✅ |  |
+| playing_ocarina | Check that the player play ocarina | ❌ | Remove after finish playing ocarina |
+| already_playing | Prevent player from retrigger ocarina | ❌ | Remove after finish playing ocarina |
 
 #### KOKIRI FOREST
 
