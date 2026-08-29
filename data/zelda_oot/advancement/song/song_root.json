@@ -1,20 +1,20 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:tripwire_hook",
+      "id": "minecraft:copper_chain",
       "components": {
         "minecraft:custom_model_data": {
-          "strings": ["fairy_slingshot"]
+          "strings": ["saria_ocarina"]
         }
       }
     },
-    "title": "Snipped!",
-    "description": "Possess your own slingshot",
+    "title": "Song",
+    "description": "",
+    "background": "minecraft:block/sulfur",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "zelda_oot:kokiri_forest/deku_tree",
   "criteria": {
     "tick": {
       "trigger": "minecraft:impossible"

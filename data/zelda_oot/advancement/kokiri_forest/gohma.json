@@ -5,7 +5,6 @@
     },
     "title": "Spider down!",
     "description": "Heal the Great Deku Tree by deafeating Gohma",
-    "background": "minecraft:block/oak_leaves",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true

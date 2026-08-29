@@ -5,7 +5,6 @@
     },
     "title": "Followed by Navi",
     "description": "Start your journey in this World",
-    "background": "minecraft:block/azalea_leaves",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true

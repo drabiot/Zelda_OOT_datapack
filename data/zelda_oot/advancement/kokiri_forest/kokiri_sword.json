@@ -10,7 +10,6 @@
     },
     "title": "The best defense is attack",
     "description": "Possess your own Kokiri Sword",
-    "background": "minecraft:block/oak_leaves",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true

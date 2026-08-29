@@ -10,7 +10,6 @@
     },
     "title": "You shall not pass!",
     "description": "Buy your first Deku Shield",
-    "background": "minecraft:block/oak_leaves",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
