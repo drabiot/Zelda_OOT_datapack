@@ -9,7 +9,6 @@ execute as @a run tag @s remove playing_ocarina
 
 gamemode adventure @a[gamemode=spectator]
 gamemode creative @a[tag=dev]
-stopsound @a[tag=in_warp]
 tag @a remove in_song
 tag @a remove in_warp
 tag @a remove warp_minuet_of_forest

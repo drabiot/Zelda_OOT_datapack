@@ -52,4 +52,5 @@ execute as @a[tag=confirm_warping_yes_click,tag=warp_prelude_of_light] run tp @s
 execute as @a[tag=confirm_warping_yes_click] run function zelda_oot:items/ocarina/song/reward/quit_ocarina
 execute as @a[tag=confirm_warping_yes_click] run tag @a remove warping_yes_click
 execute as @a[tag=confirm_warping_yes_click] run tag @a remove confirm_warping_yes_click
+execute as @a[tag=confirm_warping_yes_click] run stopsound @a
 
