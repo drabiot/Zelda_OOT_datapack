@@ -99,6 +99,10 @@
 			"required": false
 		},
 		{
+			"id":  "zelda_oot:items/ocarina/song/reward/check_warping",
+			"required": false
+		},
+		{
 			"id": "zelda_oot:tick",
 			"required": false
 		},

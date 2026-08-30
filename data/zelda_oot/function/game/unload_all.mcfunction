@@ -1,0 +1,4 @@
+function zelda_oot:game/kokiri_forest/unloader/unload_kokiri_forest
+function zelda_oot:game/kokiri_forest/unloader/unload_maze
+function zelda_oot:game/kokiri_forest/unloader/unload_trial
+function zelda_oot:game/kokiri_forest/wrapper/shop/unload_shop

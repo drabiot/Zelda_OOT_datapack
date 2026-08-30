@@ -14,4 +14,5 @@ execute as @a run kill @e[type=interaction,tag=ocarina_display]
 
 execute as @a at @s run playsound minecraft:custom.minuet_of_forest master @a ~ ~ ~ 1 1
 
-schedule function zelda_oot:items/ocarina/song/reward/quit_ocarina 50t
+tag @a add warp_minuet_of_forest
+schedule function zelda_oot:items/ocarina/song/reward/warping_init 50t
