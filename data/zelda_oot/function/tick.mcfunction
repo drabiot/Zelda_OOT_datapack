@@ -1,3 +1,7 @@
+#Prevent lightning damage
+execute at @e[type=lightning_bolt] run fill ~-2 ~-1 ~-2 ~2 ~2 ~2 air replace fire
+
+
 #Deny glowing effect to all entities that don't have the allow_glow tag
 effect clear @e[type=!item_display,type=!arrow,type=!spectral_arrow,type=!marker,type=!text_display,type=!block_display,tag=!allow_glow] minecraft:glowing
 

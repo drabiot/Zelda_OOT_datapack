@@ -1,7 +1,12 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:goat_horn"
+      "id": "minecraft:copper_chain",
+      "components": {
+        "minecraft:custom_model_data": {
+          "strings": ["ocarina_of_time"]
+        }
+      }
     },
     "title": "Lullaby",
     "description": "Find the Ocarina of Time in the Hyrule's moat",
