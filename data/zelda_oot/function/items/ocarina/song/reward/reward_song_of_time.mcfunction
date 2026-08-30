@@ -6,10 +6,10 @@ execute as @e[tag=link_face_display] at @s run tp @s ~ ~1 ~ facing entity @e[tag
 gamemode spectator @a[tag=playing_ocarina]
 spectate @e[type=block_display,tag=ocarina_display,limit=1,sort=nearest]
 
+execute as @a at @s run playsound minecraft:custom.song_of_time master @a ~ ~ ~ 1 1
+
 #Destroy play button
 execute as @a run kill @e[type=item_display,tag=ocarina_display]
 execute as @a run kill @e[type=interaction,tag=ocarina_display]
 
-schedule function zelda_oot:items/ocarina/song/reward/quit_ocarina 50t
-
-say Song of Time Played
+schedule function zelda_oot:items/ocarina/song/reward/quit_ocarina 160t

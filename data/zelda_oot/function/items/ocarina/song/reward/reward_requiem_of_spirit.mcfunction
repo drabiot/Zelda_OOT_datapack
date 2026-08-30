@@ -10,6 +10,8 @@ spectate @e[type=block_display,tag=ocarina_display,limit=1,sort=nearest]
 execute as @a run kill @e[type=item_display,tag=ocarina_display]
 execute as @a run kill @e[type=interaction,tag=ocarina_display]
 
+execute as @a at @s run playsound minecraft:custom.requiem_of_spirit master @a ~ ~ ~ 1 1
+
 schedule function zelda_oot:items/ocarina/song/reward/quit_ocarina 50t
 
 say Requiem of Spirit Played
