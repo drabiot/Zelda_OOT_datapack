@@ -7,3 +7,4 @@ execute as @a run tag @s remove playing_ocarina
 
 gamemode adventure @a[gamemode=spectator]
 gamemode creative @a[tag=dev]
+tag @a remove in_song
