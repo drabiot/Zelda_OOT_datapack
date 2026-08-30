@@ -14,4 +14,9 @@ execute as @a run kill @e[type=interaction,tag=ocarina_display]
 
 execute as @a at @s run playsound minecraft:custom.song_of_storm master @a ~ ~ ~ 1 1
 
+weather thunder 300t
+execute as @a at @s run playsound entity.lightning_bolt.thunder master @a ~ ~ ~ 5 1
+execute as @a at @s run playsound entity.lightning_bolt.thunder master @a ~ ~ ~ 10 1
+execute as @a at @s run playsound entity.lightning_bolt.thunder master @a ~ ~ ~ 1 1
+
 schedule function zelda_oot:items/ocarina/song/reward/quit_ocarina 90t
