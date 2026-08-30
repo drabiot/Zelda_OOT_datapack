@@ -17,3 +17,5 @@ tag @a remove warp_serenade_of_water
 tag @a remove warp_requiem_of_spirit
 tag @a remove warp_nocturne_of_shadow
 tag @a remove warp_prelude_of_light
+
+stopsound @a
