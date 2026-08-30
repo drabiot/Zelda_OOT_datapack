@@ -1,5 +1,4 @@
 {
-    "values":[
-      "zelda_oot:load"
-    ]
-  }
+	"replace": false,
+	"values": ["animated_java:global/on_load", "zelda_oot:load"]
+}

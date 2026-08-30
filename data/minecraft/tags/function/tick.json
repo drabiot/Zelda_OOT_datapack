@@ -1,41 +1,107 @@
 {
-  "values": [
-    { "id": "zelda_oot:tick", "required": false },
-
-    { "id": "zelda_oot:items/check_item", "required": false },
-
-    { "id": "zelda_oot:advancement/advancement", "required": false },
-
-    { "id": "zelda_oot:motion/loop", "required": false },
-
-    { "id": "zelda_oot:items/heart/heart_on_ground", "required": false },
-    { "id": "zelda_oot:items/heart/heart_pick", "required": false },
-
-    { "id": "zelda_oot:items/rupees/rupees_on_ground", "required": false },
-    { "id": "zelda_oot:items/rupees/rupees_pick", "required": false },
-
-    { "id": "zelda_oot:items/seeds/seeds_on_ground", "required": false },
-    { "id": "zelda_oot:items/seeds/seeds_pick", "required": false },
-    { "id": "zelda_oot:items/seeds/motion_seeds", "required": false },
-
-    { "id": "zelda_oot:game/breakable/check_stone", "required": false },
-    { "id": "zelda_oot:game/kokiri_forest/bush/check_grass", "required": false },
-    { "id": "zelda_oot:game/kokiri_forest/bullseye_challenge", "required": false },
-
-    { "id": "zelda_oot:game/kokiri_forest/loader/trial/apply_motion_rock", "required": false },
-
-    { "id": "zelda_oot:game/swim_event", "required": false },
-    
-    { "id": "zelda_oot:game/kokiri_forest/dialogue/intro/tp", "required": false },
-    { "id": "zelda_oot:game/kokiri_forest/dialogue/deku_tree/tp", "required": false },
-    { "id": "zelda_oot:game/kokiri_forest/check_loader", "required": false },
-    { "id": "zelda_oot:game/kokiri_forest/loader/trial_grass_respawn", "required": false },
-    { "id": "zelda_oot:game/kokiri_forest/pound_trial/detect_start", "required": false },
-    { "id": "zelda_oot:game/kokiri_forest/dialogue/mido_block/check_mido_block_dialogue", "required": false },
-    { "id": "zelda_oot:game/kokiri_forest/wrapper/shop/check_shop", "required": false },
-
-    { "id": "zelda_oot:game/kokiri_forest/wrapper/lost_woods/hidden_door", "required": false },
-
-    { "id": "zelda_oot:items/ocarina/check_note", "required": false }
-  ]
+	"replace": false,
+	"values": [
+		"animated_java:global/data_manager/on_tick",
+		{
+			"id": "zelda_oot:advancement/advancement",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:game/breakable/check_stone",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:game/kokiri_forest/bullseye_challenge",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:game/kokiri_forest/bush/check_grass",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:game/kokiri_forest/check_loader",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:game/kokiri_forest/dialogue/deku_tree/tp",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:game/kokiri_forest/dialogue/intro/tp",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:game/kokiri_forest/dialogue/mido_block/check_mido_block_dialogue",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:game/kokiri_forest/loader/trial_grass_respawn",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:game/kokiri_forest/loader/trial/apply_motion_rock",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:game/kokiri_forest/pound_trial/detect_start",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:game/kokiri_forest/wrapper/lost_woods/hidden_door",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:game/kokiri_forest/wrapper/shop/check_shop",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:game/swim_event",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:items/check_item",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:items/heart/heart_on_ground",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:items/heart/heart_pick",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:items/ocarina/check_note",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:items/rupees/rupees_on_ground",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:items/rupees/rupees_pick",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:items/seeds/motion_seeds",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:items/seeds/seeds_on_ground",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:items/seeds/seeds_pick",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:motion/loop",
+			"required": false
+		},
+		{
+			"id": "zelda_oot:tick",
+			"required": false
+		},
+		"animated_java:global/on_tick"
+	]
 }

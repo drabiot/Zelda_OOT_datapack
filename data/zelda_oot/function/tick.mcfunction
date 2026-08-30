@@ -48,7 +48,6 @@ scoreboard players enable @a deku_tree_no
 title @a[tag=playing_ocarina] actionbar {"text":"Sneak to stop playing the Ocarina","color":"gray","italic":true}
 execute as @a[tag=playing_ocarina] if entity @s[tag=playing_ocarina,tag=is_sneak] run kill @e[type=item_display,tag=ocarina_display]
 execute as @a[tag=playing_ocarina] if entity @s[tag=playing_ocarina,tag=is_sneak] run kill @e[type=interaction,tag=ocarina_display]
+execute as @a[tag=playing_ocarina] if entity @s[tag=playing_ocarina,tag=is_sneak] run execute as @e[type=item_display,tag=link_display] run function zelda_oot:link/remove/this
 execute as @a[tag=playing_ocarina] if entity @s[tag=playing_ocarina] run tag @s remove already_playing
 execute as @a[tag=playing_ocarina] if entity @s[tag=playing_ocarina,tag=is_sneak] run tag @s remove playing_ocarina
-
-

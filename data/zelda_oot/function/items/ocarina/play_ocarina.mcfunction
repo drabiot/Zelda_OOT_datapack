@@ -93,9 +93,14 @@ execute as @a[tag=playing_ocarina,tag=!already_playing] at @s rotated as @s rota
 	run summon interaction ^-0.5 ^1.4 ^0 \
 	{width:0.3f,height:0.3f,response:true,Tags:["ocarina_right_click","ocarina_display"]}
 
+#Summon Link next to the player and start his ocarina animation
+execute as @a[tag=playing_ocarina,tag=!already_playing] run function zelda_oot:items/ocarina/spawn_link
+execute as @a[tag=playing_ocarina,tag=!already_playing] at @s run execute as @e[tag=link_display,distance=..4,limit=1,sort=nearest] run function zelda_oot:link/animations/ocarina_idle/play
 
 #Add tag to ensure that we are not creating the ocarina display again and again
 execute as @a[tag=playing_ocarina] run tag @a add already_playing
+
+
 
 tag @s add busy
 schedule function zelda_oot:game/busy 3t

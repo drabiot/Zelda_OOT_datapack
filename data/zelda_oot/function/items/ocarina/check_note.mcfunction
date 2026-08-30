@@ -45,6 +45,7 @@ execute as @a[tag=confirm_ocarina_center_click] at @e[tag=ocarina_note_middle,li
 execute as @a[tag=confirm_ocarina_center_click] run scoreboard players set @a ocarina_note 1
 execute as @a[tag=confirm_ocarina_center_click] run function zelda_oot:items/ocarina/check_songs
 execute as @a[tag=confirm_ocarina_center_click] as @a at @s run playsound minecraft:block.note_block.flute master @s ~ ~ ~ 5 1.0
+execute if entity @a[tag=confirm_ocarina_center_click] as @a[tag=playing_ocarina,tag=!already_playing] at @s run execute as @e[tag=link_display,distance=..4,limit=1,sort=nearest] run function zelda_oot:link/animations/ocarina_playing_black/play
 execute as @a[tag=confirm_ocarina_center_click] run tag @a remove ocarina_center_click
 execute as @a[tag=confirm_ocarina_center_click] run tag @a remove confirm_ocarina_center_click
 
@@ -58,6 +59,7 @@ execute as @a[tag=confirm_ocarina_up_click] at @e[tag=ocarina_note_up,limit=1] \
 execute as @a[tag=confirm_ocarina_up_click] run scoreboard players set @a ocarina_note 2
 execute as @a[tag=confirm_ocarina_up_click] run function zelda_oot:items/ocarina/check_songs
 execute as @a[tag=confirm_ocarina_up_click] as @a at @s run playsound minecraft:block.note_block.flute master @s ~ ~ ~ 5 1.19
+execute if entity @a[tag=confirm_ocarina_up_click] as @a[tag=playing_ocarina,tag=!already_playing] at @s run execute as @e[tag=link_display,distance=..4,limit=1,sort=nearest] run function zelda_oot:link/animations/ocarina_playing_red/play
 execute as @a[tag=confirm_ocarina_up_click] run tag @a remove ocarina_up_click
 execute as @a[tag=confirm_ocarina_up_click] run tag @a remove confirm_ocarina_up_click
 
@@ -71,6 +73,7 @@ execute as @a[tag=confirm_ocarina_down_click] at @e[tag=ocarina_note_down,limit=
 execute as @a[tag=confirm_ocarina_down_click] run scoreboard players set @a ocarina_note 3
 execute as @a[tag=confirm_ocarina_down_click] run function zelda_oot:items/ocarina/check_songs
 execute as @a[tag=confirm_ocarina_down_click] as @a at @s run playsound minecraft:block.note_block.flute master @s ~ ~ ~ 5 0.75
+execute if entity @a[tag=confirm_ocarina_down_click] as @a[tag=playing_ocarina,tag=!already_playing] at @s run execute as @e[tag=link_display,distance=..4,limit=1,sort=nearest] run function zelda_oot:link/animations/ocarina_playing_blue/play
 execute as @a[tag=confirm_ocarina_down_click] run tag @a remove ocarina_down_click
 execute as @a[tag=confirm_ocarina_down_click] run tag @a remove confirm_ocarina_down_click
 
@@ -84,6 +87,7 @@ execute as @a[tag=confirm_ocarina_left_click] at @e[tag=ocarina_note_left,limit=
 execute as @a[tag=confirm_ocarina_left_click] run scoreboard players set @a ocarina_note 4
 execute as @a[tag=confirm_ocarina_left_click] run function zelda_oot:items/ocarina/check_songs
 execute as @a[tag=confirm_ocarina_left_click] as @a at @s run playsound minecraft:block.note_block.flute master @s ~ ~ ~ 5 0.84
+execute if entity @a[tag=confirm_ocarina_left_click] as @a[tag=playing_ocarina,tag=!already_playing] at @s run execute as @e[tag=link_display,distance=..4,limit=1,sort=nearest] run function zelda_oot:link/animations/ocarina_playing_yellow/play
 execute as @a[tag=confirm_ocarina_left_click] run tag @a remove ocarina_left_click
 execute as @a[tag=confirm_ocarina_left_click] run tag @a remove confirm_ocarina_left_click
 
@@ -97,5 +101,6 @@ execute as @a[tag=confirm_ocarina_right_click] at @e[tag=ocarina_note_right,limi
 execute as @a[tag=confirm_ocarina_right_click] run scoreboard players set @a ocarina_note 5
 execute as @a[tag=confirm_ocarina_right_click] run function zelda_oot:items/ocarina/check_songs
 execute as @a[tag=confirm_ocarina_right_click] as @a at @s run playsound minecraft:block.note_block.flute master @s ~ ~ ~ 5 1.7
+execute if entity @a[tag=confirm_ocarina_right_click] as @a[tag=playing_ocarina,tag=!already_playing] at @s run execute as @e[tag=link_display,distance=..4,limit=1,sort=nearest] run function zelda_oot:link/animations/ocarina_playing_green/play
 execute as @a[tag=confirm_ocarina_right_click] run tag @a remove ocarina_right_click
 execute as @a[tag=confirm_ocarina_right_click] run tag @a remove confirm_ocarina_right_click
