@@ -143,3 +143,23 @@ summon interaction -421 10 -14 {width:1f,height:2f,response:true,Tags:["fado_cli
 summon interaction -421 9 -14 {width:4f,height:1f,response:false,Tags:["blocked"]}
 summon interaction -421 8 -11 {width:4f,height:4f,response:false,Tags:["blocked"]}
 
+#Twin Shop
+execute positioned -393 8 -26.3 rotated 360 0 run function zelda_oot:twins/summon {args: {}}
+execute positioned -393 8 -26.3 as @e[type=minecraft:item_display,tag=zelda_oot.twins.root,tag=!twin_shop_display,distance=..3.5,sort=nearest,limit=1] run tag @s add twin_shop_display
+execute as @e[tag=twin_shop_display,limit=1,sort=nearest] run function zelda_oot:twins/animations/idle_sit/play
+
+summon interaction -393 8 -26.0 {width:1f,height:1f,response:true,Tags:["twin_shop_click"]}
+
+#Twin Door
+execute positioned -448.36 6.00 -16.41 rotated -97.51 0 run function zelda_oot:twins/summon {args: {}}
+execute positioned -448.36 6.00 -16.41 as @e[type=minecraft:item_display,tag=zelda_oot.twins.root,tag=!twin_door_display,distance=..3.5,sort=nearest,limit=1] run tag @s add twin_door_display
+execute as @e[tag=twin_door_display,limit=1,sort=nearest] run function zelda_oot:twins/animations/idle_stand/play
+
+summon interaction -448.36 6.00 -16.41 {width:1f,height:2f,response:true,Tags:["twin_door_click"]}
+
+#Twin Pound
+execute positioned -419.64 5.00 -22.27 rotated 2160.40 0 run function zelda_oot:twins/summon {args: {}}
+execute positioned -419.64 5.00 -22.27 as @e[type=minecraft:item_display,tag=zelda_oot.twins.root,tag=!twin_pound_display,distance=..3.5,sort=nearest,limit=1] run tag @s add twin_pound_display
+execute as @e[tag=twin_pound_display,limit=1,sort=nearest] run function zelda_oot:twins/animations/idle_stand2/play
+
+summon interaction -419.64 5.00 -22.27 {width:1f,height:2f,response:true,Tags:["twin_pound_click"]}

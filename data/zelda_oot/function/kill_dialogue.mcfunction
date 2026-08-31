@@ -1,1 +1,4 @@
 kill @e[type=text_display,tag=fado_dialogue]
+kill @e[type=text_display,tag=twin_shop_dialogue]
+kill @e[type=text_display,tag=twin_door_dialogue]
+kill @e[type=text_display,tag=twin_pound_dialogue]
