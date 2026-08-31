@@ -124,12 +124,22 @@ summon armor_stand -440 4.5 -9 {CustomName:"rupees",Tags:["green"],Invisible:1b,
 
 tag @a remove trial_pound_finished
 
+#Prevent griefing
+summon interaction -475 3 -25.0 {width:7.5f,height:8f,response:false,Tags:["blocked"]}
+summon interaction -433 16 -66 {width:7.5f,height:8f,response:false,Tags:["blocked"]}
+summon interaction -450 8 26 {width:11.5f,height:4f,response:false,Tags:["blocked"]}
+summon interaction -461 10 3 {width:4f,height:2.5f,response:false,Tags:["blocked"]}
+summon interaction -385 5 9 {width:4f,height:2.5f,response:false,Tags:["blocked"]}
+summon interaction -393 7.5 -28 {width:3.5f,height:1f,response:false,Tags:["blocked"]}
+summon interaction -435.0 5 -31 {width:2.5f,height:3f,response:false,Tags:["blocked"]}
+
 #Load NPC
 #Fado
 execute positioned -420.45 10.06 -14 rotated 270.79 0.10 run function zelda_oot:fado/summon {args: {}}
 execute positioned -420.45 10.06 -14 as @e[type=minecraft:item_display,tag=zelda_oot.fado.root,tag=!fado_display,distance=..3.5,sort=nearest,limit=1] run tag @s add fado_display
+execute as @e[tag=fado_display,limit=1,sort=nearest] run function zelda_oot:fado/animations/idle/play
 
 summon interaction -421 10 -14 {width:1f,height:2f,response:true,Tags:["fado_click"]}
 summon interaction -421 9 -14 {width:4f,height:1f,response:false,Tags:["blocked"]}
+summon interaction -421 8 -11 {width:4f,height:4f,response:false,Tags:["blocked"]}
 
-execute as @e[tag=fado_display,limit=1,sort=nearest] run function zelda_oot:fado/animations/idle/play

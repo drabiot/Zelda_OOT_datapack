@@ -54,3 +54,5 @@ summon minecraft:falling_block -444 10 49 {Time:-1000000,NoGravity:true,BlockSta
 #Load Green Rupees
 summon armor_stand -442.0 9.5 46 {CustomName:"rupees",Tags:["green"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:lime_concrete}}}
 summon armor_stand -442.0 9.5 40 {CustomName:"rupees",Tags:["green"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:lime_concrete}}}
+
+summon interaction -450 8 26 {width:11.5f,height:4f,response:false,Tags:["blocked"]}
