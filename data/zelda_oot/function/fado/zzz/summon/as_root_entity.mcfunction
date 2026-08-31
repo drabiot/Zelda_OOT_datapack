@@ -12,7 +12,7 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.blueprint_id set value "zelda_oot:fado"
-data modify storage animated_java:temp entry.data.rig_hash set value "3ac93babca366c812bc05b2b98a5343df68604b44f5a74b3becdbcad01327c38"
+data modify storage animated_java:temp entry.data.rig_hash set value "7e38a2c45e159c2b4eeb64a591281078e667a77ce0d9432f713c4075cad8c712"
 tp @s ~ ~ ~ ~ ~
 execute on passengers if entity @s[tag=zelda_oot.fado.node.head] run function zelda_oot:fado/zzz/summon/as_node/head
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
