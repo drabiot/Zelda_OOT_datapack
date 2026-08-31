@@ -6,3 +6,4 @@ $execute as $(right_arm) run function zelda_oot:link/variants/default/zzz/apply_
 $execute as $(left_leg) run function zelda_oot:link/variants/default/zzz/apply_to_node_left_leg
 $execute as $(right_leg) run function zelda_oot:link/variants/default/zzz/apply_to_node_right_leg
 $execute as $(ocarina) run function zelda_oot:link/variants/default/zzz/apply_to_node_ocarina
+$execute as $(music) run function zelda_oot:link/variants/default/zzz/apply_to_node_music

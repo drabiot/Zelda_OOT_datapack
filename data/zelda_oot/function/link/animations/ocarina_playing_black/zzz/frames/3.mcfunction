@@ -4,3 +4,4 @@ $data merge entity $(body) {transformation: [-1f,0f,0f,0f,0f,1f,0f,1.4784f,0f,0f
 $data merge entity $(left_arm) {transformation: [-0.9372f,0.2436f,0.2496f,0.3125f,-0.2087f,0.1819f,-0.9609f,1.3125f,-0.2795f,-0.9527f,-0.1197f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(right_arm) {transformation: [-0.925f,-0.378f,-0.0377f,-0.3125f,0.0141f,0.065f,-0.9978f,1.3125f,0.3796f,-0.9235f,-0.0548f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(ocarina) {transformation: [0.9914f,0.1305f,0f,-0.7844f,-0.113f,0.8586f,0.5f,1.2594f,0.0653f,-0.4957f,0.866f,0.3344f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(music) {transformation: [-0.64f,0f,0f,0.2775f,0f,0.48f,0f,1.5175f,0f,0f,-0.4f,0.5f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}

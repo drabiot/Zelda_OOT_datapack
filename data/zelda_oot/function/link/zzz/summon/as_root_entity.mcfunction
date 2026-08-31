@@ -12,7 +12,7 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.blueprint_id set value "zelda_oot:link"
-data modify storage animated_java:temp entry.data.rig_hash set value "2f505225a7cbfab391bea08f41609220cb1c93037e444e9c5ef2646a98290424"
+data modify storage animated_java:temp entry.data.rig_hash set value "57d49bd215f1f76facfcef906b1a67c0fd6f6064e3d595c346421bf3aa26221c"
 tp @s ~ ~ ~ ~ ~
 execute on passengers if entity @s[tag=zelda_oot.link.node.head] run function zelda_oot:link/zzz/summon/as_node/head
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
@@ -35,6 +35,9 @@ data modify storage animated_java:temp entry.data.uuids_by_name.right_leg set fr
 execute on passengers if entity @s[tag=zelda_oot.link.node.ocarina] run function zelda_oot:link/zzz/summon/as_node/ocarina
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.ocarina set from storage animated_java:gu out
+execute on passengers if entity @s[tag=zelda_oot.link.node.music] run function zelda_oot:link/zzz/summon/as_node/music
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.music set from storage animated_java:gu out
 # Data Manager: Write
 function animated_java:global/data_manager/write with storage animated_java:temp args
 function zelda_oot:link/zzz/set_default_pose
