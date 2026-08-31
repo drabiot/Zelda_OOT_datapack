@@ -3,3 +3,4 @@ data modify storage zelda_oot:twins rig_hash set value 'b3ff30aeabb7089291db0413
 scoreboard objectives add aj.idle_stand.frame dummy
 scoreboard objectives add aj.idle_stand2.frame dummy
 scoreboard objectives add aj.idle_sit.frame dummy
+scoreboard objectives add aj.idle_sit2.frame dummy

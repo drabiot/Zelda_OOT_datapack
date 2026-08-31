@@ -34,3 +34,11 @@ summon interaction -394 -5.2 -40 {width:0.5f,height:0.5f,response:true,Tags:["de
 summon interaction -394 -4.2 -40 {width:0.5f,height:0.5f,response:true,Tags:["arrow_10_click"]}
 summon interaction -395 -5.2 -39 {width:0.5f,height:0.5f,response:true,Tags:["arrow_30_click"]}
 summon interaction -395 -4.2 -39 {width:0.5f,height:0.5f,response:true,Tags:["heart_click"]}
+
+#Load NPC
+#Twin Inside Shop
+execute positioned -396.13 -7.00 -35.77 rotated 302.03 0 run function zelda_oot:twins/summon {args: {}}
+execute positioned -396.13 -7.00 -35.77 as @e[type=minecraft:item_display,tag=zelda_oot.twins.root,tag=!twin_inside_shop_display,distance=..3.5,sort=nearest,limit=1] run tag @s add twin_inside_shop_display
+execute as @e[tag=twin_inside_shop_display,limit=1,sort=nearest] run function zelda_oot:twins/animations/idle_stand2/play
+
+summon interaction -396 -7 -36 {width:1f,height:2f,response:true,Tags:["twin_inside_shop_click"]}

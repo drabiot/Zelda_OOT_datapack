@@ -74,3 +74,42 @@ execute if entity @a[tag=confirm_twin_pound_click] as @e[type=text_display,tag=t
 execute as @a[tag=confirm_twin_pound_click] run tag @a remove twin_pound_click
 execute as @a[tag=confirm_twin_pound_click] run tag @a remove confirm_twin_pound_click
 
+#Twin Inside Shop
+execute as @e[type=interaction,tag=twin_inside_shop_click,nbt={interaction:{}}] run tag @a add twin_inside_shop_click
+execute as @a[tag=twin_inside_shop_click] run kill @e[type=minecraft:interaction,tag=twin_inside_shop_click]
+execute as @a[tag=twin_inside_shop_click] run tag @a add confirm_twin_inside_shop_click
+execute as @a[tag=confirm_twin_inside_shop_click] at @e[tag=twin_inside_shop_click,limit=1] \
+    run summon minecraft:interaction -396 -7 -36 {width:1f,height:2f,response:true,Tags:["twin_inside_shop_click"]}
+
+execute as @a[tag=confirm_twin_inside_shop_click] positioned -396 -5 -34 unless entity @e[type=text_display,tag=npc_display,distance=..2] \
+	run execute as @a[] at @s rotated as @s rotated ~ 0 positioned -396 -5 -34 \
+	run summon text_display ^ ^ ^ \
+	{CustomName:'"npc_display"',Tags:["twin_inside_shop_dialogue","npc_display"],\
+	transformation:{translation:[0f,0f,0f],right_rotation:[0f,1.5f,0f,1f],left_rotation:[0f,0f,0f,1f],scale:[1f,1f,1f]},\
+	text:[{text:"This shop...It sells things you can get in the forest for free! Tee hee!\n\nDo you know how to use the "},\
+	{text:"Deku Shield",color:"red"},{text:"? Tee hee! When you get the shield, equip it and press {right click}"}]}
+
+execute if entity @a[tag=confirm_twin_inside_shop_click] as @e[type=text_display,tag=twin_inside_shop_dialogue] run schedule function zelda_oot:kill_dialogue 130t
+execute as @a[tag=confirm_twin_inside_shop_click] run tag @a remove twin_inside_shop_click
+execute as @a[tag=confirm_twin_inside_shop_click] run tag @a remove confirm_twin_inside_shop_click
+
+#Twin Inside House
+execute as @e[type=interaction,tag=twin_inside_house_click,nbt={interaction:{}}] run tag @a add twin_inside_house_click
+execute as @a[tag=twin_inside_house_click] run kill @e[type=minecraft:interaction,tag=twin_inside_house_click]
+execute as @a[tag=twin_inside_house_click] run tag @a add confirm_twin_inside_house_click
+execute as @a[tag=confirm_twin_inside_house_click] at @e[tag=twin_inside_house_click,limit=1] \
+    run summon minecraft:interaction -388.19 -6.50 18.21 {width:1f,height:1f,response:true,Tags:["twin_inside_house_click"]}
+
+execute as @a[tag=confirm_twin_inside_house_click] positioned -387 -5 19 unless entity @e[type=text_display,tag=npc_display,distance=..2] \
+	run execute as @a[] at @s rotated as @s rotated ~ 0 positioned -387 -5 19 \
+	run summon text_display ^ ^ ^ \
+	{CustomName:'"npc_display"',Tags:["twin_inside_house_dialogue","npc_display"],\
+	transformation:{translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,3.5f,0f,1f],scale:[1f,1f,1f]},\
+	text:[{text:"My sister took some Rupees and went shopping at the store that has a red roof. Tee hee!\n\nSpeaking of "},\
+	{text:"Rupees",color:"red"},{text:", a "},{text:"green",color:"green"},{text:" one is worth one, a "},\
+	{text:"blue",color:"blue"},{text:" one is worth five and a "},{text:"red",color:"red"},{text:" one is worth twenty. Hee hee!"}]}
+
+execute if entity @a[tag=confirm_twin_inside_house_click] as @e[type=text_display,tag=twin_inside_house_dialogue] run schedule function zelda_oot:kill_dialogue 200t
+execute as @a[tag=confirm_twin_inside_house_click] run tag @a remove twin_inside_house_click
+execute as @a[tag=confirm_twin_inside_house_click] run tag @a remove confirm_twin_inside_house_click
+

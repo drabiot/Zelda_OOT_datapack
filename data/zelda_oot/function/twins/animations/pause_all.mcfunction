@@ -2,3 +2,4 @@
 tag @s remove zelda_oot.twins.animation.idle_stand.playing
 tag @s remove zelda_oot.twins.animation.idle_stand2.playing
 tag @s remove zelda_oot.twins.animation.idle_sit.playing
+tag @s remove zelda_oot.twins.animation.idle_sit2.playing
