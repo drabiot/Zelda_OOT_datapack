@@ -1,6 +1,8 @@
 #Prevent lightning damage
 execute at @e[type=lightning_bolt] run fill ~-2 ~-1 ~-2 ~2 ~2 ~2 air replace fire
 
+effect give drabiot minecraft:saturation infinite 1 true
+effect give drabiot minecraft:instant_health infinite 10 true
 experience set @a 0 levels
 
 #Deny glowing effect to all entities that don't have the allow_glow tag
