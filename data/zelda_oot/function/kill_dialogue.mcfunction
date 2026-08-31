@@ -1,0 +1,1 @@
+kill @e[type=text_display,tag=fado_dialogue]

@@ -7,6 +7,10 @@
 			"required": false
 		},
 		{
+			"id": "zelda_oot:check_npc",
+			"required": false
+		},
+		{
 			"id": "zelda_oot:game/breakable/check_stone",
 			"required": false
 		},
@@ -75,6 +79,10 @@
 			"required": false
 		},
 		{
+			"id": "zelda_oot:items/ocarina/song/reward/check_warping",
+			"required": false
+		},
+		{
 			"id": "zelda_oot:items/rupees/rupees_on_ground",
 			"required": false
 		},
@@ -96,10 +104,6 @@
 		},
 		{
 			"id": "zelda_oot:motion/loop",
-			"required": false
-		},
-		{
-			"id":  "zelda_oot:items/ocarina/song/reward/check_warping",
 			"required": false
 		},
 		{

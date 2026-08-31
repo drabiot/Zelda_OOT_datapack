@@ -124,14 +124,12 @@ summon armor_stand -440 4.5 -9 {CustomName:"rupees",Tags:["green"],Invisible:1b,
 
 tag @a remove trial_pound_finished
 
+#Load NPC
+#Fado
+execute positioned -420.45 10.06 -14 rotated 270.79 0.10 run function zelda_oot:fado/summon {args: {}}
+execute positioned -420.45 10.06 -14 as @e[type=minecraft:item_display,tag=zelda_oot.fado.root,tag=!fado_display,distance=..3.5,sort=nearest,limit=1] run tag @s add fado_display
 
+summon interaction -421 10 -14 {width:1f,height:2f,response:true,Tags:["fado_click"]}
+summon interaction -421 9 -14 {width:4f,height:1f,response:false,Tags:["blocked"]}
 
-
-
-
-
-
-
-
-
-
+execute as @e[tag=fado_display,limit=1,sort=nearest] run function zelda_oot:fado/animations/idle/play
