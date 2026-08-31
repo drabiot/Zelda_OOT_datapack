@@ -22,12 +22,14 @@ Even if this datapack add world based event, it also create The Legend of Zelda 
     - [Admin](#admin)
 	- [Player Status](#player-status)
 	- [Kokiri Forest](#kokiri-forest)
+  - [Sources](#sources)
+  - [Thanks](#thanks)
 
 ## BASIC INFORMATION
 
 The datapack and the map cover only the Kokiri Forest & the Great Deku Tree for the moment. 
 
-To have the true experience combine the datapack with the Adventure Map & the [Zelda Ocarina of Time texturepack](https://github.com/drabiot/Zelda_OOT_texturepack). Moreover, this datapack work only for singleplayer and may have bugs when played in multiplayer.
+To have the true experience combine the datapack with the Adventure Map & the [Zelda Ocarina of Time ressourcepack](https://github.com/drabiot/Zelda_OOT_texturepack). Moreover, this datapack work only for singleplayer and may have bugs when played in multiplayer.
 
 The datapack run in minecraft version 26.2 & above.
 
@@ -114,3 +116,32 @@ You can crawl everywhere at any time (except in dialogue & cinematic)
 | deku_tree_again | Check if you already talked to the Deku Tree | ❌ |  Remove after speaking to the Greate Deku Tree |
 | deku_tree_d_finish | Check if the Deku Tree dialogue is finished | ✅ |  |
 | bullseye_challenge | Check if you complete the bullseye challenge in the Lost Wood | ✅ |  |
+
+## SOURCE
+- [AmberWat](https://github.com/AmberWat/NegativeSpaceFont) for usage of negative space for displaying the healthbar
+- [Cl0udWolf](https://www.youtube.com/@Cl0udWolf) for the datapack learning
+
+## THANKS
+And a big tanhks to all my friends that have support me on this project & help me a lot (more a little)
+
+- [Basilounet](https://github.com/basilounet)
+- [Radvak](https://github.com/Radvak)
+
+Who help me with tedious and boring task
+
+
+- [PGBmax](https://github.com/PGBmax)
+- [Manualouest](https://github.com/Manualouest)
+- [Xeotham](https://github.com/Xeotham)
+- Yahiko
+
+Who see my journey and encourage me
+
+
+- [Thomas](https://github.com/Convolutio)
+- [noenic](https://github.com/noenic)
+- Pkrazy
+
+Who playtest the demo
+
+And a big thank to Ishi-sama without whom the project would never have existed. Even though our paths have diverged, I am grateful to him, and I am proud of what I have achieved, considering what the project looked like in the beginning.
