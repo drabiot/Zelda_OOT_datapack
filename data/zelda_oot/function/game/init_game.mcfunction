@@ -1,3 +1,7 @@
+#Reset Health
+scoreboard players set @a max_health 12
+scoreboard players set @a player_health 12
+
 #Basic Reset
 function zelda_oot:scoreboard/wallet/reset_wallet
 function zelda_oot:scoreboard/deku_nut/reset_deku_nut

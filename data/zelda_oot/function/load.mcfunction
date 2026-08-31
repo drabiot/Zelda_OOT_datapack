@@ -1,6 +1,10 @@
 tellraw @a {"text":"Datapack : Zelda OOT loaded","color":"yellow"}
 gamerule minecraft:show_advancement_messages false
 
+#Add Health
+scoreboard objectives add max_health dummy
+scoreboard objectives add player_health dummy
+
 #Add Motion
 scoreboard objectives add motion_x1 dummy
 scoreboard objectives add motion_y1 dummy

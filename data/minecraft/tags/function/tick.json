@@ -6,6 +6,9 @@
 
 		{ "id": "zelda_oot:advancement/advancement", "required": false },
 
+		{ "id": "zelda_oot:health/kill_player", "required": false },
+		{ "id": "zelda_oot:health/display_health", "required": false },
+
 		{ "id": "zelda_oot:game/swim_event", "required": false },
 
 		{ "id": "zelda_oot:items/ocarina/check_note", "required": false },
