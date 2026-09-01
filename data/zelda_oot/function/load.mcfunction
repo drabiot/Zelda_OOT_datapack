@@ -6,7 +6,11 @@ scoreboard objectives add max_health dummy
 scoreboard objectives add player_health dummy
 
 #Add Motion
-scoreboard objectives add motion_player dummy
+scoreboard objectives add roll dummy
+scoreboard players set @a roll 0
+
+scoreboard objectives add is_rolling dummy
+scoreboard players set @a is_rolling 0
 
 scoreboard objectives add motion_x1 dummy
 scoreboard objectives add motion_y1 dummy
