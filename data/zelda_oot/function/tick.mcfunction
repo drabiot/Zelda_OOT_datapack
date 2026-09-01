@@ -9,6 +9,11 @@ experience set @a 0 levels
 effect clear @e[type=!item_display,type=!arrow,type=!spectral_arrow,type=!marker,type=!text_display,type=!block_display,tag=!allow_glow] minecraft:glowing
 
 #Movement
+execute as @a[nbt={OnGround:1b},tag=in_backflip] at @s run tag @s remove in_backflip
+
+execute as @a[predicate=zelda_oot:movement/backflip,tag=!in_backflip,tag=!dev] run scoreboard players set $strength player_motion.api.launch -10000
+execute as @a[predicate=zelda_oot:movement/backflip,tag=!in_backflip,tag=!dev] at @s run function player_motion:api/launch_looking
+execute as @a[predicate=zelda_oot:movement/backflip,tag=!in_backflip,tag=!dev] run tag @s add in_backflip
 
 
 #Sneak
