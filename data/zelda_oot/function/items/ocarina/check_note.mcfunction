@@ -42,10 +42,15 @@ execute as @a[tag=ocarina_center_click] run tag @a add confirm_ocarina_center_cl
 execute as @a[tag=confirm_ocarina_center_click] at @e[tag=ocarina_note_middle,limit=1] \
     run summon interaction ~ ~-0.1 ~ {width:0.3f,height:0.3f,response:true,Tags:["ocarina_center_click","ocarina_display"]}
 
+execute as @a[predicate=zelda_oot:movement/jump,tag=!confirm_ocarina_center_click,tag=!ocarina_center_cooldown,tag=playing_ocarina] run tag @s add confirm_ocarina_center_click
 execute as @a[tag=confirm_ocarina_center_click] run scoreboard players set @a ocarina_note 1
 execute as @a[tag=confirm_ocarina_center_click] run function zelda_oot:items/ocarina/check_songs
 execute as @a[tag=confirm_ocarina_center_click] as @a at @s run playsound minecraft:block.note_block.flute master @s ~ ~ ~ 5 1.0
 execute if entity @a[tag=confirm_ocarina_center_click] as @a[tag=playing_ocarina,tag=!already_playing] at @s run execute as @e[tag=link_display,distance=..4,limit=1,sort=nearest] run function zelda_oot:link/animations/ocarina_playing_black/play
+
+execute as @a[tag=confirm_ocarina_center_click,tag=!ocarina_center_cooldown] run schedule function zelda_oot:items/ocarina/input/stop_center 5t
+execute as @a[tag=confirm_ocarina_center_click,tag=!ocarina_center_cooldown] run tag @s add ocarina_center_cooldown
+
 execute as @a[tag=confirm_ocarina_center_click] run tag @a remove ocarina_center_click
 execute as @a[tag=confirm_ocarina_center_click] run tag @a remove confirm_ocarina_center_click
 
@@ -56,10 +61,15 @@ execute as @a[tag=ocarina_up_click] run tag @a add confirm_ocarina_up_click
 execute as @a[tag=confirm_ocarina_up_click] at @e[tag=ocarina_note_up,limit=1] \
     run summon interaction ~ ~-0.1 ~ {width:0.3f,height:0.3f,response:true,Tags:["ocarina_up_click","ocarina_display"]}
 
+execute as @a[predicate=zelda_oot:movement/forward,tag=!confirm_ocarina_up_click,tag=!ocarina_up_cooldown,tag=playing_ocarina] run tag @s add confirm_ocarina_up_click
 execute as @a[tag=confirm_ocarina_up_click] run scoreboard players set @a ocarina_note 2
 execute as @a[tag=confirm_ocarina_up_click] run function zelda_oot:items/ocarina/check_songs
 execute as @a[tag=confirm_ocarina_up_click] as @a at @s run playsound minecraft:block.note_block.flute master @s ~ ~ ~ 5 1.19
 execute if entity @a[tag=confirm_ocarina_up_click] as @a[tag=playing_ocarina,tag=!already_playing] at @s run execute as @e[tag=link_display,distance=..4,limit=1,sort=nearest] run function zelda_oot:link/animations/ocarina_playing_red/play
+
+execute as @a[tag=confirm_ocarina_up_click,tag=!ocarina_up_cooldown] run schedule function zelda_oot:items/ocarina/input/stop_up 5t
+execute as @a[tag=confirm_ocarina_up_click,tag=!ocarina_up_cooldown] run tag @s add ocarina_up_cooldown
+
 execute as @a[tag=confirm_ocarina_up_click] run tag @a remove ocarina_up_click
 execute as @a[tag=confirm_ocarina_up_click] run tag @a remove confirm_ocarina_up_click
 
@@ -70,10 +80,15 @@ execute as @a[tag=ocarina_down_click] run tag @a add confirm_ocarina_down_click
 execute as @a[tag=confirm_ocarina_down_click] at @e[tag=ocarina_note_down,limit=1] \
     run summon interaction ~ ~-0.1 ~ {width:0.3f,height:0.3f,response:true,Tags:["ocarina_down_click","ocarina_display"]}
 
+execute as @a[predicate=zelda_oot:movement/backward,tag=!confirm_ocarina_down_click,tag=!ocarina_down_cooldown,tag=playing_ocarina] run tag @s add confirm_ocarina_down_click
 execute as @a[tag=confirm_ocarina_down_click] run scoreboard players set @a ocarina_note 3
 execute as @a[tag=confirm_ocarina_down_click] run function zelda_oot:items/ocarina/check_songs
 execute as @a[tag=confirm_ocarina_down_click] as @a at @s run playsound minecraft:block.note_block.flute master @s ~ ~ ~ 5 0.75
 execute if entity @a[tag=confirm_ocarina_down_click] as @a[tag=playing_ocarina,tag=!already_playing] at @s run execute as @e[tag=link_display,distance=..4,limit=1,sort=nearest] run function zelda_oot:link/animations/ocarina_playing_blue/play
+
+execute as @a[tag=confirm_ocarina_down_click,tag=!ocarina_down_cooldown] run schedule function zelda_oot:items/ocarina/input/stop_down 5t
+execute as @a[tag=confirm_ocarina_down_click,tag=!ocarina_down_cooldown] run tag @s add ocarina_down_cooldown
+
 execute as @a[tag=confirm_ocarina_down_click] run tag @a remove ocarina_down_click
 execute as @a[tag=confirm_ocarina_down_click] run tag @a remove confirm_ocarina_down_click
 
@@ -84,10 +99,15 @@ execute as @a[tag=ocarina_left_click] run tag @a add confirm_ocarina_left_click
 execute as @a[tag=confirm_ocarina_left_click] at @e[tag=ocarina_note_left,limit=1] \
     run summon interaction ~ ~-0.1 ~ {width:0.3f,height:0.3f,response:true,Tags:["ocarina_left_click","ocarina_display"]}
 
+execute as @a[predicate=zelda_oot:movement/left,tag=!confirm_ocarina_left_click,tag=!ocarina_left_cooldown,tag=playing_ocarina] run tag @s add confirm_ocarina_left_click
 execute as @a[tag=confirm_ocarina_left_click] run scoreboard players set @a ocarina_note 4
 execute as @a[tag=confirm_ocarina_left_click] run function zelda_oot:items/ocarina/check_songs
 execute as @a[tag=confirm_ocarina_left_click] as @a at @s run playsound minecraft:block.note_block.flute master @s ~ ~ ~ 5 0.84
 execute if entity @a[tag=confirm_ocarina_left_click] as @a[tag=playing_ocarina,tag=!already_playing] at @s run execute as @e[tag=link_display,distance=..4,limit=1,sort=nearest] run function zelda_oot:link/animations/ocarina_playing_yellow/play
+
+execute as @a[tag=confirm_ocarina_left_click,tag=!ocarina_left_cooldown] run schedule function zelda_oot:items/ocarina/input/stop_left 5t
+execute as @a[tag=confirm_ocarina_left_click,tag=!ocarina_left_cooldown] run tag @s add ocarina_left_cooldown
+
 execute as @a[tag=confirm_ocarina_left_click] run tag @a remove ocarina_left_click
 execute as @a[tag=confirm_ocarina_left_click] run tag @a remove confirm_ocarina_left_click
 
@@ -98,9 +118,14 @@ execute as @a[tag=ocarina_right_click] run tag @a add confirm_ocarina_right_clic
 execute as @a[tag=confirm_ocarina_right_click] at @e[tag=ocarina_note_right,limit=1] \
     run summon interaction ~ ~-0.1 ~ {width:0.3f,height:0.3f,response:true,Tags:["ocarina_right_click","ocarina_display"]}
 
+execute as @a[predicate=zelda_oot:movement/right,tag=!confirm_ocarina_right_click,tag=!ocarina_right_cooldown,tag=playing_ocarina] run tag @s add confirm_ocarina_right_click
 execute as @a[tag=confirm_ocarina_right_click] run scoreboard players set @a ocarina_note 5
 execute as @a[tag=confirm_ocarina_right_click] run function zelda_oot:items/ocarina/check_songs
 execute as @a[tag=confirm_ocarina_right_click] as @a at @s run playsound minecraft:block.note_block.flute master @s ~ ~ ~ 5 1.7
 execute if entity @a[tag=confirm_ocarina_right_click] as @a[tag=playing_ocarina,tag=!already_playing] at @s run execute as @e[tag=link_display,distance=..4,limit=1,sort=nearest] run function zelda_oot:link/animations/ocarina_playing_green/play
+
+execute as @a[tag=confirm_ocarina_right_click,tag=!ocarina_right_cooldown] run schedule function zelda_oot:items/ocarina/input/stop_right 5t
+execute as @a[tag=confirm_ocarina_right_click,tag=!ocarina_right_cooldown] run tag @s add ocarina_right_cooldown
+
 execute as @a[tag=confirm_ocarina_right_click] run tag @a remove ocarina_right_click
 execute as @a[tag=confirm_ocarina_right_click] run tag @a remove confirm_ocarina_right_click
