@@ -1,8 +1,8 @@
 execute as @a if score @s player_health > @s max_health run scoreboard players remove @s player_health 1
 execute as @a if entity @s[scores={max_health=81..}] run scoreboard players remove @s max_health 1
 
-execute as @a if entity @s[gamemode=creative] run return run kill @e[type=armor_stand,tag=inexistant_dummy_tag]
-execute as @a if entity @s[gamemode=spectator] run return run kill @e[type=armor_stand,tag=inexistant_dummy_tag]
+execute as @a if entity @s[gamemode=creative] run return run title @a[gamemode=creative] actionbar [{"text":""}]
+execute as @a if entity @s[gamemode=spectator] run return run title @a[gamemode=spectator] actionbar [{"text":""}]
 
 #1 Heart
 execute as @a[scores={player_health=0}] if entity @s[scores={max_health=4}] run title @s actionbar [{"text":"\uF821"},{"text":"\uE004\uF802"}]
