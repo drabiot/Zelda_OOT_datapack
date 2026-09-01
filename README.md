@@ -121,6 +121,7 @@ You can crawl everywhere at any time (except in dialogue & cinematic)
 ## SOURCE
 - [AmberWat](https://github.com/AmberWat/NegativeSpaceFont) for usage of negative space for displaying the healthbar
 - [Cl0udWolf](https://www.youtube.com/@Cl0udWolf) for the datapack learning
+- [Player Motion datapack](https://modrinth.com/datapack/player_motion?version=1.21.8&loader=datapack) that help me manage movement
 
 ## THANKS
 And a big tanhks to all my friends that have support me on this project & help me a lot (more a little)
