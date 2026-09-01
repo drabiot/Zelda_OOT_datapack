@@ -26,15 +26,15 @@ function zelda_oot:game/kokiri_forest/dialogue/deku_tree/animation/m1
 #Reset First dialogue
 tag @a remove way_to_deku_tree
 
+#Init Reward's Tag
+tag @a remove mido_reward_blue_1
+tag @a remove mido_reward_blue_2
+tag @a remove mido_reward_green
+tag @a remove mido_reward_heart
+
 #Reset Deku Tree
 tag @a remove deku_tree_again
 tag @a remove deku_tree_d_finish
-
-#Init Reward's Tag
-tag @a add mido_reward_blue_1
-tag @a add mido_reward_blue_2
-tag @a add mido_reward_green
-tag @a add mido_reward_heart
 
 #Remove Advancement
 tag @a remove bullseye_challenge
@@ -48,6 +48,11 @@ summon armor_stand -413 11.1 12 {CustomName:"heart",Invisible:1b,NoBasePlate:1b,
 summon armor_stand -420 9.5 -14 {CustomName:"rupees",Tags:["blue"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:blue_concrete}}}
 summon armor_stand -436 7.5 -43 {CustomName:"rupees",Tags:["blue"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:blue_concrete}}}
 summon armor_stand -389 -7.5 -41 {CustomName:"rupees",Tags:["blue"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:blue_concrete}}}
+
+summon armor_stand -447 12 12 {CustomName:"rupees",Tags:["blue"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b}
+summon armor_stand -441.0 10 6 {CustomName:"rupees",Tags:["blue"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b}
+
+
 
 #Spawn Kokiri's Trial Blue Rupees
 summon armor_stand -457 9.5 37 {CustomName:"rupees",Tags:["blue"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:blue_concrete}}}

@@ -67,7 +67,7 @@ summon minecraft:falling_block -442 5 -7 {Time:-1000000,NoGravity:true,BlockStat
 
 
 #Load sign
-setblock -452 10 19 spruce_sign[rotation=8]{front_text:{messages:[[{"text":"Hole of 'Z'","color":"light_purple"}],[{"text":"Let's go","color":"white"}],[{"text":"through this","color":"white"}],[{"text":"small hole!","color":"white"}]]},is_waxed:true} replace
+setblock -452 10 19 spruce_sign[rotation=8]{front_text:{messages:[[{"text":"Hole of 'Z'","color":"light_purple"}],[{"text":"Let's go through","color":"white"}],[{"text":"this small hole!","color":"white"}],[{"text":"press {","color":"white"},{"text":"sneak","color":"blue"},{"text":"}","color":"white"}]]},is_waxed:true} replace
 setblock -425 3 18 spruce_sign[rotation=8]{front_text:{messages:["",[{"text":"Link's","color":"white"}],[{"text":"House","color":"white"}],""]},is_waxed:true} replace
 setblock -401 5 -19 spruce_sign[rotation=13]{front_text:{messages:[[{"text":"Stepping","color":"dark_red"}],[{"text":"Stone","color":"dark_red"}],[{"text":"in the","color":"white"}],[{"text":"Pond","color":"white"}]]},is_waxed:true} replace
 setblock -391 5 -5 spruce_sign[rotation=4]{front_text:{messages:[[{"text":"Just ahead:","color":"white"}],[{"text":"Great Deku","color":"green"}],[{"text":"Tree's","color":"green"}],[{"text":"Meadows","color":"green"}]]},is_waxed:true} replace
