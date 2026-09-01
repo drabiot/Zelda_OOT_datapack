@@ -1,0 +1,12 @@
+{
+  "condition": "minecraft:inverted",
+  "term": {
+    "condition": "minecraft:location_check",
+    "offsetY": 1,
+    "predicate": {
+      "block": {
+        "blocks": "#minecraft:air"
+      }
+    }
+  }
+}
