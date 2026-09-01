@@ -11,9 +11,7 @@ effect clear @e[type=!item_display,type=!arrow,type=!spectral_arrow,type=!marker
 #Movement
 execute as @a[nbt={OnGround:1b},tag=in_backflip] at @s run tag @s remove in_backflip
 
-execute as @a[predicate=zelda_oot:movement/backflip,tag=!in_backflip,tag=!dev] run scoreboard players set $strength player_motion.api.launch -10000
-execute as @a[predicate=zelda_oot:movement/backflip,tag=!in_backflip,tag=!dev] at @s run function player_motion:api/launch_looking
-execute as @a[predicate=zelda_oot:movement/backflip,tag=!in_backflip,tag=!dev] run tag @s add in_backflip
+function zelda_oot:motion/backflip
 
 
 #Sneak

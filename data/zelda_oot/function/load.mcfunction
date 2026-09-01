@@ -6,6 +6,8 @@ scoreboard objectives add max_health dummy
 scoreboard objectives add player_health dummy
 
 #Add Motion
+scoreboard objectives add motion_player dummy
+
 scoreboard objectives add motion_x1 dummy
 scoreboard objectives add motion_y1 dummy
 scoreboard objectives add motion_z1 dummy
