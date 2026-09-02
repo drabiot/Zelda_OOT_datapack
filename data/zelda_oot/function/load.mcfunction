@@ -6,6 +6,11 @@ scoreboard objectives add max_health dummy
 scoreboard objectives add player_health dummy
 
 #Add Motion
+scoreboard players set $x player_motion.api.launch 0
+scoreboard players set $y player_motion.api.launch 0
+scoreboard players set $z player_motion.api.launch 0
+scoreboard players set $strength player_motion.api.launch -10000
+
 scoreboard objectives add roll dummy
 scoreboard players set @a roll 0
 

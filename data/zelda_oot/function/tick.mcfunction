@@ -13,6 +13,8 @@ execute as @a[nbt={OnGround:1b},tag=in_backflip] at @s run tag @s remove in_back
 
 function zelda_oot:motion/backflip
 function zelda_oot:motion/roll
+function zelda_oot:motion/sidestep_left
+function zelda_oot:motion/sidestep_right
 
 #Sneak
 execute as @a if score @s sneak_time > @s sneak_prev run tag @s add is_sneak
@@ -21,9 +23,6 @@ execute as @a unless score @s sneak_time > @s sneak_prev run tag @s remove is_sn
 scoreboard players operation @a sneak_prev = @a sneak_time
 
 attribute @a[nbt={OnGround:1b},tag=is_sneak,tag=!dev,tag=!dialogue,tag=!kokiri_shop,limit=1] jump_strength base set 0
-
-attribute @a[tag=!is_sneak,tag=!dialogue,tag=!kokiri_shop,limit=1] camera_distance base reset
-attribute @a[tag=!is_sneak,tag=!dialogue,tag=!kokiri_shop,limit=1] scale base reset
 attribute @a[tag=!is_sneak,tag=!dialogue,tag=!kokiri_shop,limit=1] jump_strength base reset
 
 attribute @a[tag=!dev,tag=kokiri_shop,limit=1] jump_strength base set 0
