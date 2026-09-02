@@ -16,6 +16,15 @@ function zelda_oot:motion/roll
 function zelda_oot:motion/sidestep_left
 function zelda_oot:motion/sidestep_right
 
+execute as @a[tag=in_roll] at @s anchored eyes positioned ^ ^ ^0.8 unless block ~ ~ ~ minecraft:air \
+	unless block ~ ~ ~ #minecraft:flowers unless block ~ ~ ~ #minecraft:replaceable \
+	unless block ~ ~ ~ #minecraft:wool_carpets unless block ~ ~ ~ #minecraft:buttons \
+	unless block ~ ~ ~ minecraft:moss_carpet unless block ~ ~ ~ #minecraft:features_cannot_replace \
+	run function player_motion:api/hurt_roll
+
+
+
+
 #Sneak
 execute as @a if score @s sneak_time > @s sneak_prev run tag @s add is_sneak
 execute as @a unless score @s sneak_time > @s sneak_prev run tag @s remove is_sneak
