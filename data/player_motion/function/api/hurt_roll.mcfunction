@@ -1,4 +1,29 @@
 #> player_motion:api/hurt_roll
+#Sound Effect
+
+execute as @a[tag=!hurt] at @s run playsound minecraft:custom.link_roll_wall ambient @a ~ ~ ~ 1 1
+
+execute as @a[tag=!hurt] at @s if score @s random matches 0 run playsound minecraft:custom.younglink_hurt1 player @a ~ ~ ~ 1 1
+execute as @a[tag=!hurt] at @s if score @s random matches 1 run playsound minecraft:custom.younglink_hurt2 player @a ~ ~ ~ 1 1
+execute as @a[tag=!hurt] at @s if score @s random matches 2 run playsound minecraft:custom.younglink_hurt3 player @a ~ ~ ~ 1 1
+execute as @a[tag=!hurt] at @s if score @s random matches 3 run playsound minecraft:custom.younglink_hurt1 player @a ~ ~ ~ 1 1
+execute as @a[tag=!hurt] at @s if score @s random matches 4 run playsound minecraft:custom.younglink_hurt2 player @a ~ ~ ~ 1 1
+execute as @a[tag=!hurt] at @s if score @s random matches 5 run playsound minecraft:custom.younglink_hurt3 player @a ~ ~ ~ 1 1
+execute as @a[tag=!hurt] at @s if score @s random matches 6 run playsound minecraft:custom.younglink_hurt1 player @a ~ ~ ~ 1 1
+execute as @a[tag=!hurt] at @s if score @s random matches 7 run playsound minecraft:custom.younglink_hurt2 player @a ~ ~ ~ 1 1
+execute as @a[tag=!hurt] at @s if score @s random matches 8 run playsound minecraft:custom.younglink_hurt3 player @a ~ ~ ~ 1 1
+execute as @a[tag=!hurt] at @s if score @s random matches 9 run playsound minecraft:custom.younglink_hurt1 player @a ~ ~ ~ 1 1
+execute as @a[tag=!hurt] at @s if score @s random matches 10 run playsound minecraft:custom.younglink_hurt2 player @a ~ ~ ~ 1 1
+execute as @a[tag=!hurt] at @s if score @s random matches 11 run playsound minecraft:custom.younglink_hurt3 player @a ~ ~ ~ 1 1
+execute as @a[tag=!hurt] at @s if score @s random matches 12 run playsound minecraft:custom.younglink_hurt1 player @a ~ ~ ~ 1 1
+execute as @a[tag=!hurt] at @s if score @s random matches 13 run playsound minecraft:custom.younglink_hurt2 player @a ~ ~ ~ 1 1
+execute as @a[tag=!hurt] at @s if score @s random matches 14 run playsound minecraft:custom.younglink_hurt3 player @a ~ ~ ~ 1 1
+execute as @a[tag=!hurt] at @s if score @s random matches 15 run playsound minecraft:custom.younglink_hurt1 player @a ~ ~ ~ 1 1
+
+execute as @a[tag=!hurt] at @s run tag @s add hurt
+
+tag @a remove in_roll
+
 # Launches the player in the input direction
 execute if entity @s[type=!player] run return fail
 execute on vehicle run return fail
@@ -17,3 +42,5 @@ scoreboard players operation @s player_motion.internal.motion.z += $out player_m
 
 # Force a constant vertical launch, ignoring look direction
 scoreboard players set @s player_motion.internal.motion.y -100000
+
+execute as @a at @s run tag @s remove hurt
