@@ -22,8 +22,13 @@ execute as @a[tag=in_roll] at @s anchored eyes positioned ^ ^ ^0.8 unless block 
 	unless block ~ ~ ~ minecraft:moss_carpet unless block ~ ~ ~ #minecraft:features_cannot_replace \
 	run function player_motion:api/hurt_roll
 
-execute as @a[tag=spinning] at @s run tp @s ^ ^ ^ ~18 ~
 
+#Spinning
+execute as @e[type=minecraft:acacia_boat,tag=rotator_vehicle,tag=spinning_boat] at @s run tp @s ~ ~ ~ ~27.5 ~
+execute as @a[tag=spinning] run scoreboard players remove @s spin_timer 1
+execute as @a[tag=spinning,scores={spin_timer=..0}] at @s run ride @s dismount
+execute as @a[tag=spinning,scores={spin_timer=..0}] at @s run kill @e[type=minecraft:acacia_boat,tag=rotator_vehicle,tag=spinning_boat,distance=..2]
+tag @a[tag=spinning,scores={spin_timer=..0}] remove spinning
 #Sneak
 execute as @a if score @s sneak_time > @s sneak_prev run tag @s add is_sneak
 execute as @a unless score @s sneak_time > @s sneak_prev run tag @s remove is_sneak

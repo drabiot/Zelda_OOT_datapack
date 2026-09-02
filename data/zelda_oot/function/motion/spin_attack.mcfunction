@@ -2,11 +2,10 @@ tag @a[tag=!spin_cooldown,tag=!spinning] add in_spin_attack
 
 tag @a[tag=in_spin_attack,tag=!spinning] add spin_cooldown
 
-execute as @a[tag=in_spin_attack,tag=!spinning] at @s run say Spin Attack
+scoreboard players set @a[tag=in_spin_attack] spin_timer 20
 
-tag @a[tag=in_spin_attack,tag=!spinning] add spinning
+execute as @a[tag=in_spin_attack,tag=!spinning] at @s rotated as @s run summon minecraft:acacia_boat ~ ~ ~ {Tags:["rotator_vehicle","new_boat"],NoGravity:1b,Rotation:[0.0f,0.0f],Invulnerable:1b,Silent:1b,active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:-1,show_particles:0b}]}
+execute as @a[tag=in_spin_attack,tag=!spinning] at @s rotated as @s run tp @e[type=minecraft:acacia_boat,tag=new_boat] ~ ~ ~ ~ ~
+tag @e[tag=new_boat] remove new_boat
 
-execute as @a[tag=in_spin_attack,tag=spinning] at @s run schedule function zelda_oot:motion/stop_spinning 20t
-execute as @a[tag=in_spin_attack,tag=spinning] at @s run schedule function zelda_oot:motion/spin_attack_cooldown 150t
-
-tag @a[tag=in_spin_attack] remove in_spin_attack
+schedule function zelda_oot:motion/spinning 4t 
