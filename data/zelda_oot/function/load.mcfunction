@@ -1,6 +1,11 @@
 tellraw @a {"text":"Datapack : Zelda OOT loaded","color":"yellow"}
 gamerule minecraft:show_advancement_messages false
 
+#Add Movement Key Binds
+scoreboard objectives add roll_input dummy
+scoreboard objectives add backflip_input dummy
+scoreboard objectives add sidestep_input dummy
+
 #Add Health
 scoreboard objectives add max_health dummy
 scoreboard objectives add player_health dummy
