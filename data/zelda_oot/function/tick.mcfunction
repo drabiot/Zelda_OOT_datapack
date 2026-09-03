@@ -84,4 +84,4 @@ execute as @a[tag=playing_ocarina,tag=!in_song,tag=!in_warp] if entity @s[tag=pl
 execute as @a[tag=playing_ocarina] if entity @s[tag=in_song] run spectate @e[type=block_display,tag=ocarina_display,limit=1,sort=nearest]
 execute as @a[tag=playing_ocarina] if entity @s[tag=in_warp] run ride @s mount @e[type=block_display,tag=ocarina_display,limit=1,sort=nearest]
 
-execute positioned -495 11 -59 if entity @a[tag=!succeed_skull_kid_duet,distance=5..] run function zelda_oot:items/ocarina/song/shuffle_skull_kid
+execute positioned -495 11 -59 if entity @a[tag=!succeed_skull_kid_duet,distance=5..10] run function zelda_oot:items/ocarina/song/shuffle_skull_kid

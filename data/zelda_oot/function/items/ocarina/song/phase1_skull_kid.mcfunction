@@ -9,4 +9,4 @@ $function zelda_oot:items/ocarina/check_reset {objective:"skull_kid_r1",step:3,n
 $function zelda_oot:items/ocarina/check_reset {objective:"skull_kid_r1",step:2,note:$(n2)}
 $function zelda_oot:items/ocarina/check_reset {objective:"skull_kid_r1",step:1,note:$(n1)}
 
-$function zelda_oot:items/ocarina/check_final {objective:"skull_kid_r1",from:5,note:$(n5),func:"zelda_oot:items/ocarina/song/reward/skull_kid_r1_win"}
+$function zelda_oot:items/ocarina/check_final {objective:"skull_kid_r1",from:5,note:$(n5),func:"zelda_oot:items/ocarina/song/reward/skull_kid/skull_kid_r1_win"}

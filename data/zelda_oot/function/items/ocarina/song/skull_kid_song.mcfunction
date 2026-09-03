@@ -29,4 +29,4 @@ execute store result storage zelda_oot:macro input.n6 int 1 run scoreboard playe
 execute store result storage zelda_oot:macro input.n7 int 1 run scoreboard players get note_7 skull_kid_song
 execute store result storage zelda_oot:macro input.n8 int 1 run scoreboard players get note_8 skull_kid_song
 
-execute as @a[scores={ocarina_playing=1..}] run function zelda_oot:items/ocarina/song/phase1_skull_kid with storage zelda_oot:macro input
+execute as @a[scores={ocarina_playing=1..}] run function zelda_oot:items/ocarina/song/skull_kid/phase1_skull_kid with storage zelda_oot:macro input
