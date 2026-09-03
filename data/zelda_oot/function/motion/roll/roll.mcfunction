@@ -11,10 +11,10 @@ execute as @a[tag=roll_double_tap] at @s run function player_motion:api/roll
 #execute as @a[tag=roll_double_tap,predicate=!zelda_oot:movement/forward,predicate=!zelda_oot:movement/backward,predicate=!zelda_oot:movement/left,predicate=!zelda_oot:movement/right] at @s run function player_motion:api/low_roll
 execute as @a[tag=roll_double_tap] run tag @s remove roll_ready
 execute as @a[tag=roll_double_tap] run tag @s add in_roll
-execute as @a[tag=sneak_held_roll] run schedule function zelda_oot:motion/late_roll 10t
+execute as @a[tag=sneak_held_roll] run schedule function zelda_oot:motion/roll/late_roll 10t
 
 execute as @a[tag=sneak_pressed_now_roll,tag=!roll_ready,tag=!roll_double_tap] run tag @s add roll_ready
-execute as @a[tag=sneak_pressed_now_roll,tag=!roll_ready,tag=!roll_double_tap] run function zelda_oot:motion/reset_roll
+execute as @a[tag=sneak_pressed_now_roll,tag=!roll_ready,tag=!roll_double_tap] run function zelda_oot:motion/roll/reset_roll
 
 execute as @a[tag=sneak_pressed_now_roll] run tag @s remove sneak_pressed_now_roll
 execute as @a[tag=roll_double_tap] run tag @s remove roll_double_tap

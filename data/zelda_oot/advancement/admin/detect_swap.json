@@ -20,6 +20,6 @@
     }
   },
   "rewards": {
-    "function": "zelda_oot:motion/detect_swap"
+    "function": "zelda_oot:motion/spin_attack/detect_swap"
   }
 }

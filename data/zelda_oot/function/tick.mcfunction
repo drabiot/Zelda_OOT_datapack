@@ -11,10 +11,10 @@ effect clear @e[type=!item_display,type=!arrow,type=!spectral_arrow,type=!marker
 #Movement
 execute as @a[nbt={OnGround:1b},tag=in_backflip] at @s run tag @s remove in_backflip
 
-function zelda_oot:motion/backflip
-function zelda_oot:motion/roll
-function zelda_oot:motion/sidestep_left
-function zelda_oot:motion/sidestep_right
+function zelda_oot:motion/backflip/backflip
+function zelda_oot:motion/roll/roll
+function zelda_oot:motion/sidestep/sidestep_left
+function zelda_oot:motion/sidestep/sidestep_right
 
 execute as @a[tag=in_roll] at @s anchored eyes positioned ^ ^ ^0.8 unless block ~ ~ ~ minecraft:air \
 	unless block ~ ~ ~ #minecraft:flowers unless block ~ ~ ~ #minecraft:replaceable \
@@ -29,6 +29,7 @@ execute as @a[tag=spinning] run scoreboard players remove @s spin_timer 1
 execute as @a[tag=spinning,scores={spin_timer=..0}] at @s run ride @s dismount
 execute as @a[tag=spinning,scores={spin_timer=..0}] at @s run kill @e[type=minecraft:acacia_boat,tag=rotator_vehicle,tag=spinning_boat,distance=..2]
 tag @a[tag=spinning,scores={spin_timer=..0}] remove spinning
+
 #Sneak
 execute as @a if score @s sneak_time > @s sneak_prev run tag @s add is_sneak
 execute as @a unless score @s sneak_time > @s sneak_prev run tag @s remove is_sneak

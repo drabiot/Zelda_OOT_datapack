@@ -23,13 +23,12 @@ execute as @a[tag=sidestep_left_double_tap] at @s if score @s random matches 14 
 execute as @a[tag=sidestep_left_double_tap] at @s if score @s random matches 15 run playsound minecraft:custom.younglink_attack4 player @a ~ ~ ~ 1 1
 
 execute as @a[tag=sidestep_left_double_tap] at @s run function player_motion:api/sidestep_left
-execute as @a[tag=sidestep_left_double_tap] at @s run function player_motion:api/sidestep_left
 execute as @a[tag=sidestep_left_double_tap] run tag @s remove sidestep_left_ready
 execute as @a[tag=sidestep_left_double_tap] run tag @s add in_sidestep_left
-execute as @a[tag=sneak_held_left] run schedule function zelda_oot:motion/late_sidestep_left 10t
+execute as @a[tag=sneak_held_left] run schedule function zelda_oot:motion/sidestep/late_sidestep_left 10t
 
 execute as @a[tag=sneak_pressed_now_left,tag=!sidestep_left_ready,tag=!sidestep_left_double_tap] run tag @s add sidestep_left_ready
-execute as @a[tag=sneak_pressed_now_left,tag=!sidestep_left_ready,tag=!sidestep_left_double_tap] run function zelda_oot:motion/reset_sidestep_left
+execute as @a[tag=sneak_pressed_now_left,tag=!sidestep_left_ready,tag=!sidestep_left_double_tap] run function zelda_oot:motion/sidestep/reset_sidestep_left
 
 execute as @a[tag=sneak_pressed_now_left] run tag @s remove sneak_pressed_now_left
 execute as @a[tag=sidestep_left_double_tap] run tag @s remove sidestep_left_double_tap

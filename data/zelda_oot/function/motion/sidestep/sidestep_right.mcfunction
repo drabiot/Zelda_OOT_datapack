@@ -25,10 +25,10 @@ execute as @a[tag=sidestep_right_double_tap] at @s if score @s random matches 15
 execute as @a[tag=sidestep_right_double_tap] at @s run function player_motion:api/sidestep_right
 execute as @a[tag=sidestep_right_double_tap] run tag @s remove sidestep_right_ready
 execute as @a[tag=sidestep_right_double_tap] run tag @s add in_sidestep_right
-execute as @a[tag=sneak_held_right] run schedule function zelda_oot:motion/late_sidestep_right 10t
+execute as @a[tag=sneak_held_right] run schedule function zelda_oot:motion/sidestep/late_sidestep_right 10t
 
 execute as @a[tag=sneak_pressed_now_right,tag=!sidestep_right_ready,tag=!sidestep_right_double_tap] run tag @s add sidestep_right_ready
-execute as @a[tag=sneak_pressed_now_right,tag=!sidestep_right_ready,tag=!sidestep_right_double_tap] run function zelda_oot:motion/reset_sidestep_right
+execute as @a[tag=sneak_pressed_now_right,tag=!sidestep_right_ready,tag=!sidestep_right_double_tap] run function zelda_oot:motion/sidestep/reset_sidestep_right
 
 execute as @a[tag=sneak_pressed_now_right] run tag @s remove sneak_pressed_now_right
 execute as @a[tag=sidestep_right_double_tap] run tag @s remove sidestep_right_double_tap
