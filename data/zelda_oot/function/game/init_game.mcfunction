@@ -44,6 +44,9 @@ tag @a remove deku_tree_d_finish
 #Remove Advancement
 tag @a remove bullseye_challenge
 
+#Remove challenge
+tag @a Remove succeed_skull_kid_duet
+
 #Spawn Kokiri's Forest Hearts
 summon armor_stand -410 12.1 9 {CustomName:"heart",Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:beetroot}}}
 summon armor_stand -407 11.1 11 {CustomName:"heart",Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:beetroot}}}

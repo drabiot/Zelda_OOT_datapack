@@ -10,3 +10,7 @@ function zelda_oot:items/ocarina/song/serenade_of_water
 function zelda_oot:items/ocarina/song/requiem_of_spirit
 function zelda_oot:items/ocarina/song/nocturne_of_shadow
 function zelda_oot:items/ocarina/song/prelude_of_light
+
+execute as @a[tag=phase1_skull_kid,tag=!succeed_skull_kid_duet] at @s run function zelda_oot:items/ocarina/song/phase1_skull_kid with storage zelda_oot:macro input
+execute as @a[tag=phase2_skull_kid,tag=!succeed_skull_kid_duet] at @s run function zelda_oot:items/ocarina/song/phase2_skull_kid with storage zelda_oot:macro input
+execute as @a[tag=phase3_skull_kid,tag=!succeed_skull_kid_duet] at @s run function zelda_oot:items/ocarina/song/phase3_skull_kid with storage zelda_oot:macro input

@@ -99,3 +99,7 @@ scoreboard objectives add nocturne_of_shadow dummy
 scoreboard players set @a nocturne_of_shadow 0
 scoreboard objectives add prelude_of_light dummy
 scoreboard players set @a prelude_of_light 0
+
+scoreboard objectives add skull_kid_song dummy
+scoreboard objectives add skull_kid_r1 dummy
+scoreboard players set @a skull_kid_r1 0
