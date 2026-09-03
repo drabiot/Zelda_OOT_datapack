@@ -9,17 +9,25 @@ experience set @a 0 levels
 effect clear @e[type=!item_display,type=!arrow,type=!spectral_arrow,type=!marker,type=!text_display,type=!block_display,tag=!allow_glow] minecraft:glowing
 
 #Movement
+execute as @a[nbt={OnGround:1b},tag=in_roll,tag=!dialogue,tag=!dev] at @s unless entity @e[type=shulker,distance=..1] run summon shulker ~ ~1 ~ {NoAI:1b,PersistenceRequired:1b,NoGravity:1b,Invulnerable:1b,Silent:1b,Peek:0b,Tags:["roll_crawl"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:-1,show_particles:0b}]}
+execute if entity @a[tag=!in_roll] run tp @e[type=minecraft:shulker, tag=roll_crawl] ~ ~-1000 ~
+execute as @a[tag=in_roll] at @s run tp @e[type=shulker,tag=roll_crawl,distance=1.2..] ~ ~-1000 ~
+execute as @a[tag=in_roll] at @s run kill @e[type=shulker,tag=roll_crawl,distance=1.2..]
+
 execute as @a[nbt={OnGround:1b}] run function zelda_oot:motion/backflip/backflip
 execute as @a[nbt={OnGround:1b}] run function zelda_oot:motion/roll/roll
 function zelda_oot:motion/sidestep/sidestep_left
 function zelda_oot:motion/sidestep/sidestep_right
 
-execute as @a[tag=in_roll] at @s anchored eyes positioned ^ ^-0.4 ^0.8 unless block ~ ~ ~ minecraft:air \
-	unless block ~ ~ ~ #minecraft:flowers unless block ~ ~ ~ #minecraft:replaceable \
-	unless block ~ ~ ~ #minecraft:wool_carpets unless block ~ ~ ~ #minecraft:buttons \
-	unless block ~ ~ ~ minecraft:moss_carpet unless block ~ ~ ~ #minecraft:features_cannot_replace \
+execute as @a[tag=in_roll] at @s anchored eyes positioned ^ ^ ^0.8 \
+	unless block ~ ~ ~ minecraft:air \
+	unless block ~ ~ ~ #minecraft:flowers \
+	unless block ~ ~ ~ #minecraft:replaceable \
+	unless block ~ ~ ~ #minecraft:wool_carpets \
+	unless block ~ ~ ~ #minecraft:buttons \
+	unless block ~ ~ ~ minecraft:moss_carpet \
+	unless block ~ ~ ~ #minecraft:features_cannot_replace \
 	run function player_motion:api/hurt_roll
-
 
 #Spinning
 execute as @e[type=minecraft:acacia_boat,tag=rotator_vehicle,tag=spinning_boat] at @s run tp @s ~ ~ ~ ~27.5 ~
