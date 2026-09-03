@@ -10,4 +10,16 @@ execute as @a[tag=in_spin_attack,tag=!spinning] at @s rotated as @s unless entit
 execute as @a[tag=in_spin_attack,tag=!spinning] at @s rotated as @s run tp @e[type=minecraft:acacia_boat,tag=new_boat] ~ ~ ~ ~ ~
 tag @e[tag=new_boat] remove new_boat
 
-schedule function zelda_oot:motion/spin_attack/spinning 4t 
+schedule function zelda_oot:motion/spin_attack/spinning 4t
+
+#Breakable damage
+execute as @a[tag=in_spin_attack,tag=!spinning] at @s store success score @s spin_shatter run fill ~-2 ~0 ~-2 ~2 ~0 ~2 minecraft:air replace minecraft:bush
+execute as @a[tag=in_spin_attack,tag=!spinning] at @s if score @s spin_shatter matches 1 run playsound minecraft:block.sweet_berry_bush.break player @a ~ ~ ~ 1 1
+
+execute as @a[tag=in_spin_attack,tag=!spinning] at @s store success score @s spin_shatter run fill ~-2 ~0 ~-2 ~2 ~0 ~2 minecraft:air replace minecraft:spruce_sign
+execute as @a[tag=in_spin_attack,tag=!spinning] at @s if score @s spin_shatter matches 1 run playsound minecraft:block.wood.break player @a ~ ~ ~ 1 1
+
+execute as @a[tag=in_spin_attack,tag=!spinning] at @s store success score @s spin_shatter run fill ~-2 ~0 ~-2 ~2 ~0 ~2 minecraft:air replace minecraft:firefly_bush
+execute as @a[tag=in_spin_attack,tag=!spinning] at @s if score @s spin_shatter matches 1 run playsound minecraft:block.sweet_berry_bush.break player @a ~ ~ ~ 1 1
+
+
