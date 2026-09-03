@@ -1,6 +1,12 @@
-execute as @a[predicate=!zelda_oot:movement/tight,predicate=zelda_oot:movement/right,predicate=zelda_oot:movement/sneak,tag=!sneak_held_right,tag=!in_roll,tag=!in_backflip,tag=!dev,tag=!is_swimming,tag=!dialogue,tag=!playing_ocarina,tag=!sneak_pressed_now_right] run tag @s add sneak_pressed_now_right
-execute as @a[predicate=!zelda_oot:movement/tight,predicate=zelda_oot:movement/right,predicate=zelda_oot:movement/sneak,tag=!in_roll,tag=!in_backflip,tag=!dev,tag=!is_swimming,tag=!dialogue,tag=!playing_ocarina,tag=!sneak_held_right] run tag @s add sneak_held_right
+#Double sneak + right to sidestep
+execute as @a[tag=sidestep_sneak,predicate=!zelda_oot:movement/tight,predicate=zelda_oot:movement/right,predicate=zelda_oot:movement/sneak,tag=!sneak_held_right,tag=!in_roll,tag=!in_backflip,tag=!dev,tag=!is_swimming,tag=!dialogue,tag=!playing_ocarina,tag=!sneak_pressed_now_right] run tag @s add sneak_pressed_now_right
+execute as @a[tag=sidestep_sneak,predicate=!zelda_oot:movement/tight,predicate=zelda_oot:movement/right,predicate=zelda_oot:movement/sneak,tag=!in_roll,tag=!in_backflip,tag=!dev,tag=!is_swimming,tag=!dialogue,tag=!playing_ocarina,tag=!sneak_held_right] run tag @s add sneak_held_right
 execute as @a[tag=sneak_held_right] at @s unless predicate zelda_oot:movement/sneak run tag @s remove sneak_held_right
+
+#Double right to sidestep
+execute as @a[tag=sidestep_press,predicate=!zelda_oot:movement/tight,predicate=zelda_oot:movement/right,tag=!right_held_sidestep,tag=!in_roll,tag=!in_backflip,tag=!dev,tag=!is_swimming,tag=!dialogue,tag=!playing_ocarina,tag=!sneak_pressed_now_right] run tag @s add sneak_pressed_now_right
+execute as @a[tag=sidestep_press,predicate=!zelda_oot:movement/tight,predicate=zelda_oot:movement/right,tag=!in_roll,tag=!in_backflip,tag=!dev,tag=!is_swimming,tag=!dialogue,tag=!playing_ocarina,tag=!right_held_sidestep] run tag @s add right_held_sidestep
+execute as @a[tag=right_held_sidestep] at @s unless predicate zelda_oot:movement/right run tag @s remove right_held_sidestep
 
 execute as @a[tag=sneak_pressed_now_right,tag=sidestep_right_ready] run tag @s add sidestep_right_double_tap
 

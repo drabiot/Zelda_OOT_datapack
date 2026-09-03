@@ -1,6 +1,12 @@
-execute as @a[predicate=!zelda_oot:movement/tight,predicate=zelda_oot:movement/left,predicate=zelda_oot:movement/sneak,tag=!sneak_held_left,tag=!in_roll,tag=!in_backflip,tag=!dev,tag=!is_swimming,tag=!dialogue,tag=!playing_ocarina,tag=!sneak_pressed_now_left] run tag @s add sneak_pressed_now_left
-execute as @a[predicate=!zelda_oot:movement/tight,predicate=zelda_oot:movement/left,predicate=zelda_oot:movement/sneak,tag=!in_roll,tag=!in_backflip,tag=!dev,tag=!is_swimming,tag=!dialogue,tag=!playing_ocarina,tag=!sneak_held_left] run tag @s add sneak_held_left
+#Double sneak + left to sidestep
+execute as @a[tag=sidestep_sneak,predicate=!zelda_oot:movement/tight,predicate=zelda_oot:movement/left,predicate=zelda_oot:movement/sneak,tag=!sneak_held_left,tag=!in_roll,tag=!in_backflip,tag=!dev,tag=!is_swimming,tag=!dialogue,tag=!playing_ocarina,tag=!sneak_pressed_now_left] run tag @s add sneak_pressed_now_left
+execute as @a[tag=sidestep_sneak,predicate=!zelda_oot:movement/tight,predicate=zelda_oot:movement/left,predicate=zelda_oot:movement/sneak,tag=!in_roll,tag=!in_backflip,tag=!dev,tag=!is_swimming,tag=!dialogue,tag=!playing_ocarina,tag=!sneak_held_left] run tag @s add sneak_held_left
 execute as @a[tag=sneak_held_left] at @s unless predicate zelda_oot:movement/sneak run tag @s remove sneak_held_left
+
+#Double left to sidestep
+execute as @a[tag=sidestep_press,predicate=!zelda_oot:movement/tight,predicate=zelda_oot:movement/left,tag=!left_held_sidestep,tag=!in_roll,tag=!in_backflip,tag=!dev,tag=!is_swimming,tag=!dialogue,tag=!playing_ocarina,tag=!sneak_pressed_now_left] run tag @s add sneak_pressed_now_left
+execute as @a[tag=sidestep_press,predicate=!zelda_oot:movement/tight,predicate=zelda_oot:movement/left,tag=!in_roll,tag=!in_backflip,tag=!dev,tag=!is_swimming,tag=!dialogue,tag=!playing_ocarina,tag=!left_held_sidestep] run tag @s add left_held_sidestep
+execute as @a[tag=left_held_sidestep] at @s unless predicate zelda_oot:movement/left run tag @s remove left_held_sidestep
 
 execute as @a[tag=sneak_pressed_now_left,tag=sidestep_left_ready] run tag @s add sidestep_left_double_tap
 

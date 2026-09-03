@@ -23,6 +23,11 @@ advancement grant @a only zelda_oot:song/warp
 function zelda_oot:game/kokiri_forest/way_to_deku_tree/close_way
 function zelda_oot:game/kokiri_forest/dialogue/deku_tree/animation/m1
 
+#Set default movement keys
+tag @a add roll_press
+tag @a add backflip_press
+tag @a add sidestep_press
+
 #Reset First dialogue
 tag @a remove way_to_deku_tree
 

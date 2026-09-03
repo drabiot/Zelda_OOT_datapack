@@ -9,10 +9,8 @@ experience set @a 0 levels
 effect clear @e[type=!item_display,type=!arrow,type=!spectral_arrow,type=!marker,type=!text_display,type=!block_display,tag=!allow_glow] minecraft:glowing
 
 #Movement
-execute as @a[nbt={OnGround:1b},tag=in_backflip] at @s run tag @s remove in_backflip
-
-function zelda_oot:motion/backflip/backflip
-function zelda_oot:motion/roll/roll
+execute as @a[nbt={OnGround:1b}] run function zelda_oot:motion/backflip/backflip
+execute as @a[nbt={OnGround:1b}] run function zelda_oot:motion/roll/roll
 function zelda_oot:motion/sidestep/sidestep_left
 function zelda_oot:motion/sidestep/sidestep_right
 

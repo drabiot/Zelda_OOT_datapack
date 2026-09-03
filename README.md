@@ -19,7 +19,7 @@ Even if this datapack add world based event, it also create The Legend of Zelda 
   - [Gameplay](#gameplay)
     - [Sneaking/Crawling](#sneakingcrawling)
   - [Player Tag](#player-tag)
-    - [Admin](#admin)
+    - [Admin/Option](#adminoption)
 	- [Player Status](#player-status)
 	- [Kokiri Forest](#kokiri-forest)
   - [Sources](#sources)
@@ -73,11 +73,17 @@ You can crawl everywhere at any time (except in dialogue & cinematic)
 
 ### PLAYER TAG
 
-#### ADMIN
+#### ADMIN/OPTION
 
 | Tag | Usage | Unique | Reset |
 | ---- | ---- | :----: | ----- |
-| dev | admin rule that deny every other inconveniant tag | ⚠️ |  |
+| dev | Admin rule that deny every other inconveniant tag | ⚠️ |  |
+| roll_sneak | Player add to double sneak + forward to roll | ❌ |  |
+| roll_press | Player add to double forward to roll | ❌ |  |
+| backflip_sneak | Player add backward jump to backflip | ❌ |  |
+| backflip_press | Player add to double backward to backflip | ❌ |  |
+| sidestep_sneak | Player add to double sneak + {left/right} to sidestep | ❌ |  |
+| sidestep_press | Player add to double {left/right} to sidestep | ❌ |  |
 
 #### PLAYER STATUS
 
