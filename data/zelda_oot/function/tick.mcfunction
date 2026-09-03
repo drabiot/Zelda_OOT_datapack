@@ -16,8 +16,8 @@ execute as @a[tag=in_roll] at @s run kill @e[type=shulker,tag=roll_crawl,distanc
 
 execute as @a[nbt={OnGround:1b}] run function zelda_oot:motion/backflip/backflip
 execute as @a[nbt={OnGround:1b}] run function zelda_oot:motion/roll/roll
-function zelda_oot:motion/sidestep/sidestep_left
-function zelda_oot:motion/sidestep/sidestep_right
+execute as @a[nbt={OnGround:1b}] run function zelda_oot:motion/sidestep/sidestep_left
+execute as @a[nbt={OnGround:1b}] run function zelda_oot:motion/sidestep/sidestep_right
 
 execute as @a[tag=in_roll] at @s anchored eyes positioned ^ ^ ^0.8 \
 	unless block ~ ~ ~ minecraft:air \

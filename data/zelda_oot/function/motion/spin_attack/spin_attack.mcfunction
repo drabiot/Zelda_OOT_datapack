@@ -1,3 +1,5 @@
+execute if entity @a[predicate=zelda_oot:movement/tight] run return run kill @e[type=armor_stand,tag=inexistant_dummy]
+
 tag @a[tag=!spin_cooldown,tag=!spinning] add in_spin_attack
 
 tag @a[tag=in_spin_attack,tag=!spinning] add spin_cooldown

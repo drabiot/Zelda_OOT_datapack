@@ -21,6 +21,7 @@ execute as @a[tag=!hurt] at @s if score @s random matches 14 run playsound minec
 execute as @a[tag=!hurt] at @s if score @s random matches 15 run playsound minecraft:custom.younglink_hurt1 player @a ~ ~ ~ 1 1
 
 execute as @a[tag=!hurt] at @s run tag @s add hurt
+effect give @a[tag=hurt] minecraft:slowness 1 3 true
 
 tag @a remove in_roll
 
