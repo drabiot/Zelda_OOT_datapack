@@ -1,3 +1,4 @@
 execute if entity @a[tag=!mido_reward_green] run function zelda_oot:items/rupees/green_rupees_reward
-execute if entity @a[tag=!mido_reward_green] run summon armor_stand -434 -6.5 -36 {CustomName:"rupees",Tags:["decay"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:lime_concrete}}}
+execute if entity @a[tag=!mido_reward_green] run summon item_display -434 -5.5 -36 {CustomName:"rupees",Tags:["no_gravity","decay","item_chest"],item:{id:"minecraft:lime_concrete",count:1},transformation:{translation:[0,0,0],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.3f,0.3f]},Glowing:1b}
 tag @a add mido_reward_green
+

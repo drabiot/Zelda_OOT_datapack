@@ -1,3 +1,3 @@
 execute if entity @a[tag=!mido_reward_heart] run function zelda_oot:items/heart/heart_reward
-execute if entity @a[tag=!mido_reward_heart] run summon armor_stand -434 -7 -39 {CustomName:"heart",Tags:["decay"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:beetroot}}}
+execute if entity @a[tag=!mido_reward_heart] run summon item_display -434 -5.5 -39 {CustomName:"false_heart",Tags:["no_gravity","decay","item_chest"],item:{id:"minecraft:beetroot",count:1},transformation:{translation:[0,0,0],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.3f,0.3f]},Glowing:1b}
 tag @a add mido_reward_heart

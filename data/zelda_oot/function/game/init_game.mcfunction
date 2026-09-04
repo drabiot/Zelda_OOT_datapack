@@ -50,20 +50,21 @@ tag @a remove bullseye_challenge
 tag @a remove succeed_skull_kid_duet
 
 #Spawn Kokiri's Forest Hearts
-summon armor_stand -410 12.1 9 {CustomName:"heart",Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:beetroot}}}
-summon armor_stand -407 11.1 11 {CustomName:"heart",Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:beetroot}}}
-summon armor_stand -413 11.1 12 {CustomName:"heart",Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:beetroot}}}
+summon item_display -410 13.5 9 {CustomName:"heart",item:{id:"minecraft:beetroot",count:1},transformation:{translation:[0,0,0],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.3f,0.3f]}}
+summon item_display -407 12.5 11 {CustomName:"heart",item:{id:"minecraft:beetroot",count:1},transformation:{translation:[0,0,0],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.3f,0.3f]}}
+summon item_display -413 12.5 12 {CustomName:"heart",item:{id:"minecraft:beetroot",count:1},transformation:{translation:[0,0,0],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.3f,0.3f]}}
 
 #Spawn Kokiri's Forest Blue Rupees
-summon armor_stand -420 9.5 -14 {CustomName:"rupees",Tags:["blue"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:blue_concrete}}}
-summon armor_stand -436 7.5 -43 {CustomName:"rupees",Tags:["blue"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:blue_concrete}}}
-summon armor_stand -389 -7.5 -41 {CustomName:"rupees",Tags:["blue"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:blue_concrete}}}
+summon item_display -420 10.5 -15 {CustomName:"rupees",Tags:["blue"],item:{id:"minecraft:blue_concrete",count:1},transformation:{translation:[0,0,0],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.3f,0.3f]}}
+summon item_display -436 8.5 -43 {CustomName:"rupees",Tags:["blue"],item:{id:"minecraft:blue_concrete",count:1},transformation:{translation:[0,0,0],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.3f,0.3f]}}
+summon item_display -389 -6.5 -41 {CustomName:"rupees",Tags:["blue"],item:{id:"minecraft:blue_concrete",count:1},transformation:{translation:[0,0,0],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.3f,0.3f]}}
 
-summon armor_stand -447 12 12 {CustomName:"rupees",Tags:["blue"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b}
-summon armor_stand -441.0 10 6 {CustomName:"rupees",Tags:["blue"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b}
+summon item_display -448 20 16 {CustomName:"rupees",Tags:["blue","no_gravity","training_area"],transformation:{translation:[0,0,0],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.3f,0.3f]}}
+summon item_display -448 20 16 {CustomName:"rupees",Tags:["green","no_gravity","training_area"],transformation:{translation:[0,0,0],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.3f,0.3f]}}
+summon item_display -448 20 16 {CustomName:"rupees",Tags:["green","no_gravity","training_area"],transformation:{translation:[0,0,0],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.3f,0.3f]}}
 
 
 
 #Spawn Kokiri's Trial Blue Rupees
-summon armor_stand -457 9.5 37 {CustomName:"rupees",Tags:["blue"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:blue_concrete}}}
-summon armor_stand -447 9.5 48 {CustomName:"rupees",Tags:["blue"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:blue_concrete}}}
+summon item_display -457 10.5 37 {CustomName:"rupees",Tags:["blue"],item:{id:"minecraft:blue_concrete",count:1},transformation:{translation:[0,0,0],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.3f,0.3f]}}
+summon item_display -447 10.5 48 {CustomName:"rupees",Tags:["blue"],item:{id:"minecraft:blue_concrete",count:1},transformation:{translation:[0,0,0],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.3f,0.3f]}}

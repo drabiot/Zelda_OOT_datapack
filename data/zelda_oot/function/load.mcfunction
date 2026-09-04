@@ -39,7 +39,6 @@ scoreboard objectives add sneak_prev dummy
 scoreboard objectives add spin_timer dummy
 scoreboard objectives add spin_shatter dummy
 
-
 #Add quantity
 scoreboard objectives add quantity dummy
 

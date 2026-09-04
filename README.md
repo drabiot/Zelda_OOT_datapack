@@ -103,7 +103,7 @@ You can crawl everywhere at any time (except in dialogue & cinematic)
 | mido_reward_blue_2 | Check if you grab the one time reward of one of the 4 chest in Mido's house (blue rupee) | ✅ |  |
 | mido_reward_green | Check if you grab the one time reward of one of the 4 chest in Mido's house (green rupee) | ✅ |  |
 | mido_reward_heart | Check if you grab the one time reward of one of the 4 chest in Mido's house (healing heart) | ✅ |  |
-| thrust_sign | Check if you cut the sign in the training area | ✅ |  |
+| break_sign_training_area | Check if you cut the sign in the training area | ✅ |  |
 | trial_pound_1 | Check if the player pass in the trial pound 1 to check if he succeed the trial pound | ❌ | Remove if you leave the trial area |
 | trial_pound_2 | Check if the player pass in the trial pound 2 to check if he succeed the trial pound | ❌ | Remove if you leave the trial area |
 | trial_pound_3 | Check if the player pass in the trial pound 3 to check if he succeed the trial pound | ❌ | Remove if you leave the trial area |

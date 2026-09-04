@@ -52,7 +52,7 @@ summon minecraft:falling_block -443 10 49 {Time:-1000000,NoGravity:true,BlockSta
 summon minecraft:falling_block -444 10 49 {Time:-1000000,NoGravity:true,BlockState:{Name:"minecraft:azalea_leaves"}}
 
 #Load Green Rupees
-summon armor_stand -442.0 9.5 46 {CustomName:"rupees",Tags:["green"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:lime_concrete}}}
-summon armor_stand -442.0 9.5 40 {CustomName:"rupees",Tags:["green"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:lime_concrete}}}
+summon item_display -442.0 10.5 46 {CustomName:"rupees",Tags:["green"],item:{id:"minecraft:lime_concrete",count:1},transformation:{translation:[0,0,0],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.3f,0.3f]}}
+summon item_display -442.0 10.5 40 {CustomName:"rupees",Tags:["green"],item:{id:"minecraft:lime_concrete",count:1},transformation:{translation:[0,0,0],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.3f,0.3f]}}
 
 summon interaction -450 8 26 {width:11.5f,height:4f,response:false,Tags:["blocked"]}

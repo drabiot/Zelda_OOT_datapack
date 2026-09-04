@@ -17,6 +17,7 @@
 		{ "id": "zelda_oot:check_npc", "required": false },
 
 		{ "id": "zelda_oot:game/kokiri_forest/bullseye_challenge", "required": false },
+		{ "id": "zelda_oot:game/kokiri_forest/check_reward_kokiri", "required": false },
 
 		{ "id": "zelda_oot:game/breakable/check_stone", "required": false },
 		{ "id": "zelda_oot:game/kokiri_forest/bush/check_grass", "required": false },

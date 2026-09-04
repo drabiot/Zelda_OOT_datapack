@@ -1,3 +1,5 @@
+execute as @e[tag=guard] at @s if entity @p[distance=..8] run function zelda_oot:guard_move
+
 #Prevent lightning damage
 execute at @e[type=lightning_bolt] run fill ~-2 ~-1 ~-2 ~2 ~2 ~2 air replace fire
 
@@ -59,13 +61,14 @@ execute as @a[tag=is_sneak] at @s run kill @e[type=shulker,tag=crawl,distance=1.
 scoreboard players add @a random 1
 execute if score @p random matches 16 run scoreboard players set @a random 0
 
-tag @e[type=armor_stand, tag=decay] add decay_pending
-scoreboard players set @e[type=armor_stand, tag=decay] decayTimer 100
-tag @e[type=armor_stand, tag=decay] remove decay
+tag @e[type=item_display, tag=decay] add decay_pending
+scoreboard players set @e[type=item_display, tag=decay] decayTimer 100
+tag @e[type=item_display, tag=decay] remove decay
 
-scoreboard players remove @e[type=armor_stand,tag=decay_pending] decayTimer 1
+scoreboard players remove @e[type=item_display,tag=decay_pending] decayTimer 1
 
-execute as @e[type=armor_stand, tag=decay_pending] if score @s decayTimer matches 0 run kill @s
+execute as @e[type=item_display, tag=decay_pending] if score @s decayTimer matches 0 run kill @s
+execute as @e[type=item_display, tag=item_chest] at @s run tp @s ~ ~0.005 ~
 
 #Kill drop item
 execute as @e[type=item,nbt={Item:{id:"minecraft:firefly_bush"}}] run kill @s

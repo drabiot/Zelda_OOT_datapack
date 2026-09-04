@@ -1,2 +1,4 @@
-#summon armor_stand ~ ~-0.9 ~ {CustomName:"heart",Tags:["decay"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:beetroot}}}
-execute as @e[type=armor_stand,name=heart] at @s run tp @s ~ ~ ~ ~5 ~
+#summon item_display ~ ~0.5 ~ {CustomName:"heart",Tags:["decay"],item:{id:"minecraft:beetroot",count:1},transformation:{translation:[0,0,0],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.3f,0.3f]}}
+execute as @e[type=item_display,name=heart] at @s run tp @s ~ ~ ~ ~5 ~
+execute as @e[type=item_display,name=false_heart] at @s run tp @s ~ ~ ~ ~5 ~
+execute as @e[type=item_display,name=heart] at @s if block ~ ~-0.3 ~ minecraft:air run tp @s ~ ~-0.05 ~

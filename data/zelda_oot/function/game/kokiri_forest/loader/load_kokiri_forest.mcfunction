@@ -117,10 +117,11 @@ setblock -443 10 11 minecraft:bush
 setblock -443 10 9 minecraft:bush
 
 #Load Green Rupees
-summon armor_stand -420 4.5 -29 {CustomName:"rupees",Tags:["green"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:lime_concrete}}}
-summon armor_stand -416 4.5 -29 {CustomName:"rupees",Tags:["green"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:lime_concrete}}}
-summon armor_stand -437 4.5 -6 {CustomName:"rupees",Tags:["green"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:lime_concrete}}}
-summon armor_stand -440 4.5 -9 {CustomName:"rupees",Tags:["green"],Invisible:1b,NoBasePlate:1b,Small:1b,DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Silent:1b,equipment:{head:{id:lime_concrete}}}
+
+summon item_display -420 5.5 -29 {CustomName:"rupees",Tags:["green"],item:{id:"minecraft:lime_concrete",count:1},transformation:{translation:[0,0,0],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.3f,0.3f]}}
+summon item_display -416 5.5 -29 {CustomName:"rupees",Tags:["green"],item:{id:"minecraft:lime_concrete",count:1},transformation:{translation:[0,0,0],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.3f,0.3f]}}
+summon item_display -437 5.5 -6 {CustomName:"rupees",Tags:["green"],item:{id:"minecraft:lime_concrete",count:1},transformation:{translation:[0,0,0],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.3f,0.3f]}}
+summon item_display -440 5.5 -9 {CustomName:"rupees",Tags:["green"],item:{id:"minecraft:lime_concrete",count:1},transformation:{translation:[0,0,0],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.3f,0.3f]}}
 
 tag @a remove trial_pound_finished
 
