@@ -87,7 +87,7 @@ execute as @a[tag=confirm_twin_inside_shop_click] positioned -396 -5 -34 unless 
 	{CustomName:'"npc_display"',Tags:["twin_inside_shop_dialogue","npc_display"],\
 	transformation:{translation:[0f,0f,0f],right_rotation:[0f,1.5f,0f,1f],left_rotation:[0f,0f,0f,1f],scale:[1f,1f,1f]},\
 	text:[{text:"This shop...It sells things you can get in the forest for free! Tee hee!\n\nDo you know how to use the "},\
-	{text:"Deku Shield",color:"red"},{text:"? Tee hee! When you get the shield, equip it and press {right click}"}]}
+	{text:"Deku Shield",color:"red"},{text:"? Tee hee! When you get the shield, equip it and press {"},{text:"Right Click",color:"blue"},{text:"}"}]}
 
 execute if entity @a[tag=confirm_twin_inside_shop_click] as @e[type=text_display,tag=twin_inside_shop_dialogue] run schedule function zelda_oot:kill_dialogue 130t
 execute as @a[tag=confirm_twin_inside_shop_click] run tag @a remove twin_inside_shop_click
@@ -170,3 +170,21 @@ execute as @a[tag=confirm_know_it_all_brother_grass_click] positioned -402 6 4 u
 execute if entity @a[tag=confirm_know_it_all_brother_grass_click] as @e[type=text_display,tag=know_it_all_brother_grass_dialogue] run schedule function zelda_oot:kill_dialogue 250t
 execute as @a[tag=confirm_know_it_all_brother_grass_click] run tag @a remove know_it_all_brother_grass_click
 execute as @a[tag=confirm_know_it_all_brother_grass_click] run tag @a remove confirm_know_it_all_brother_grass_click
+
+#Kokiri Shopkeeper
+execute as @e[type=interaction,tag=kokiri_shopkeeper_click,nbt={interaction:{}}] run tag @a add kokiri_shopkeeper_click
+execute as @a[tag=kokiri_shopkeeper_click] run kill @e[type=minecraft:interaction,tag=kokiri_shopkeeper_click]
+execute as @a[tag=kokiri_shopkeeper_click] run tag @a add confirm_kokiri_shopkeeper_click
+execute as @a[tag=confirm_kokiri_shopkeeper_click] at @e[tag=kokiri_shopkeeper_click,limit=1] \
+    run summon interaction -393 -6.5 -39 {width:0.5f,height:1.5f,response:true,Tags:["kokiri_shopkeeper_click"]}
+
+execute as @a[tag=confirm_kokiri_shopkeeper_click] positioned -393 -4.5 -39 unless entity @e[type=text_display,tag=npc_display] \
+	run execute as @a[] at @s rotated as @s rotated ~ 0 positioned -393 -4.5 -39 \
+	run summon text_display ^ ^ ^ \
+	{CustomName:'"npc_display"',Tags:["kokiri_shopkeeper_dialogue","npc_display"],\
+	transformation:{translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f],scale:[1f,1f,1f]},\
+	text:[{text:"Welcome!\nWe sell shields, but not swords!"}]}
+
+execute if entity @a[tag=confirm_kokiri_shopkeeper_click] as @e[type=text_display,tag=kokiri_shopkeeper_dialogue] run schedule function zelda_oot:kill_dialogue 50t
+execute as @a[tag=confirm_kokiri_shopkeeper_click] run tag @a remove kokiri_shopkeeper_click
+execute as @a[tag=confirm_kokiri_shopkeeper_click] run tag @a remove confirm_kokiri_shopkeeper_click

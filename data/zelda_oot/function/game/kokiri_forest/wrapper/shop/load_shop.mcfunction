@@ -11,8 +11,6 @@ scoreboard players set arrow_10 kokiri_shop 0
 scoreboard players set arrow_30 kokiri_shop 0
 scoreboard players set heart_shop kokiri_shop 10
 
-tellraw @a {"text":"Welcome!"}
-
 #Right Shop Part
 execute positioned -392 -5 -40.0 rotated 180 0 run summon item_display ~ ~ ~ {CustomName:"deku_shield",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,0.5f]},item:{id:"minecraft:shield",count:1,components:{"minecraft:custom_data":{deku_shield:1b},"minecraft:custom_model_data":{strings:["deku_shield"]}}}}
 summon item_display -392 -4 -40.0 {CustomName:"deku_nut_5",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,0.5f],},item:{id:"minecraft:pitcher_pod",count:1}}
@@ -42,3 +40,10 @@ execute positioned -396.13 -7.00 -35.77 as @e[type=minecraft:item_display,tag=ze
 execute as @e[tag=twin_inside_shop_display,limit=1,sort=nearest] run function zelda_oot:twins/animations/idle_stand2/play
 
 summon interaction -396 -7 -36 {width:1f,height:2f,response:true,Tags:["twin_inside_shop_click"]}
+
+#Kokiri Shopkeeper
+execute positioned -393 -6.5 -39 rotated 0 0 run function zelda_oot:kokiri_shopkeeper/summon {args: {}}
+execute positioned -393 -6.5 -39 as @e[type=minecraft:item_display,tag=zelda_oot.kokiri_shopkeeper.root,tag=!kokiri_shopkeeper_display,distance=..3.5,sort=nearest,limit=1] run tag @s add kokiri_shopkeeper_display
+execute as @e[tag=kokiri_shopkeeper_display,limit=1,sort=nearest] run function zelda_oot:kokiri_shopkeeper/animations/idle/play
+
+summon interaction -393 -6.5 -39 {width:0.5f,height:1.5f,response:true,Tags:["kokiri_shopkeeper_click"]}

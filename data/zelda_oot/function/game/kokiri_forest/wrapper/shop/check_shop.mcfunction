@@ -66,7 +66,7 @@ execute as @a unless predicate zelda_oot:kokiri_forest/shop/deku_shield \
 	unless predicate zelda_oot:kokiri_forest/shop/arrow_10 \
 	unless predicate zelda_oot:kokiri_forest/shop/arrow_30 \
 	unless predicate zelda_oot:kokiri_forest/shop/shop_heart \
-	run kill @e[type=text_display,x=-393,y=-5,z=-39,distance=..5]
+	run kill @e[type=text_display,tag=!npc_display,x=-393,y=-5,z=-39,distance=..5]
 
 #Glow Effect
 execute as @a if predicate zelda_oot:kokiri_forest/shop/deku_shield positioned -393 -5 -39 unless entity @e[type=text_display,distance=..5] run \
@@ -116,9 +116,9 @@ execute as @a if predicate zelda_oot:kokiri_forest/shop/deku_stick positioned -3
 execute as @a if predicate zelda_oot:kokiri_forest/shop/deku_seed positioned -393 -5 -39 unless entity @e[type=text_display,distance=..5] run \
 	summon text_display -393 -5 -39 {background:0,billboard:"center",text:[{"text":"Deku Seeds: 30 Rupees\n","color":"red"},{"text":"They serve as bullet for your slingshot\n",color:"white"}]}
 execute as @a if predicate zelda_oot:kokiri_forest/shop/arrow_10 positioned -393 -5 -39 unless entity @e[type=text_display,distance=..5] run \
-	summon text_display -393 -5 -39 {background:0,billboard:"center",text:[{"text":"Arrows (5): 0 Rupees\n","color":"red"},{"text":"You need a bow to buy arrows\n",color:"white"}]}
+	summon text_display -393 -5 -39 {background:0,billboard:"center",text:[{"text":"Arrows (5): 20 Rupees\n","color":"red"},{"text":"You need a bow to buy arrows\n",color:"white"}]}
 execute as @a if predicate zelda_oot:kokiri_forest/shop/arrow_30 positioned -393 -5 -39 unless entity @e[type=text_display,distance=..5] run \
-	summon text_display -393 -5 -39 {background:0,billboard:"center",text:[{"text":"Arrows (10): 0 Rupees\n","color":"red"},{"text":"You need a bow to buy arrows\n",color:"white"}]}
+	summon text_display -393 -5 -39 {background:0,billboard:"center",text:[{"text":"Arrows (10): 60 Rupees\n","color":"red"},{"text":"You need a bow to buy arrows\n",color:"white"}]}
 execute as @a if predicate zelda_oot:kokiri_forest/shop/shop_heart positioned -393 -5 -39 unless entity @e[type=text_display,distance=..5] run \
 	summon text_display -393 -5 -39 {background:0,billboard:"center",text:[{"text":"Heart: 10 Rupees\n","color":"red"},{"text":"Restore small portion of your life\n",color:"white"}]}
 
