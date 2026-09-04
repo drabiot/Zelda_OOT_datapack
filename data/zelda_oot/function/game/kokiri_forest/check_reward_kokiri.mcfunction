@@ -4,4 +4,10 @@ execute positioned -447 10 12 as @a[tag=in_sidestep_right] if entity @s[distance
 
 execute positioned -442 10 6 if block ~ ~ ~ air run execute if entity @a[tag=!break_sign_training_area] run summon item_display ~ ~0.5 ~ {CustomName:"rupees",Tags:["blue", "decay"],item:{id:"minecraft:blue_concrete",count:1},transformation:{translation:[0,0,0],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.3f,0.3f]}}
 execute positioned -442 10 6 if block ~ ~ ~ air run execute if entity @a[tag=!break_sign_training_area] run tag @a add break_sign_training_area
-execute positioned -442 10 6 if block ~ ~ ~ air run execute if entity @a[tag=!break_sign_training_area] run tag @a add break_sign_training_area
+
+
+#Check Mido House
+#
+#
+#execute positioned -434 -7 -36 if entity @a[tag=mido_reward_green] run setblock ~ ~ ~ minecraft:waxed_copper_golem_statue[facing=west] replace
+#execute positioned -434 -7 -39 if entity @a[tag=mido_reward_heart] run setblock ~ ~ ~ minecraft:waxed_copper_golem_statue[facing=west] replace
