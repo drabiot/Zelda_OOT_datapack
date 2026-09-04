@@ -38,6 +38,7 @@ tag @a remove mido_reward_blue_1
 tag @a remove mido_reward_blue_2
 tag @a remove mido_reward_green
 tag @a remove mido_reward_heart
+tag @a remove break_sign_training_area
 
 #Reset Deku Tree
 tag @a remove deku_tree_again

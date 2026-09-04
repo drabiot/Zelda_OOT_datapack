@@ -2,7 +2,7 @@
 execute positioned -442 9 46 run kill @e[type=minecraft:falling_block,distance=..25]
 
 #Destroy Rupees
-execute positioned -442 9 43 run kill @e[type=minecraft:armor_stand,name=rupees,tag=green,distance=..5]
+execute positioned -442 9 43 run kill @e[type=minecraft:item_display,name=rupees,tag=green,distance=..5]
 
 execute positioned -436 12 42 run kill @e[type=minecraft:armor_stand,name=rock,distance=..50]
 execute positioned -436 12 42 run kill @e[type=minecraft:block_display,distance=..50]
