@@ -11,7 +11,7 @@ execute if entity @a[advancements={zelda_oot:kokiri_forest/gohma=true}] run plac
 effect clear @e[type=!item_display,type=!arrow,type=!spectral_arrow,type=!marker,type=!text_display,type=!block_display,tag=!allow_glow] minecraft:glowing
 
 #Movement
-execute as @a[nbt={OnGround:1b},tag=in_roll,tag=!dialogue,tag=!dev] at @s unless entity @e[type=shulker,distance=..1] run summon shulker ~ ~1 ~ {NoAI:1b,PersistenceRequired:1b,NoGravity:1b,Invulnerable:1b,Silent:1b,Peek:0b,Tags:["roll_crawl"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:-1,show_particles:0b}]}
+execute as @a[nbt={OnGround:1b},tag=in_roll,tag=!dialogue,tag=!dev] at @s unless entity @e[type=shulker,distance=..1] run summon shulker ~ ~0.5 ~ {NoAI:1b,PersistenceRequired:1b,NoGravity:1b,Invulnerable:1b,Silent:1b,Peek:0b,Tags:["roll_crawl"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:-1,show_particles:0b}]}
 execute if entity @a[tag=!in_roll] run tp @e[type=shulker, tag=roll_crawl] ~ ~-1000 ~
 execute as @a at @s run tp @e[type=shulker,tag=roll_crawl,distance=1.2..] ~ ~-1000 ~
 execute as @a at @s run kill @e[type=shulker,tag=roll_crawl,distance=1.2..]
