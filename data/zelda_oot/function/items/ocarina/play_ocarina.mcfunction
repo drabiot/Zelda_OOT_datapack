@@ -95,7 +95,7 @@ execute as @a[tag=playing_ocarina,tag=!already_playing] at @s rotated as @s rota
 
 #Summon Link next to the player and start his ocarina animation
 execute as @a[tag=playing_ocarina,tag=!already_playing] run function zelda_oot:items/ocarina/spawn_link
-execute as @a[tag=playing_ocarina,tag=!already_playing] at @s run execute as @e[tag=link_display,distance=..4,limit=1,sort=nearest] run function zelda_oot:link/animations/ocarina_idle/play
+execute as @a[tag=playing_ocarina,tag=!already_playing] at @s run execute as @e[tag=link_display,distance=..4,limit=1,sort=nearest] run function zelda_oot_mob:link/animations/ocarina_idle/play
 
 #Add tag to ensure that we are not creating the ocarina display again and again
 execute as @a[tag=playing_ocarina] run tag @a add already_playing

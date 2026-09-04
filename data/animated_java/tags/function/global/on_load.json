@@ -1,10 +1,10 @@
 {
 	"replace": false,
 	"values": [
-		"zelda_oot:fado/on_load",
-		"zelda_oot:know_it_all_brother/on_load",
-		"zelda_oot:kokiri_shopkeeper/on_load",
-		"zelda_oot:link/on_load",
-		"zelda_oot:twins/on_load"
+		"zelda_oot_mob:fado/on_load",
+		"zelda_oot_mob:know_it_all_brother/on_load",
+		"zelda_oot_mob:kokiri_shopkeeper/on_load",
+		"zelda_oot_mob:link/on_load",
+		"zelda_oot_mob:twins/on_load"
 	]
 }

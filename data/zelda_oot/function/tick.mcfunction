@@ -83,7 +83,7 @@ scoreboard players enable @a deku_tree_no
 title @a[tag=playing_ocarina] actionbar {"text":"Sneak to stop playing the Ocarina","color":"gray","italic":true}
 execute as @a[tag=playing_ocarina,tag=!in_song,tag=!in_warp] if entity @s[tag=playing_ocarina,tag=is_sneak,tag=!in_song,tag=!in_warp] run kill @e[type=item_display,tag=ocarina_display]
 execute as @a[tag=playing_ocarina,tag=!in_song,tag=!in_warp] if entity @s[tag=playing_ocarina,tag=is_sneak,tag=!in_song,tag=!in_warp] run kill @e[type=interaction,tag=ocarina_display]
-execute as @a[tag=playing_ocarina,tag=!in_song,tag=!in_warp] if entity @s[tag=playing_ocarina,tag=is_sneak,tag=!in_song,tag=!in_warp] run execute as @e[type=item_display,tag=link_display] run function zelda_oot:link/remove/this
+execute as @a[tag=playing_ocarina,tag=!in_song,tag=!in_warp] if entity @s[tag=playing_ocarina,tag=is_sneak,tag=!in_song,tag=!in_warp] run execute as @e[type=item_display,tag=link_display] run function zelda_oot_mob:link/remove/this
 execute as @a[tag=playing_ocarina,tag=!in_song,tag=!in_warp] if entity @s[tag=playing_ocarina,tag=!in_song,tag=!in_warp] run tag @s remove already_playing
 execute as @a[tag=playing_ocarina,tag=!in_song,tag=!in_warp] if entity @s[tag=playing_ocarina,tag=is_sneak,tag=!in_song,tag=!in_warp] run tag @s remove playing_ocarina
 execute as @a[tag=playing_ocarina] if entity @s[tag=in_song] run spectate @e[type=block_display,tag=ocarina_display,limit=1,sort=nearest]

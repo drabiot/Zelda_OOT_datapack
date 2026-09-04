@@ -136,52 +136,52 @@ summon interaction -435.0 5 -31 {width:2.5f,height:3f,response:false,Tags:["bloc
 
 #Load NPC
 #Fado
-execute positioned -420.45 10.06 -14 rotated 270.79 0.10 run function zelda_oot:fado/summon {args: {}}
-execute positioned -420.45 10.06 -14 as @e[type=minecraft:item_display,tag=zelda_oot.fado.root,tag=!fado_display,distance=..3.5,sort=nearest,limit=1] run tag @s add fado_display
-execute as @e[tag=fado_display,limit=1,sort=nearest] run function zelda_oot:fado/animations/idle/play
+execute positioned -420.45 10.06 -14 rotated 270.79 0.10 run function zelda_oot_mob:fado/summon {args: {}}
+execute positioned -420.45 10.06 -14 as @e[type=minecraft:item_display,tag=zelda_oot_mob.fado.root,tag=!fado_display,distance=..3.5,sort=nearest,limit=1] run tag @s add fado_display
+execute as @e[tag=fado_display,limit=1,sort=nearest] run function zelda_oot_mob:fado/animations/idle/play
 
 summon interaction -421 10 -14 {width:1f,height:2f,response:true,Tags:["fado_click"]}
 summon interaction -421 9 -14 {width:4f,height:1f,response:false,Tags:["blocked"]}
 summon interaction -421 8 -11 {width:4f,height:4f,response:false,Tags:["blocked"]}
 
 #Twin Shop
-execute positioned -393 8.2 -26.3 rotated 360 0 run function zelda_oot:twins/summon {args: {}}
-execute positioned -393 8.2 -26.3 as @e[type=minecraft:item_display,tag=zelda_oot.twins.root,tag=!twin_shop_display,distance=..3.5,sort=nearest,limit=1] run tag @s add twin_shop_display
-execute as @e[tag=twin_shop_display,limit=1,sort=nearest] run function zelda_oot:twins/animations/idle_sit/play
+execute positioned -393 8.2 -26.3 rotated 360 0 run function zelda_oot_mob:twins/summon {args: {}}
+execute positioned -393 8.2 -26.3 as @e[type=minecraft:item_display,tag=zelda_oot_mob.twins.root,tag=!twin_shop_display,distance=..3.5,sort=nearest,limit=1] run tag @s add twin_shop_display
+execute as @e[tag=twin_shop_display,limit=1,sort=nearest] run function zelda_oot_mob:twins/animations/idle_sit/play
 
 summon interaction -393 8.2 -26.0 {width:1f,height:1f,response:true,Tags:["twin_shop_click"]}
 
 #Twin Door
-execute positioned -448.36 6.00 -16.41 rotated -97.51 0 run function zelda_oot:twins/summon {args: {}}
-execute positioned -448.36 6.00 -16.41 as @e[type=minecraft:item_display,tag=zelda_oot.twins.root,tag=!twin_door_display,distance=..3.5,sort=nearest,limit=1] run tag @s add twin_door_display
-execute as @e[tag=twin_door_display,limit=1,sort=nearest] run function zelda_oot:twins/animations/idle_stand/play
+execute positioned -448.36 6.00 -16.41 rotated -97.51 0 run function zelda_oot_mob:twins/summon {args: {}}
+execute positioned -448.36 6.00 -16.41 as @e[type=minecraft:item_display,tag=zelda_oot_mob.twins.root,tag=!twin_door_display,distance=..3.5,sort=nearest,limit=1] run tag @s add twin_door_display
+execute as @e[tag=twin_door_display,limit=1,sort=nearest] run function zelda_oot_mob:twins/animations/idle_stand/play
 
 summon interaction -448.36 6.00 -16.41 {width:1f,height:2f,response:true,Tags:["twin_door_click"]}
 
 #Twin Pound
-execute positioned -419.64 5.00 -22.27 rotated 2160.40 0 run function zelda_oot:twins/summon {args: {}}
-execute positioned -419.64 5.00 -22.27 as @e[type=minecraft:item_display,tag=zelda_oot.twins.root,tag=!twin_pound_display,distance=..3.5,sort=nearest,limit=1] run tag @s add twin_pound_display
-execute as @e[tag=twin_pound_display,limit=1,sort=nearest] run function zelda_oot:twins/animations/idle_stand2/play
+execute positioned -419.64 5.00 -22.27 rotated 2160.40 0 run function zelda_oot_mob:twins/summon {args: {}}
+execute positioned -419.64 5.00 -22.27 as @e[type=minecraft:item_display,tag=zelda_oot_mob.twins.root,tag=!twin_pound_display,distance=..3.5,sort=nearest,limit=1] run tag @s add twin_pound_display
+execute as @e[tag=twin_pound_display,limit=1,sort=nearest] run function zelda_oot_mob:twins/animations/idle_stand2/play
 
 summon interaction -419.64 5.00 -22.27 {width:1f,height:2f,response:true,Tags:["twin_pound_click"]}
 
 #Know-it-all Brother Attack
-execute positioned -443.73 10.00 20.07 rotated 832.91 0 run function zelda_oot:know_it_all_brother/summon {args: {}}
-execute positioned -443.73 10.00 20.07 as @e[type=minecraft:item_display,tag=zelda_oot.know_it_all_brother.root,tag=!know_it_all_brother_attack_display,distance=..3.5,sort=nearest,limit=1] run tag @s add know_it_all_brother_attack_display
-execute as @e[tag=know_it_all_brother_attack_display,limit=1,sort=nearest] run function zelda_oot:know_it_all_brother/animations/idle_attack/play
+execute positioned -443.73 10.00 20.07 rotated 832.91 0 run function zelda_oot_mob:know_it_all_brother/summon {args: {}}
+execute positioned -443.73 10.00 20.07 as @e[type=minecraft:item_display,tag=zelda_oot_mob.know_it_all_brother.root,tag=!know_it_all_brother_attack_display,distance=..3.5,sort=nearest,limit=1] run tag @s add know_it_all_brother_attack_display
+execute as @e[tag=know_it_all_brother_attack_display,limit=1,sort=nearest] run function zelda_oot_mob:know_it_all_brother/animations/idle_attack/play
 
 summon interaction -443.73 10.00 20.07 {width:1f,height:2f,response:true,Tags:["know_it_all_brother_attack_click"]}
 
 #Know-it-all Brother Rock
-execute positioned -431 5 -29.2 rotated 1439.86 0 run function zelda_oot:know_it_all_brother/summon {args: {}}
-execute positioned -431 5 -29.2 as @e[type=minecraft:item_display,tag=zelda_oot.know_it_all_brother.root,tag=!know_it_all_brother_rock_display,distance=..3.5,sort=nearest,limit=1] run tag @s add know_it_all_brother_rock_display
-execute as @e[tag=know_it_all_brother_rock_display,limit=1,sort=nearest] run function zelda_oot:know_it_all_brother/animations/idle_rock/play
+execute positioned -431 5 -29.2 rotated 1439.86 0 run function zelda_oot_mob:know_it_all_brother/summon {args: {}}
+execute positioned -431 5 -29.2 as @e[type=minecraft:item_display,tag=zelda_oot_mob.know_it_all_brother.root,tag=!know_it_all_brother_rock_display,distance=..3.5,sort=nearest,limit=1] run tag @s add know_it_all_brother_rock_display
+execute as @e[tag=know_it_all_brother_rock_display,limit=1,sort=nearest] run function zelda_oot_mob:know_it_all_brother/animations/idle_rock/play
 
 summon interaction -431 5 -29.2 {width:2f,height:1f,response:true,Tags:["know_it_all_brother_rock_click"]}
 
 #Know-it-all Brother Grass
-execute positioned -404 5.2 3.8 rotated 1983.91 0 run function zelda_oot:know_it_all_brother/summon {args: {}}
-execute positioned -404 5.2 3.8 as @e[type=minecraft:item_display,tag=zelda_oot.know_it_all_brother.root,tag=!know_it_all_brother_grass_display,distance=..3.5,sort=nearest,limit=1] run tag @s add know_it_all_brother_grass_display
-execute as @e[tag=know_it_all_brother_grass_display,limit=1,sort=nearest] run function zelda_oot:know_it_all_brother/animations/idle_grass/play
+execute positioned -404 5.2 3.8 rotated 1983.91 0 run function zelda_oot_mob:know_it_all_brother/summon {args: {}}
+execute positioned -404 5.2 3.8 as @e[type=minecraft:item_display,tag=zelda_oot_mob.know_it_all_brother.root,tag=!know_it_all_brother_grass_display,distance=..3.5,sort=nearest,limit=1] run tag @s add know_it_all_brother_grass_display
+execute as @e[tag=know_it_all_brother_grass_display,limit=1,sort=nearest] run function zelda_oot_mob:know_it_all_brother/animations/idle_grass/play
 
 summon interaction -404 5 3.8 {width:2f,height:1f,response:true,Tags:["know_it_all_brother_grass_click"]}

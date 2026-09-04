@@ -2,7 +2,7 @@ execute as @a run kill @e[type=block_display,tag=link_face_display]
 execute as @a run kill @e[type=interaction,tag=warping_click]
 execute as @a run kill @e[type=text_display,tag=warping_text]
 
-execute as @a[tag=playing_ocarina] run execute as @e[type=item_display,tag=link_display] run function zelda_oot:link/remove/this
+execute as @a[tag=playing_ocarina] run execute as @e[type=item_display,tag=link_display] run function zelda_oot_mob:link/remove/this
 execute as @a[tag=in_song] at @s run tp ~ ~-2.7 ~
 execute as @a run tag @s remove already_playing
 execute as @a run tag @s remove playing_ocarina
