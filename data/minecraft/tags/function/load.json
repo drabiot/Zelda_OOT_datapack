@@ -1,4 +1,4 @@
 {
 	"replace": false,
-	"values": ["animated_java:global/on_load", "zelda_oot:load", "player_motion:internal/technical/load"]
+	"values": ["animated_java:global/on_load", "player_motion:internal/technical/load", "zelda_oot:load"]
 }

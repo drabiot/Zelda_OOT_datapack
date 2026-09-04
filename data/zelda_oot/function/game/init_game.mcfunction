@@ -20,6 +20,8 @@ advancement grant @a only zelda_oot:song/warp
 #advancement grant drabiot until zelda_oot:hyrule/hyrule_root
 
 #Init Structures
+place template zelda_oot:kokiri/deku_tree/kokiri_exit_close -471 3 -28
+
 function zelda_oot:game/kokiri_forest/way_to_deku_tree/close_way
 function zelda_oot:game/kokiri_forest/dialogue/deku_tree/animation/m1
 

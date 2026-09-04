@@ -1,1 +1,0 @@
-tp @n[type=mannequin,tag=looking,limit=1] ~ ~.5 ~ facing entity @p[sort=nearest] feet

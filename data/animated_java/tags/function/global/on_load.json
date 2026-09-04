@@ -1,4 +1,4 @@
 {
 	"replace": false,
-	"values": ["zelda_oot:fado/on_load", "zelda_oot:link/on_load", "zelda_oot:twins/on_load"]
+	"values": ["zelda_oot:fado/on_load", "zelda_oot:know_it_all_brother/on_load", "zelda_oot:link/on_load", "zelda_oot:twins/on_load"]
 }

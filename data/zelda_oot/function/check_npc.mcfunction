@@ -60,8 +60,8 @@ execute as @a[tag=twin_pound_click] run tag @a add confirm_twin_pound_click
 execute as @a[tag=confirm_twin_pound_click] at @e[tag=twin_pound_click,limit=1] \
     run summon minecraft:interaction -419.64 5.00 -22.27 {width:1f,height:2f,response:true,Tags:["twin_pound_click"]}
 
-execute as @a[tag=confirm_twin_pound_click] positioned -421.46 7.00 -22.72 unless entity @e[type=text_display,tag=npc_display,distance=..2] \
-	run execute as @a[] at @s rotated as @s rotated ~ 0 positioned -421.46 7.00 -22.72 \
+execute as @a[tag=confirm_twin_pound_click] positioned -421.46 6.5 -22.72 unless entity @e[type=text_display,tag=npc_display,distance=..2] \
+	run execute as @a[] at @s rotated as @s rotated ~ 0 positioned -421.46 6.5 -22.72 \
 	run summon text_display ^ ^ ^ \
 	{CustomName:'"npc_display"',Tags:["twin_pound_dialogue","npc_display"],\
 	transformation:{translation:[0f,0f,0f],right_rotation:[0f,0.2f,0f,1f],left_rotation:[0f,0f,0f,1f],scale:[1f,1f,1f]},\
@@ -113,3 +113,60 @@ execute if entity @a[tag=confirm_twin_inside_house_click] as @e[type=text_displa
 execute as @a[tag=confirm_twin_inside_house_click] run tag @a remove twin_inside_house_click
 execute as @a[tag=confirm_twin_inside_house_click] run tag @a remove confirm_twin_inside_house_click
 
+#Know-it-all Brother Attack
+execute as @e[type=interaction,tag=know_it_all_brother_attack_click,nbt={interaction:{}}] run tag @a add know_it_all_brother_attack_click
+execute as @a[tag=know_it_all_brother_attack_click] run kill @e[type=minecraft:interaction,tag=know_it_all_brother_attack_click]
+execute as @a[tag=know_it_all_brother_attack_click] run tag @a add confirm_know_it_all_brother_attack_click
+execute as @a[tag=confirm_know_it_all_brother_attack_click] at @e[tag=know_it_all_brother_attack_click,limit=1] \
+    run summon minecraft:interaction -443.73 10.00 20.07 {width:1f,height:2f,response:true,Tags:["know_it_all_brother_attack_click"]}
+
+execute as @a[tag=confirm_know_it_all_brother_attack_click] positioned -443 11 17 unless entity @e[type=text_display,tag=npc_display,distance=..2] \
+	run execute as @a[] at @s rotated as @s rotated ~ 0 positioned -443 11 17 \
+	run summon text_display ^ ^ ^ \
+	{CustomName:'"npc_display"',Tags:["know_it_all_brother_attack_dialogue","npc_display"],\
+	transformation:{translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,-0.7f,0f,1f],scale:[1f,1f,1f]},\
+	text:[{text:"Hey, let's work on some moves!\n\nTo "},\
+	{text:"jump sideways",color:"red"},{text:", press {"},{text:"right/left",color:"blue"},{text:"} 2 times. To do a "},{text:"backflip",color:"red"},{text:" , press {"},{text:"backward",color:"blue"},{text:"} 2 times. To do a "},\
+	{text:"roll attack",color:"red"},{text:", press {"},{text:"forward",color:"blue"},{text:"} 2 times. While you roll, you can avoid damage.\n\nYou can use your movement on the stone next to me, so let's practice!"}]}
+
+execute if entity @a[tag=confirm_know_it_all_brother_attack_click] as @e[type=text_display,tag=know_it_all_brother_attack_dialogue] run schedule function zelda_oot:kill_dialogue 300t
+execute as @a[tag=confirm_know_it_all_brother_attack_click] run tag @a remove know_it_all_brother_attack_click
+execute as @a[tag=confirm_know_it_all_brother_attack_click] run tag @a remove confirm_know_it_all_brother_attack_click
+
+#Know-it-all Brother Rock
+execute as @e[type=interaction,tag=know_it_all_brother_rock_click,nbt={interaction:{}}] run tag @a add know_it_all_brother_rock_click
+execute as @a[tag=know_it_all_brother_rock_click] run kill @e[type=minecraft:interaction,tag=know_it_all_brother_rock_click]
+execute as @a[tag=know_it_all_brother_rock_click] run tag @a add confirm_know_it_all_brother_rock_click
+execute as @a[tag=confirm_know_it_all_brother_rock_click] at @e[tag=know_it_all_brother_rock_click,limit=1] \
+    run summon minecraft:interaction -431 5 -29.2 {width:2f,height:1f,response:true,Tags:["know_it_all_brother_rock_click"]}
+
+execute as @a[tag=confirm_know_it_all_brother_rock_click] positioned -429 6 -31 unless entity @e[type=text_display,tag=npc_display,distance=..2] \
+	run execute as @a[] at @s rotated as @s rotated ~ 0 positioned -429 6 -31 \
+	run summon text_display ^ ^ ^ \
+	{CustomName:'"npc_display"',Tags:["know_it_all_brother_rock_dialogue","npc_display"],\
+	transformation:{translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,-0.2f,0f,1f],scale:[1f,1f,1f]},\
+	text:[{text:"{"},{text:"Right Click",color:"blue"},{text:"} by the stone, pick it up! {"},{text:"Right Click",color:"blue"},\
+	{text:"} by the stone, pick it up!\n\nMean old "},{text:"Mido",color:"red"},{text:"...he made me pick up the rocks in front of his house."}]}
+
+execute if entity @a[tag=confirm_know_it_all_brother_rock_click] as @e[type=text_display,tag=know_it_all_brother_rock_dialogue] run schedule function zelda_oot:kill_dialogue 150t
+execute as @a[tag=confirm_know_it_all_brother_rock_click] run tag @a remove know_it_all_brother_rock_click
+execute as @a[tag=confirm_know_it_all_brother_rock_click] run tag @a remove confirm_know_it_all_brother_rock_click
+
+#Know-it-all Brother Grass
+execute as @e[type=interaction,tag=know_it_all_brother_grass_click,nbt={interaction:{}}] run tag @a add know_it_all_brother_grass_click
+execute as @a[tag=know_it_all_brother_grass_click] run kill @e[type=minecraft:interaction,tag=know_it_all_brother_grass_click]
+execute as @a[tag=know_it_all_brother_grass_click] run tag @a add confirm_know_it_all_brother_grass_click
+execute as @a[tag=confirm_know_it_all_brother_grass_click] at @e[tag=know_it_all_brother_grass_click,limit=1] \
+    run summon minecraft:interaction -404 5 3.8 {width:2f,height:1f,response:true,Tags:["know_it_all_brother_grass_click"]}
+
+execute as @a[tag=confirm_know_it_all_brother_grass_click] positioned -402 6 4 unless entity @e[type=text_display,tag=npc_display,distance=..2] \
+	run execute as @a[] at @s rotated as @s rotated ~ 0 positioned -402 6 4 \
+	run summon text_display ^ ^ ^ \
+	{CustomName:'"npc_display"',Tags:["know_it_all_brother_grass_dialogue","npc_display"],\
+	transformation:{translation:[0f,0f,0f],right_rotation:[0f,-3f,0f,1f],left_rotation:[0f,0f,0f,1f],scale:[1f,1f,1f]},\
+	text:[{text:"That meanie, "},{text:"Mido",color:"red"},{text:", made me cut the grass at Saria's house. Mido told Saria he would do it so she would like him, but I'm the one doing all the work!\n"},\
+	{text:"\nYou and "},{text:"Saria",color:"red"},{text:" are close friends, so will you help me cut the grass? I'll let you keep anything that you find while cutting it."}]}
+
+execute if entity @a[tag=confirm_know_it_all_brother_grass_click] as @e[type=text_display,tag=know_it_all_brother_grass_dialogue] run schedule function zelda_oot:kill_dialogue 250t
+execute as @a[tag=confirm_know_it_all_brother_grass_click] run tag @a remove know_it_all_brother_grass_click
+execute as @a[tag=confirm_know_it_all_brother_grass_click] run tag @a remove confirm_know_it_all_brother_grass_click
