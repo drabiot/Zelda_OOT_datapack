@@ -1,5 +1,3 @@
-execute as @e[tag=guard] at @s if entity @p[distance=..8] run function zelda_oot:guard_move
-
 #Prevent lightning damage
 execute at @e[type=lightning_bolt] run fill ~-2 ~-1 ~-2 ~2 ~2 ~2 air replace fire
 
@@ -13,10 +11,12 @@ execute if entity @a[advancements={zelda_oot:kokiri_forest/gohma=true}] run plac
 effect clear @e[type=!item_display,type=!arrow,type=!spectral_arrow,type=!marker,type=!text_display,type=!block_display,tag=!allow_glow] minecraft:glowing
 
 #Movement
-execute as @a[nbt={OnGround:1b},tag=in_roll,tag=!dialogue,tag=!dev] at @s unless entity @e[type=shulker,distance=..1] run summon shulker ~ ~0.5 ~ {NoAI:1b,PersistenceRequired:1b,NoGravity:1b,Invulnerable:1b,Silent:1b,Peek:0b,Tags:["roll_crawl"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:-1,show_particles:0b}]}
-execute if entity @a[tag=!in_roll] run tp @e[type=shulker, tag=roll_crawl] ~ ~-1000 ~
-execute as @a at @s run tp @e[type=shulker,tag=roll_crawl,distance=1.2..] ~ ~-1000 ~
-execute as @a at @s run kill @e[type=shulker,tag=roll_crawl,distance=1.2..]
+execute as @a[tag=in_roll,tag=!dialogue,tag=!dev] at @s unless entity @e[type=shulker,distance=..0.1] run summon shulker ~ ~0.5 ~ {NoAI:1b,PersistenceRequired:1b,NoGravity:1b,Invulnerable:1b,Silent:1b,Peek:0b,Tags:["roll_crawl"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:-1,show_particles:0b}]}
+execute as @a[tag=sneak_pressed_now_roll,tag=roll_ready,tag=!dialogue,tag=!dev] at @s unless entity @e[type=shulker,distance=..0.1] run summon shulker ~ ~0.5 ~ {NoAI:1b,PersistenceRequired:1b,NoGravity:1b,Invulnerable:1b,Silent:1b,Peek:0b,Tags:["roll_crawl"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:-1,show_particles:0b}]}
+execute if entity @a[tag=!roll_double_tap,tag=!in_roll] run tp @e[type=shulker, tag=roll_crawl] ~ ~-1000 ~
+execute as @a at @s run tp @e[type=shulker,tag=roll_crawl,distance=1.4..] ~ ~-1000 ~
+execute as @a at @s run kill @e[type=shulker,tag=roll_crawl,distance=1.4..]
+
 
 execute as @a[nbt={OnGround:1b},tag=!kokiri_shop] run function zelda_oot:motion/backflip/backflip
 execute as @a[nbt={OnGround:1b},tag=!kokiri_shop] run function zelda_oot:motion/roll/roll
@@ -47,7 +47,7 @@ execute as @a unless score @s sneak_time > @s sneak_prev run tag @s remove is_sn
 scoreboard players operation @a sneak_prev = @a sneak_time
 
 attribute @a[nbt={OnGround:1b},tag=is_sneak,tag=!dev,tag=!dialogue,tag=!kokiri_shop,limit=1] jump_strength base set 0
-attribute @a[tag=!is_sneak,tag=!dialogue,tag=!kokiri_shop,limit=1] jump_strength base reset
+#attribute @a[tag=!is_sneak,tag=!dialogue,tag=!kokiri_shop,limit=1] jump_strength base reset
 
 attribute @a[tag=!dev,tag=kokiri_shop,limit=1] jump_strength base set 0
 

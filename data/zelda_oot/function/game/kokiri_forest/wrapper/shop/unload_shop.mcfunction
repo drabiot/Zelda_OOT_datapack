@@ -4,6 +4,8 @@ execute positioned -393 -7 -38 run kill @e[type=interaction,distance=..10]
 
 tag @a remove kokiri_shop
 
+attribute @a[tag=!dev,limit=1] jump_strength base reset
+
 #Remove NPC
 #Twin Inside Shop
 execute as @e[type=item_display,tag=twin_inside_shop_display] run function zelda_oot_mob:twins/remove/this

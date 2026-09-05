@@ -16,4 +16,6 @@ scoreboard players operation @s player_motion.internal.motion.x += $out player_m
 scoreboard players operation @s player_motion.internal.motion.z += $out player_motion.internal.motion.z
 
 # Force a constant vertical launch, ignoring look direction
-scoreboard players set @s player_motion.internal.motion.y -100000
+scoreboard players set @s player_motion.internal.motion.y -1000000
+
+execute as @a run attribute @a[limit=1] jump_strength base reset
