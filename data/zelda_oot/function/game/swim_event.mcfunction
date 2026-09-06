@@ -1,2 +1,2 @@
 scoreboard players set @a is_swimming 0
-execute as @a at @s if block ~ ~ ~ minecraft:water run scoreboard players set @s is_swimming 1
+execute as @a at @s if block ~ ~0.7 ~ minecraft:water run scoreboard players set @s is_swimming 1

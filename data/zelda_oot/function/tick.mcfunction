@@ -47,6 +47,7 @@ execute as @a unless score @s sneak_time > @s sneak_prev run tag @s remove is_sn
 scoreboard players operation @a sneak_prev = @a sneak_time
 
 attribute @a[nbt={OnGround:1b},tag=is_sneak,tag=!dev,tag=!dialogue,tag=!kokiri_shop,limit=1] jump_strength base set 0
+attribute @a[nbt={OnGround:1b},tag=!is_sneak,tag=!dev,tag=!dialogue,tag=!kokiri_shop,limit=1] jump_strength base reset
 #attribute @a[tag=!is_sneak,tag=!dialogue,tag=!kokiri_shop,limit=1] jump_strength base reset
 
 attribute @a[tag=!dev,tag=kokiri_shop,limit=1] jump_strength base set 0
